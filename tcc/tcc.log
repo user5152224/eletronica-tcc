@@ -1,141 +1,167 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.15)  11 OCT 2025 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  11 OCT 2025 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tcc.tex
 (./tcc.tex
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/base/leqno.clo
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/leqno.clo
 File: leqno.clo 2016/12/29 v1.2b Standard LaTeX option (left equation numbers)
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count194
-\c@chapter=\count195
-\c@section=\count196
-\c@subsection=\count197
-\c@subsubsection=\count198
-\c@paragraph=\count199
-\c@subparagraph=\count266
-\c@figure=\count267
-\c@table=\count268
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
+\bibindent=\dimen148
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
-rs
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip51
-\f@nch@O@elh=\skip52
-\f@nch@O@erh=\skip53
-\f@nch@O@olh=\skip54
-\f@nch@O@orh=\skip55
-\f@nch@O@elf=\skip56
-\f@nch@O@erf=\skip57
-\f@nch@O@olf=\skip58
-\f@nch@O@orf=\skip59
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks17
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks18
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count269
-\Gm@cntv=\count270
-\c@Gm@tempcnt=\count271
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks18
+\Gm@cnth=\count284
+\Gm@cntv=\count285
+\c@Gm@tempcnt=\count286
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks19
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box52
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
-\ttl@plus=\dimen150
-\ttl@minus=\dimen151
-\ttl@toksa=\toks19
-\titlewidth=\dimen152
-\titlewidthlast=\dimen153
-\titlewidthfirst=\dimen154
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen157
+\ttl@minus=\dimen158
+\ttl@toksa=\toks20
+\titlewidth=\dimen159
+\titlewidthlast=\dimen160
+\titlewidthfirst=\dimen161
 )
-(/home/papabundus/.texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/10/05 v24.11 The Babel package
-\babel@savecnt=\count272
-\U@D=\dimen155
-\l@unhyphenated=\language89
+(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/10/01 v25.13 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count287
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2045.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2047.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2049.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2050.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2053.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2078.
+\U@D=\dimen162
+\l@unhyphenated=\language90
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count273
+\bbl@dirlevel=\count288
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/generic/babel-portuges/brazil.ld
+(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ld
 f
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 (babel)             (\language72). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count274
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
 )
-\MT@toks=\toks20
-\MT@tempbox=\box53
-\MT@count=\count275
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
-LaTeX Info: Redefining \leftprotrusion on input line 1062.
-\MT@prot@toks=\toks21
-LaTeX Info: Redefining \rightprotrusion on input line 1081.
-LaTeX Info: Redefining \textls on input line 1392.
-\MT@outer@kern=\dimen156
-LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
-\MT@listname@count=\count276
+\MT@toks=\toks21
+\MT@tempbox=\box54
+\MT@count=\count290
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks22
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen163
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count291
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex
 .def
-File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 902.
-LaTeX Info: Redefining \lslig on input line 902.
-\MT@outer@space=\skip62
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip67
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
-))
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex
 .def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
-\l__pdf_internal_box=\box54
-) (./tcc.aux)
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count292
+) (./tcc.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 5.
+)
 \openout1 = `tcc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -193,17 +219,18 @@ Package microtype Info: Applying patch `toc' on input line 95.
 Package microtype Info: Applying patch `eqnum' on input line 95.
 Package microtype Info: Applying patch `footnote' on input line 95.
 Package microtype Info: Applying patch `verbatim' on input line 95.
+LaTeX Info: Redefining \microtypesetup on input line 95.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 95.
+Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/home/papabundus/.texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -221,7 +248,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1
 
-{/home/papabundus/.texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/home/papabundus/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 112--112
 
  []
@@ -252,24 +279,24 @@ Cap\'{\i }tulo I.
 
 ] (./tcc.aux)
  ***********
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4982 strings out of 473579
- 82335 string characters out of 5724712
- 530398 words of memory out of 5000000
- 27813 multiletter control sequences out of 15000+600000
- 567059 words of font info for 94 fonts, out of 8000000 for 9000
+ 5198 strings out of 467748
+ 86638 string characters out of 5423317
+ 548324 words of memory out of 5000000
+ 33826 multiletter control sequences out of 15000+600000
+ 636711 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,104p,1000b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/papabundus/.texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb></home/papabundus/.texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmcsc10.pfb></home/papabundus/.texlive/2024/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></home/papabundus/.texlive/2024/texmf-dist/fonts/type1/publ
+ 57i,6n,103p,1000b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb>
-Output written on tcc.pdf (6 pages, 67620 bytes).
+Output written on tcc.pdf (6 pages, 67577 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
