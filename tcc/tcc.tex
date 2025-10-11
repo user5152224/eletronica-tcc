@@ -1,13 +1,148 @@
 %!latex
-\documentclass[12pt, a4paper, leqno]{book}
+\documentclass[12pt, a4paper, leqno, twoside]{book}
 
+\usepackage{%
+  fancyhdr,
+  geometry,
+  setspace,
+  titlesec
+}
 \usepackage[brazil]{babel}
+
+% Formatação do título dos capítulos
+\titleformat{\chapter}[display]
+{}%
+{
+   \Large\centering\normalsize%
+   {\sc\chaptertitlename}\hspace{1ex}%
+   {\selectfont\thechapter}%
+}%
+{3ex}% 
+{\centering\bf\large\lsstyle\MakeUppercase}%
+[]
+
+% Espaçamento de letra para o cabeçalho dos capítulos
+\usepackage[letterspace=203]{microtype}
+
+% Formatação do título das se\c c\~oes
+\titleformat{\section}{\centering\sc}{\thesection}{1em}{}[]
+
+% Estilo dos cabeçalhos
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headrulewidth}{0ex}
+\fancypagestyle{est}{%
+  \def\fontface{\bf}
+  \fancyhf{}
+  \fancyhead[CE]{\fontface\sc\leftmark}
+  \fancyhead[CO]{{\S}\fontface\sc\rightmark}
+  \fancyhead[LE,RO]{\fontface\thepage}
+}
+
+% Numeração dos capítulos em algarismos romanos
+\def\theHchapter{\arabic{chapter}\thechapter}
+\def\thechapter{\Roman{chapter}}
+
+% Remover páginas em branco
+\let\cleardoublepage=\clearpage
+
+% Geometria da página
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+
+% Definições gerais
+\def\tpfc{\scshape}
+
+\def\localData{%
+  \parbox[c][0cm][c]{4cm}{
+    \sc
+    Jo\~ao Pessoa\hfill -\hfill PB\\
+    \footnotesize
+    \today
+  }
+}
+
+\def\parteSuperior{
+  \parbox[c][0cm][c]{12cm}{
+    {\scshape\scriptsize%
+      {INSTITUTO\hfill FEDERAL\hfill DE\hfill EDUCA\c C\~AO,\hfill CI\^ENCIA\hfill E\hfill TECNOLOGIA DA PARA\'IBA}\\
+      {
+        \fontsize{12}{12}\selectfont
+        {\noindent CURSO\hfill T\'ECNICO\hfill SUBSEQUENTE\hfill EM\hfill ELETR\^ONICA}\\
+        \large
+        {\noindent TRABALHO\hfill DE\hfill CONCLUS\~AO\hfill DE\hfill CURSO}\\
+      }
+    }
+  }
+  \vfill 
+  {\lsstyle\Large\scshape%
+    PROJETO
+  }
+  \vskip .5cm
+  \textit{por}
+  \vskip .5cm
+  {\tpfc Harllen Ara\'ujo de Sena}
+  \par
+  {\it e}
+  \par
+  {\tpfc Henrique Cirilo Costa}
+  \vskip .5cm
+  \textit{orientado pelo}
+  \vskip .5cm
+  {\tpfc Prof. Dr. C\'icero Alisson dos Santos}
+  \vskip .5cm
+}
 
 \begin{document}
 
+  % Remover a capa da contagem de páginas.
+  \pagenumbering{gobble}
 
-\chapter{Preliminares}
+  \pagestyle{empty}
+  \begin{center}
+    \parteSuperior
+    \vfill 
+    \localData
+  \end{center} 
+  \newpage
 
-ab
+  % Começar a contagem de páginas.
+  \pagenumbering{arabic}
 
+  \begin{center}
+    \parteSuperior
+    \vskip 2cm
+    \hfill
+    \parbox[c][0cm][c]{7.7cm}{
+      Trabalho de conclus\~ao de curso apresentado ao IFPB.
+    }
+    \vfill 
+    \localData
+  \end{center} 
+
+  % Espaçamento entre linhas.
+  \setstretch{1.5}
+
+  \tableofcontents
+
+  % Remover paginação da tabela de conteúdos
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+  \newpage
+  \singlespacing
+  \pagestyle{est}
+
+  \chapter*{Introdu\c c\~ao}
+
+  \chapter{Preliminares}
+  
+  \section{Amplificadores Operacionais}
+  
+  \begin{thebibliography}{}
+    \bibitem{Malvino}
+    MALVINO, Albert Paul; BATES, David J. {\it Eletr\^onica\/}: Volume 1. 2. ed. S\~ao Paulo: McGraw-Hill Education, 1986.
+    \bibitem{HH}
+    HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
+    \bibitem{TexIns}
+    {\it LM555 Timer\/}: Texas Instruments, 2015. Dispon\'ivel em: https://www.ti.com/lit/ds\allowbreak/symlink/lm555.pdf. Acesso em: 26 novembro 2023.
+  \end{thebibliography}
 \end{document}

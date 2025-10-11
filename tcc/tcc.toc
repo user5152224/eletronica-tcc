@@ -1,0 +1,4 @@
+\babel@toc {brazil}{}\relax 
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {I}Preliminares}{4}{}%
+\contentsline {section}{\numberline {I.1}Amplificadores Operacionais}{4}{}%
