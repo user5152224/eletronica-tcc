@@ -4,4 +4,7 @@
 \contentsline {section}{\numberline {I.1}Amplificadores Operacionais}{4}{}%
 \contentsline {chapter}{\numberline {II}Resumo do projeto}{5}{}%
 \contentsline {section}{\numberline {II.1}Sobre o projeto}{5}{}%
-\contentsline {section}{\numberline {II.2}Um tour pelos est\'agios}{5}{}%
+\contentsline {section}{\numberline {II.2}Um tour pelos est\'agios}{6}{}%
+\contentsline {subsection}{\numberline {II.2.1}A entrada desbalanceada}{6}{}%
+\contentsline {subsection}{\numberline {II.2.2}A entrada balanceada}{6}{}%
+\contentsline {subsection}{\numberline {II.2.3}O est\'agio de ganho}{6}{}%
