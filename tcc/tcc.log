@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  13 OCT 2025 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  14 OCT 2025 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,20 +162,20 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -211,13 +211,13 @@ LaTeX Font Info:    ... okay on input line 95.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 95.
-Package microtype Info: Applying patch `item' on input line 95.
-Package microtype Info: Applying patch `toc' on input line 95.
-Package microtype Info: Applying patch `eqnum' on input line 95.
-Package microtype Info: Applying patch `footnote' on input line 95.
-Package microtype Info: Applying patch `verbatim' on input line 95.
-LaTeX Info: Redefining \microtypesetup on input line 95.
+LaTeX Info: Redefining \microtypecontext on input line 100.
+Package microtype Info: Applying patch `item' on input line 100.
+Package microtype Info: Applying patch `toc' on input line 100.
+Package microtype Info: Applying patch `eqnum' on input line 100.
+Package microtype Info: Applying patch `footnote' on input line 100.
+Package microtype Info: Applying patch `verbatim' on input line 100.
+LaTeX Info: Redefining \microtypesetup on input line 100.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -232,22 +232,22 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 102.
+(Font)              <12> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 102.
+(Font)              <8> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 102.
+(Font)              <6> on input line 107.
 
 
 [1
 
 {/home/fool/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 
  []
 
@@ -272,8 +272,18 @@ Cap\'{\i }tulo I.
 [4
 
 ]
+Cap\'{\i }tulo II.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 148.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 148.
+
 
 [5
+
+]
+
+[6
 
 ] (./tcc.aux)
  ***********
@@ -282,22 +292,25 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5198 strings out of 467748
- 86350 string characters out of 5426443
- 548324 words of memory out of 5000000
- 33826 multiletter control sequences out of 15000+600000
- 636711 words of font info for 98 fonts, out of 8000000 for 9000
+ 5285 strings out of 467748
+ 87329 string characters out of 5426443
+ 554342 words of memory out of 5000000
+ 33857 multiletter control sequences out of 15000+600000
+ 639662 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,103p,1000b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+ 57i,8n,103p,2766b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
-fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
-b>
-Output written on tcc.pdf (6 pages, 67768 bytes).
+fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+>
+Output written on tcc.pdf (7 pages, 111159 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 32769 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 47105 words of extra memory for PDF output out of 51595 (max. 10000000)
 

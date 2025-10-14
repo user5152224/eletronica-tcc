@@ -49,6 +49,8 @@
 % Geometria da página
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 
+\renewcommand{\thefootnote}{\small\bfseries\arabic{footnote}}
+
 % Definições gerais
 \def\tpfc{\scshape}
 
@@ -91,6 +93,9 @@
   {\tpfc Prof. Dr. C\'icero Alisson dos Santos}
   \vskip .5cm
 }
+
+\def\ohm{\,\Omega}
+\def\opamp{OpAmp}
 
 \begin{document}
 
@@ -136,13 +141,20 @@
   \chapter{Preliminares}
   
   \section{Amplificadores Operacionais}
+
+  \chapter{Resumo do projeto}
+
+  \section{Sobre o projeto} 
+  A proposta do projeto \'e inovadora, no sentido de criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo. Para este fim, usou-se v\'arios NE5532. Cada um consiste dum dual OpAmp (amplificador operacional dual), precisamente um {\it dual in-line package} (DIP) com dois amplificadores operacionais embutidos. O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. A fim de suplantar o desafio t\'ecnico de se alimentar um alto-falante de $8\ohm$ com uma boa pot\^encia, faz-se o uso duma ponte ({\it bridge}). Conectam-se dois amplificadores em cascata (s\'erie), resultando num aumento de duas vezes a tens\~ao e, consequentemente quadruplicando a pot\^encia do sinal, sobrepujando o limiar de pot\^encia dum \'unico amplificador. Um outro fator prepoderante \'e o limite da corrente de sa\'ida de cada OpAmp, estipulado para evitar sua sobrecarga interna. Segundo o pr\'oprio autor do projeto o NE5532 acionar\'a uma carga de $500\ohm$\footnote{Creio que este par\^ametro \'e dependente do fabricante.} at\'e o limiar da tens\~ao de sa\'ida do \opamp, embora seja recomend\'avel usar cargas mais ``leves'', isto \'e, cargas com resist\^encias maiores. O projeto foi dimensionado para alimentar um alto-falante de $8\ohm$, caso $4\ohm$ seja requerido, ser\~ao necess\'arios duas vezes mais \opamp{s}, para fornecer o dobro de corrente demandada pela carga de $4\ohm$ e, o mesmo se aplica ao modo de opera\c c\~ao {\it bridged\/}\footnote{Neste modo, a carga, a saber, o alto-falante, receber\'a duas tens\~oes invertidas em fase, isto por sua vez resultar\'a na duplica\c c\~ao da tens\~ao de sa\'ida e na quadruplica\c c\~ao da pot\^encia.}. O sistema foi desenvolvido para que os modos {\it single-ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Precipuamente, a configura\c c\~ao est\'ereo \'e constituida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} apenas com tr\^es PCIs. \'E sabido que inerentemente os \opamp{s} possuem prote\c c\~ao contra sobrecarga. N\~ao obstante, rel\'es de sa\'ida s\~ao usados para evitar o {\it on-off muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g. os estalos ({\it pops}), e para evitar falhas DC, i.e., evitar que o sistema forneça DC ao alto-falante evitando assim, sua sobrecarga. 
+
+  \section{Um tour pelos est\'agios}
   
   \begin{thebibliography}{}
     \bibitem{Malvino}
     MALVINO, Albert Paul; BATES, David J. {\it Eletr\^onica\/}: Volume 1. 2. ed. S\~ao Paulo: McGraw-Hill Education, 1986.
     \bibitem{HH}
     HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
-    \bibitem{TexIns}
-    {\it LM555 Timer\/}: Texas Instruments, 2015. Dispon\'ivel em: https://www.ti.com/lit/ds\allowbreak/symlink/lm555.pdf. Acesso em: 26 novembro 2023.
+%    \bibitem{TexIns}
+%    {\it LM555 Timer\/}: Texas Instruments, 2015. Dispon\'ivel em: https://www.ti.com/lit/ds\allowbreak/symlink/lm555.pdf. Acesso em: 26 novembro 2023.
   \end{thebibliography}
 \end{document}

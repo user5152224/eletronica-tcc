@@ -2,3 +2,6 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {I}Preliminares}{4}{}%
 \contentsline {section}{\numberline {I.1}Amplificadores Operacionais}{4}{}%
+\contentsline {chapter}{\numberline {II}Resumo do projeto}{5}{}%
+\contentsline {section}{\numberline {II.1}Sobre o projeto}{5}{}%
+\contentsline {section}{\numberline {II.2}Um tour pelos est\'agios}{5}{}%
