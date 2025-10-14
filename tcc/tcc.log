@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  14 OCT 2025 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  14 OCT 2025 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,16 +278,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 150.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [5
 
 ]
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 164.
+(babel)             Reported on input line 174.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -308,28 +305,30 @@ L3 programming layer <2025-09-02>
  ) 
 Here is how much of TeX's memory you used:
  5321 strings out of 467748
- 88142 string characters out of 5426443
+ 88140 string characters out of 5426443
  556337 words of memory out of 5000000
  33887 multiletter control sequences out of 15000+600000
  640265 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,103p,2930b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,103p,1518b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
 b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
 fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
 fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-/home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-/home/fool/.texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tcc.pdf (8 pages, 158362 bytes).
+fb></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+home/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></ho
+me/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></ho
+me/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></ho
+me/fool/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></ho
+me/fool/.texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on tcc.pdf (8 pages, 174327 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51201 words of extra memory for PDF output out of 51595 (max. 10000000)
 
