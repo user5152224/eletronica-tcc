@@ -173,16 +173,16 @@
     $$
       v_{J}({\rm rms})=\sqrt{4kBRT}\quad{\rm V(rms)},
     $$
-    em que $k$ \'e a constante de Boltzmann, $B$ \'e o comprimento da banda em Hz.
+    em que $k$ \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
   } ({\it Johnson Noise}) menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
   \subsection{O est\'agio de ganho}
-  De acordo com o autor do projeto o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. N\~ao obstante, os NE5532s n\~ao est\~ao completamente livre de distor\c c\~ao, e o THD ({\it Total Harmonic Distortion}\/) seria significativo.
+  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. N\~ao obstante, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD ({\it Total Harmonic Distortion}\/) seria significativo.
 
   O primeiro est\'agio (IC1A,1C1B) d\'a um ganho de $10.7\,\db$[\footnote{Eu calculei $20\cdot\log_{10}(6220/910)\approx16.7\,\db$.}; as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ engendrando uma vantagem de $3\,\db$\footnote{N\~ao entendi o porqu\^e.}, como no amplicador balanceado. O segundo est\'agio duplica a tens\~ao, pois
   \[
     V_{\rm out}=\biggl(1+{R_{11}\over R_{10}}\biggr)\cdot V_{\rm in}=\biggl(1+{2{\rm k}2\over 2{\rm k}2}\biggr)\cdot V_{\rm in}=2\cdot V_{\rm in},
   \]
-  donde o ganho rm $\db$ \'e
+  donde o ganho em $\db$ \'e
   \[
     20\cdot\log_{10}\biggr({V_{\rm out}\over V_{\rm in}}\biggr)=20\cdot\log_{10}2\approx 6\,\db.
   \]
@@ -190,7 +190,7 @@
 
   IC2B \'e um seguidor de tens\~ao, logo, seu ganho \'e unit\'ario. Sua fun\c c\~ao \'e prevenir a imped\^ancia de entrada de $1\,{\rm k}\Omega$ do est\'agio de ganho final IC3B, de carregar a sa\'ida de IC2A, causando distor\c c\~ao. IC2B \'e menos vulner\'avel \`a carga, porque ela tem uma retroalimenta\c c\~ao negativa m\'axima. 
 
-  Em IC3B, no pino 6, segue da lei de Kirchhoff a igualdade
+  Em IC3B, no pino 6, em virtude de \ampop{s} possuirem imped\^ancia de entrada muito alta, a corrente nas entradas do \ampop\ s\~ao neglig\'iveis. Portanto, idealmente, segue da lei de Kirchhoff a igualdade
   \[
     {V_{\rm in}\over R_{12}}+{V_{\rm out}\over R_{13}+R_{14}}=0,
   \]
@@ -202,7 +202,7 @@
   \[
     20\cdot\log_{10}2\approx6\,\db. 
   \]
-  Ele \'e usado no modo {\it shunt-feedback} para evitar a distor\c c\~ao de modo comum, que seria resultados de sinais de altos n\'iveis. Ele tem uma sa\'ida do tipo `imped\^ancia-zero', com retroalimentac\~ao HF ({\it High Frequency}\/) via $C_8$ e LF ({\it Low Frequency}\/) via $R_{13}$. Desta maneira, o {\it crosstalk}\footnote{O que \'e isso?} \'e mantido no m\'inimo, enquanto mant\'em estabilidade com carga capacitiva\footnote{Isto est\'a correto?}. 
+  Ele \'e usado no modo {\it shunt-feedback} para evitar a distor\c c\~ao de modo comum, que resultariam de sinais de altos n\'iveis. Ele tem uma sa\'ida do tipo `imped\^ancia-zero', com retroalimentac\~ao HF ({\it High Frequency}\/) via $C_8$ e LF ({\it Low Frequency}\/) via $R_{13}$. Desta maneira, o {\it crosstalk}\footnote{O que \'e isso?} \'e mantido no m\'inimo, enquanto mant\'em estabilidade com carga capacitiva\footnote{Isto est\'a correto?}. 
 
   A sa\'ida em $K_3$ est\'a revertida em fase e pode ser usada para {\it Bridging}\footnote{???}.
 
