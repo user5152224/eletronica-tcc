@@ -158,7 +158,7 @@
 
   O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Precipuamente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
 
-  \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. N\~ao obstante, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do cone por deforma\c c\~ao cont\'inua. 
+  \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. N\~ao obstante, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
   \section{Um tour pelos designs}
   \subsection{A entrada desbalanceada}
 
@@ -188,7 +188,7 @@
   \]
   O ganho \'e menor para maximizar a retroalimenta\c c\~ao negativa ({\it Negative Feedback}\/), porque agora o n\'ivel de tens\~ao \'e mais alto. 
 
-  IC2B \'e um seguidor de tens\~ao, logo, seu ganho \'e unit\'ario. Sua fun\c c\~ao \'e prevenir a imped\^ancia de entrada de $1\,{\rm k}\Omega$ do est\'agio de ganho final IC3B, de carregar a sa\'ida de IC2A, causando distor\c c\~ao. IC2B \'e menos vuner\'avel a cargas, porque ela tem uma retroalimenta\c c\~ao negativa m\'axima. 
+  IC2B \'e um seguidor de tens\~ao, logo, seu ganho \'e unit\'ario. Sua fun\c c\~ao \'e prevenir a imped\^ancia de entrada de $1\,{\rm k}\Omega$ do est\'agio de ganho final IC3B, de carregar a sa\'ida de IC2A, causando distor\c c\~ao. IC2B \'e menos vulner\'avel \`a carga, porque ela tem uma retroalimenta\c c\~ao negativa m\'axima. 
 
   Em IC3B, no pino 6, segue da lei de Kirchhoff a igualdade
   \[
