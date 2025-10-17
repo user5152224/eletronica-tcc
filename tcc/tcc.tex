@@ -97,6 +97,8 @@
 \def\ohm{\,\Omega}
 \def\ampop{AmpOp}
 \def\db{{\rm dB}}
+\def\[{\vskip .5cm\begin{equation}}
+\def\]{\end{equation}\vskip .5cm\noindent}
 
 \begin{document}
 
@@ -157,7 +159,7 @@
   O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Precipuamente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
 
   \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. N\~ao obstante, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do cone por deforma\c c\~ao cont\'inua. 
-  \section{Um tour pelos est\'agios}
+  \section{Um tour pelos designs}
   \subsection{A entrada desbalanceada}
 
   Este est\'agio consiste de um filtro RF, neste caso um filtro passa-baixas, pois a tens\~ao de sa\'ida \'e 
@@ -169,11 +171,44 @@
   \subsection{A entrada balanceada}
   Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, ele tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR\footnote{Definir este conceito!}. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, engendrando assim num ru\'ido Jonhson\footnote{\'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin $[T(t)\,{\rm K}=(t+273)\,^\circ{\rm C}]$ \'e na realidade dada pela express\~ao:
     $$
-      v_{J}({\rm rms})=\sqrt{4kBRT}\quad{\rm V(rms)}.
+      v_{J}({\rm rms})=\sqrt{4kBRT}\quad{\rm V(rms)},
     $$
-    Em que $k$ \'e a constante de Boltzmann, $B$ \'e o comprimento da banda em Hz.
+    em que $k$ \'e a constante de Boltzmann, $B$ \'e o comprimento da banda em Hz.
   } ({\it Johnson Noise}) menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
   \subsection{O est\'agio de ganho}
+  De acordo com o autor do projeto o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. N\~ao obstante, os NE5532s n\~ao est\~ao completamente livre de distor\c c\~ao, e o THD ({\it Total Harmonic Distortion}\/) seria significativo.
+
+  O primeiro est\'agio (IC1A,1C1B) d\'a um ganho de $10.7\,\db$[\footnote{Eu calculei $20\cdot\log_{10}(6220/910)\approx16.7\,\db$.}; as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ engendrando uma vantagem de $3\,\db$\footnote{N\~ao entendi o porqu\^e.}, como no amplicador balanceado. O segundo est\'agio duplica a tens\~ao, pois
+  \[
+    V_{\rm out}=\biggl(1+{R_{11}\over R_{10}}\biggr)\cdot V_{\rm in}=\biggl(1+{2{\rm k}2\over 2{\rm k}2}\biggr)\cdot V_{\rm in}=2\cdot V_{\rm in},
+  \]
+  donde o ganho rm $\db$ \'e
+  \[
+    20\cdot\log_{10}\biggr({V_{\rm out}\over V_{\rm in}}\biggr)=20\cdot\log_{10}2\approx 6\,\db.
+  \]
+  O ganho \'e menor para maximizar a retroalimenta\c c\~ao negativa ({\it Negative Feedback}\/), porque agora o n\'ivel de tens\~ao \'e mais alto. 
+
+  IC2B \'e um seguidor de tens\~ao, logo, seu ganho \'e unit\'ario. Sua fun\c c\~ao \'e prevenir a imped\^ancia de entrada de $1\,{\rm k}\Omega$ do est\'agio de ganho final IC3B, de carregar a sa\'ida de IC2A, causando distor\c c\~ao. IC2B \'e menos vuner\'avel a cargas, porque ela tem uma retroalimenta\c c\~ao negativa m\'axima. 
+
+  Em IC3B, no pino 6, segue da lei de Kirchhoff a igualdade
+  \[
+    {V_{\rm in}\over R_{12}}+{V_{\rm out}\over R_{13}+R_{14}}=0,
+  \]
+  ou seja,
+  \[
+    {V_{\rm out}\over V_{\rm in}}=-{R_{13}+R_{14}\over R_{12}}={2047\over 1000}\approx 2,
+  \]
+  logo o ganho em \db\ \'e aproximadamente
+  \[
+    20\cdot\log_{10}2\approx6\,\db. 
+  \]
+  Ele \'e usado no modo {\it shunt-feedback} para evitar a distor\c c\~ao de modo comum, que seria resultados de sinais de altos n\'iveis. Ele tem uma sa\'ida do tipo `imped\^ancia-zero', com retroalimentac\~ao HF ({\it High Frequency}\/) via $C_8$ e LF ({\it Low Frequency}\/) via $R_{13}$. Desta maneira, o {\it crosstalk}\footnote{O que \'e isso?} \'e mantido no m\'inimo, enquanto mant\'em estabilidade com carga capacitiva\footnote{Isto est\'a correto?}. 
+
+  A sa\'ida em $K_3$ est\'a revertida em fase e pode ser usada para {\it Bridging}\footnote{???}.
+
+  IC3A \'e um est\'agio inversor de ganho unit\'ario que corrige a fase do sinal. A sa\'ida tamb\'em \'e do tipo `imped\^ancia-zero'.
+
+  \subsection{O amplificador de pot\^encia}
 
   \begin{thebibliography}{}
     \bibitem{Malvino}
