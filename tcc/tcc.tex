@@ -211,13 +211,19 @@
 
   \subsection{O amplificador de pot\^encia}
 
-  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop, logo, no total s\~ao 64 se\c c\~oes de \ampop{s}, atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\,\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s.
+  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop, logo, no total s\~ao 64 se\c c\~oes de \ampop{s}, atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\,\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s, e voc\^e pode se perguntar qual o efeito que eles ter\~ao na imped\^ancia de sa\'ida do amplificador. Uma baixa imped\^ancia de sa\'ida \'e sempre uma coisa boa a se fazer, mas n\~ao por causa do ent\~ao chamado `fator de amortecimento' ({\it Damping-Factor}\/), o qual \'e altamente n\~ao significativo devido ao fato que a bobina do alto-falante sempre domina a resist\^encia do circuito. O `fator de amortecimento' \'e definido como a imped\^ancia da carga dividido pela imped\^ancia de sa\'ida do amplificador. N\'os temos 64 resistores de $1\,\ohm$ em paralelo, dando uma imped\^ancia total de $1\,\ohm/64=0.0156\,\ohm$. Isto nos d\'a o fator de amortecimento hipot\'etico de $8/0.0156=512$, o que \'e muito bom \'e qualquer pradr\~ao. O cabeamento para o alto-falante possui mais resist\^encia do que isso!
 
-  (Incluir o {\it Damping Factor}).
+  A sa\'ida dos \ampop{s} podem ser soldados diretamente na placa, a fim de diminuir os custos e dar uma melhor condu\c c\~ao de calor do encapsulamento do \ampop\ \`as trilhas de cobre. Todavia o autor deste projeto decidiu usar soquetes de alta qualidade. Ter muitos \ampop{s} em paralelos pode ser um fardo para determinar falhas no circuito--- se houver um \ampop\ ruim dos 32, ent\~ao provavelmente voc\^e ter\'a bastante trabalho para desoldar para localizar elemento defeituoso. 
 
   A fila de \ampop{s} s\~ao unidos pelos jumpers $K_5$--$K_{12}$.
 
   Existe uma {\it Output Choke} $L_1$ para estabilidade em cargas capacitivas, e {\it Catching Diodes} $D_1$--$D_2$ para previnir danos devidos aos transientes\footnote{Geralmente s\~ao picos ou impulsos el\'etricos indesejados de curta dura\c c\~ao, causador de estalos nos alto-falantes, e.g., no momento em que se liga e desliga o sistema de \'audio.} de tens\~ao ao limitar a corrente em cargas reativas. 
+
+  \subsection{O rel\'e de sa\'ida e seu controle}
+
+  Conforme j\'a mencionado ,o rel\'e de sa\'ida proteje os alto-falantes contra falhas DC e d\'a uma partida suave ({\it Slow-On}\/), e um desligamento r\'apido ({\it Fast-Off}\/). Destarte, nenhum transiente \'e passado aos alto-falantes, tanto ao ligar o sistema, como ao deslig\'a-lo. O rel\'e \'e controlado da fonte de tens\~ao. Referindo-se \`a figura 2, ao se ligar $R_{17}$ carrega $C_24$ suavimente atrasando o ligamento do amplificador. Em funcionamento $C_{21}$ \'e carregado e $T_3$ \'e acionado. Quando a tens\~ao AC \'e removida $C_{21}$ descarrega rapidamente, desligando $T_3$ e, $D_8$ aciona os transistores $T_4$ e $T_5$, os quais descarregam $C_{24}$ e faz com que os contatos de sa\'ida do rel\'e se abram imediatamente. At\'e mesmo uma breve interrup\c c\~ao na tens\~ao AC, resulta num atraso do ligamento completo. Normalmente $T_4$ e $T_5$ est\~ao inativos e $D_{15}$ n\~ao conduz, mas se uma falha DC aplicar uma tens\~ao positiva ou negativa via $R_{13}$ ou $R_{14}$, $T_4$ e $T_5$ s\~ao acionados e os rel\'es s\~ao abertos subtamente para proteger os alto-falantes
+
+  \subsection{Fonte de tens\~ao}
   \begin{thebibliography}{}
     \bibitem{HH}
     HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
