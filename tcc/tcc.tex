@@ -50,7 +50,8 @@
 % Geometria da página
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 
-\renewcommand{\thefootnote}{\small\bfseries\arabic{footnote}}
+% Modificar o estilo da numeração das notas de rodapé
+\renewcommand{\thefootnote}{\bfseries\arabic{footnote}}
 
 % Definições gerais
 \def\tpfc{\scshape}
@@ -210,8 +211,21 @@
 
   \subsection{O amplificador de pot\^encia}
 
+  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop, logo, no total s\~ao 64 se\c c\~oes de \ampop{s}, atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\,\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s.
+
+  (Incluir o {\it Damping Factor}).
+
+  A fila de \ampop{s} s\~ao unidos pelos jumpers $K_5$--$K_{12}$.
+
+  Existe uma {\it Output Choke} $L_1$ para estabilidade em cargas capacitivas, e {\it Catching Diodes} $D_1$--$D_2$ para previnir danos devidos aos transientes\footnote{Geralmente s\~ao picos ou impulsos el\'etricos indesejados de curta dura\c c\~ao, causador de estalos nos alto-falantes, e.g., no momento em que se liga e desliga o sistema de \'audio.} de tens\~ao ao limitar a corrente em cargas reativas. 
   \begin{thebibliography}{}
+    \bibitem{HH}
+    HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
     \bibitem{Malvino}
-    MALVINO, Albert Paul. {\bf Eletr\^onica\/}: Volume 1. 1ª ed. S\~ao Paulo: McGraw-Hill Education, 1987.
+    MALVINO, Albert Paul. {\it Eletr\^onica\/}: Volume 1. 1ª ed. S\~ao Paulo: McGraw-Hill Education, 1987.
+    \bibitem{SelfElektor}
+    SELF, Douglas. {\it The 5532 OpAmplifier. Part 1: design philosophy and schematics.} Elektor, p. 14--17, out. 2010.
+    \bibitem{SelfGiesbertsElektor}
+    SELF, Douglas; GIESBERTS, Ton. {\it The 5532 OpAmplifier. Part 2: construction, bridged operation and test results.} Elektor, p. 24--27, nov. 2010.
   \end{thebibliography}
 \end{document}

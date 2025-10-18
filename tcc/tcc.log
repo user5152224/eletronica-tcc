@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  17 OCT 2025 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  17 OCT 2025 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,20 +164,20 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -213,13 +213,13 @@ LaTeX Font Info:    ... okay on input line 103.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 103.
-Package microtype Info: Applying patch `item' on input line 103.
-Package microtype Info: Applying patch `toc' on input line 103.
-Package microtype Info: Applying patch `eqnum' on input line 103.
-Package microtype Info: Applying patch `footnote' on input line 103.
-Package microtype Info: Applying patch `verbatim' on input line 103.
-LaTeX Info: Redefining \microtypesetup on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 104.
+Package microtype Info: Applying patch `item' on input line 104.
+Package microtype Info: Applying patch `toc' on input line 104.
+Package microtype Info: Applying patch `eqnum' on input line 104.
+Package microtype Info: Applying patch `footnote' on input line 104.
+Package microtype Info: Applying patch `verbatim' on input line 104.
+LaTeX Info: Redefining \microtypesetup on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -234,22 +234,22 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 110.
+(Font)              <12> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 110.
+(Font)              <8> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 110.
+(Font)              <6> on input line 111.
 
 
 [1
 
 {/home/papabundus/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
  []
 
@@ -276,9 +276,9 @@ Cap\'{\i }tulo I.
 ]
 Cap\'{\i }tulo II.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 151.
+(Font)              <7> on input line 152.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 151.
+(Font)              <5> on input line 152.
 
 
 [5
@@ -286,7 +286,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 180.
+(babel)             Reported on input line 183.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -324,37 +324,39 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5351 strings out of 467748
- 88684 string characters out of 5423317
- 559376 words of memory out of 5000000
- 33891 multiletter control sequences out of 15000+600000
- 641149 words of font info for 146 fonts, out of 8000000 for 9000
+ 5372 strings out of 467748
+ 88841 string characters out of 5423317
+ 559387 words of memory out of 5000000
+ 33894 multiletter control sequences out of 15000+600000
+ 641710 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,103p,1760b,369s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,103p,1760b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmcsc10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></home/papabundus/.texlive/2025/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></home/papabundus/.texlive/2025/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/papabundus/.texlive/2025/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/papabundus/.texlive/202
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/papabundus/.texliv
-e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/papabundus/.t
-exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/papabundu
-s/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/papab
-undus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/p
-apabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/cm
--super/sfrm1200.pfb>
-Output written on tcc.pdf (10 pages, 229638 bytes).
+fonts/cm/cmbx7.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmcsc10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmex10.pfb></home/papabundus/.texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/papabundus/.texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/papabundus/.texlive/202
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/papabundus/.texliv
+e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/papabundus/.t
+exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/papabund
+us/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/pap
+abundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home
+/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
+home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti12.pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb>
+Output written on tcc.pdf (10 pages, 250889 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51201 words of extra memory for PDF output out of 51595 (max. 10000000)
 
