@@ -4,31 +4,33 @@
 \usepackage{%
   fancyhdr,
   geometry,
+  hyperref,
+  newtxtext,
+  newtxmath,
   setspace,
   titlesec
 }
 \usepackage[brazil]{babel}
 
+% Espaçamento de letra para o cabeçalho dos capítulos
+\usepackage[letterspace=250]{microtype}
+
 % Formatação do título dos capítulos
 \titleformat{\chapter}[display]
 {}%
 {
-   \Large\centering\normalsize%
-   {\sc\chaptertitlename}\hspace{1ex}%
-   {\selectfont\thechapter}%
+   \fontsize{50pt}{50pt}\centering%
+   {\selectfont\thechapter}
 }%
 {3ex}% 
-{\centering\bf\large\lsstyle\MakeUppercase}%
+{\centering\bf\lsstyle\MakeUppercase}%
 []
-
-% Espaçamento de letra para o cabeçalho dos capítulos
-\usepackage[letterspace=203]{microtype}
 
 % Formatação do título das se\c c\~oes e subseções
 \titleformat{\section}{\centering\large\scshape}{\thesection}{1em}{}[]
 \titleformat{\subsection}{\centering\scshape}{\thesubsection}{1em}{}[]
 
-% Estilo dos cabeçalhos
+% Estilo dos cabeçalhos das páginas
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \renewcommand{\headrulewidth}{0ex}
@@ -66,7 +68,7 @@
 }
 
 \def\parteSuperior{
-  \parbox[c][0cm][c]{12cm}{
+  \parbox[c][0cm][c]{10cm}{
     {\scshape\scriptsize%
       {INSTITUTO\hfill FEDERAL\hfill DE\hfill EDUCA\c C\~AO,\hfill CI\^ENCIA\hfill E\hfill TECNOLOGIA DA PARA\'IBA}\\
       {

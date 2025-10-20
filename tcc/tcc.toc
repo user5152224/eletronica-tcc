@@ -1,13 +1,13 @@
 \babel@toc {brazil}{}\relax 
 \thispagestyle {empty}
-\contentsline {chapter}{\numberline {I}Preliminares}{4}{}%
-\contentsline {section}{\numberline {I.1}Amplificadores Operacionais}{4}{}%
-\contentsline {chapter}{\numberline {II}Resumo do projeto}{5}{}%
-\contentsline {section}{\numberline {II.1}Sobre o projeto}{5}{}%
-\contentsline {section}{\numberline {II.2}Um tour pelos designs}{6}{}%
-\contentsline {subsection}{\numberline {II.2.1}A entrada desbalanceada}{6}{}%
-\contentsline {subsection}{\numberline {II.2.2}A entrada balanceada}{6}{}%
-\contentsline {subsection}{\numberline {II.2.3}O est\'agio de ganho}{6}{}%
-\contentsline {subsection}{\numberline {II.2.4}O amplificador de pot\^encia}{7}{}%
-\contentsline {subsection}{\numberline {II.2.5}O rel\'e de sa\'ida e seu controle}{8}{}%
-\contentsline {subsection}{\numberline {II.2.6}Fonte de tens\~ao}{8}{}%
+\contentsline {chapter}{\numberline {I}Preliminares}{4}{chapter.1I}%
+\contentsline {section}{\numberline {I.1}Amplificadores Operacionais}{4}{section.1I.1}%
+\contentsline {chapter}{\numberline {II}Resumo do projeto}{5}{chapter.2II}%
+\contentsline {section}{\numberline {II.1}Sobre o projeto}{5}{section.2II.1}%
+\contentsline {section}{\numberline {II.2}Um tour pelos designs}{6}{section.2II.2}%
+\contentsline {subsection}{\numberline {II.2.1}A entrada desbalanceada}{6}{subsection.2II.2.1}%
+\contentsline {subsection}{\numberline {II.2.2}A entrada balanceada}{6}{subsection.2II.2.2}%
+\contentsline {subsection}{\numberline {II.2.3}O est\'agio de ganho}{6}{subsection.2II.2.3}%
+\contentsline {subsection}{\numberline {II.2.4}O amplificador de pot\^encia}{7}{subsection.2II.2.4}%
+\contentsline {subsection}{\numberline {II.2.5}O rel\'e de sa\'ida e seu controle}{8}{subsection.2II.2.5}%
+\contentsline {subsection}{\numberline {II.2.6}Fonte de tens\~ao}{8}{subsection.2II.2.6}%
