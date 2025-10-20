@@ -13,17 +13,17 @@
 \usepackage[brazil]{babel}
 
 % Espaçamento de letra para o cabeçalho dos capítulos
-\usepackage[letterspace=250]{microtype}
+\usepackage[letterspace=300]{microtype}
 
 % Formatação do título dos capítulos
 \titleformat{\chapter}[display]
 {}%
 {
-   \fontsize{50pt}{50pt}\centering%
+   \centering\fontsize{80pt}{80pt}%
    {\selectfont\thechapter}
 }%
-{3ex}% 
-{\centering\bf\lsstyle\MakeUppercase}%
+{1em}% 
+{\centering\scshape\lsstyle\MakeUppercase}%
 []
 
 % Formatação do título das se\c c\~oes e subseções
@@ -44,7 +44,7 @@
 
 % Numeração dos capítulos em algarismos romanos
 \def\theHchapter{\arabic{chapter}\thechapter}
-\def\thechapter{\Roman{chapter}}
+%\def\thechapter{\Roman{chapter}}
 
 % Remover páginas em branco
 \let\cleardoublepage=\clearpage
@@ -59,7 +59,7 @@
 \def\tpfc{\scshape}
 
 \def\localData{%
-  \parbox[c][0cm][c]{4cm}{
+  \parbox[c][0cm][c]{3.5cm}{
     \sc
     Jo\~ao Pessoa\hfill -\hfill PB\\
     \footnotesize
