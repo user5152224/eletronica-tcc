@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  20 OCT 2025 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  21 OCT 2025 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,14 +933,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 218.
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 218.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -948,8 +940,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7{/home/papabundus/.texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
-}]
+[7]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -959,23 +950,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 238.
+ (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 238.
+
 
 [9
 
-] (./tcc.aux)
+{/home/papabundus/.texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+ (./tcc.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 01FCE8796A1A33C07921842CDBDD1DA9;1849.
+(rerunfilecheck)             Checksum: 641277CB1CF5D6276200B694AA3E44CB;2052.
  ) 
 Here is how much of TeX's memory you used:
- 17706 strings out of 467748
- 273770 string characters out of 5423317
- 723081 words of memory out of 5000000
+ 17715 strings out of 467748
+ 273933 string characters out of 5423317
+ 723079 words of memory out of 5000000
  45746 multiletter control sequences out of 15000+600000
- 704069 words of font info for 368 fonts, out of 8000000 for 9000
+ 704631 words of font info for 374 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,103p,1760b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1047,10 +1047,10 @@ fb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pf
 b></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb>
 </home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></
 home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (10 pages, 181504 bytes).
+Output written on tcc.pdf (10 pages, 181591 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 94297 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 94305 words of extra memory for PDF output out of 106986 (max. 10000000)
 

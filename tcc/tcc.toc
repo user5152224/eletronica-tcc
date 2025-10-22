@@ -11,3 +11,4 @@
 \contentsline {subsection}{\numberline {2.2.4}O amplificador de pot\^encia}{7}{subsection.22.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}O rel\'e de sa\'ida e seu controle}{8}{subsection.22.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Fonte de tens\~ao}{8}{subsection.22.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Escrut\'inio do amplificador}{8}{subsection.22.2.7}%
