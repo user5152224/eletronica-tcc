@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  22 OCT 2025 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  23 OCT 2025 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1172,24 +1172,21 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 154.
 
-Package amsmath Warning: Foreign command \atop;
+Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 167.
+(amsmath)                 on input line 181.
 
 
 
 [4
 
 ]
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 182.
+Underfull \vbox (badness 8170) has occurred while \output is active []
 
 
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 195.
+(babel)             Reported on input line 207.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1198,74 +1195,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Cap\'{\i }tulo 2.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 204.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 206.
-
-
-[6
-
-]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1274,7 +1203,75 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[6]
+Cap\'{\i }tulo 2.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 5.5pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 230.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 232.
+
+
+[7
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1293,16 +1290,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
+ 342.
+ (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+File: ot1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 342.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 281.
- (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 346.
+
+(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 281.
+(Font)              scaled to size 12.0pt on input line 346.
 
 
-[10
+[12
 
 {/home/papabundus/.texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
  (./tcc.aux)
@@ -1311,20 +1334,16 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: DF27968CA22A1B457778D7925BAFF67C;2522.
+(rerunfilecheck)             Checksum: D756C2813A6A73E733D7AC7CBF298B5A;2806.
  ) 
 Here is how much of TeX's memory you used:
- 28428 strings out of 467748
- 508752 string characters out of 5423317
- 914524 words of memory out of 5000000
- 56193 multiletter control sequences out of 15000+600000
- 707134 words of font info for 399 fonts, out of 8000000 for 9000
+ 28486 strings out of 467748
+ 509888 string characters out of 5423317
+ 913653 words of memory out of 5000000
+ 56234 multiletter control sequences out of 15000+600000
+ 703986 words of font info for 395 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,103p,1727b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
-t, replaced by a fixed one
-
+ 84i,12n,103p,1245b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1382,18 +1401,18 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
-></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.p
-fb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.
-pfb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.p
-fb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.p
-fb></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pf
-b></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb>
-</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></
-home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (11 pages, 192805 bytes).
+></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pf
+b></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb
+></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb
+></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/txfonts/txtt.pfb>
+</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></
+home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></ho
+me/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on tcc.pdf (13 pages, 202911 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 94333 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 90765 words of extra memory for PDF output out of 106986 (max. 10000000)
 
