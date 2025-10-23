@@ -2,13 +2,15 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {1}Preliminares}{4}{chapter.11}%
 \contentsline {section}{\numberline {1.1}Amplificadores Operacionais}{4}{section.11.1}%
-\contentsline {chapter}{\numberline {2}Resumo do projeto}{5}{chapter.22}%
-\contentsline {section}{\numberline {2.1}Sobre o projeto}{5}{section.22.1}%
-\contentsline {section}{\numberline {2.2}Um tour pelos designs}{6}{section.22.2}%
-\contentsline {subsection}{\numberline {2.2.1}A entrada desbalanceada}{6}{subsection.22.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}A entrada balanceada}{6}{subsection.22.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}O est\'agio de ganho}{6}{subsection.22.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}O amplificador de pot\^encia}{7}{subsection.22.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}O rel\'e de sa\'ida e seu controle}{8}{subsection.22.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Fonte de tens\~ao}{8}{subsection.22.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Escrut\'inio do amplificador}{8}{subsection.22.2.7}%
+\contentsline {subsection}{\numberline {1.1.1}Offset de um amp-op}{4}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Ganho de modo-comum em um amp-op\ diferencial}{4}{subsection.11.1.2}%
+\contentsline {chapter}{\numberline {2}Resumo do projeto}{6}{chapter.22}%
+\contentsline {section}{\numberline {2.1}Sobre o projeto}{6}{section.22.1}%
+\contentsline {section}{\numberline {2.2}Um tour pelos designs}{7}{section.22.2}%
+\contentsline {subsection}{\numberline {2.2.1}A entrada desbalanceada}{7}{subsection.22.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}A entrada balanceada}{7}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}O est\'agio de ganho}{7}{subsection.22.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}O amplificador de pot\^encia}{8}{subsection.22.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}O rel\'e de sa\'ida e seu controle}{9}{subsection.22.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Fonte de tens\~ao}{9}{subsection.22.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Escrut\'inio do amplificador}{9}{subsection.22.2.7}%

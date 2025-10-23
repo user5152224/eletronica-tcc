@@ -4,12 +4,15 @@
 \usepackage{%
   fancyhdr,
   geometry,
+  graphicx,
   hyperref,
   newtxtext,
   newtxmath,
   setspace,
-  titlesec
+  titlesec,
+  tikz
 }
+
 \usepackage[brazil]{babel}
 
 % Espaçamento de letra para o cabeçalho dos capítulos
@@ -100,6 +103,7 @@
 \def\ohm{\,\Omega}
 \def\ampop{amp-op}
 \def\db{{\rm dB}}
+\def\cmrr{{\rm CMRR}}
 
 \def\[{\begin{equation}}
 \def\]{\end{equation}}
@@ -149,6 +153,45 @@
   
   \section{Amplificadores Operacionais}
 
+  \subsection{Offset de um \ampop}
+  O {\it offset} de um aplificador \'e o desvio/erro de tens\~ao que um \ampop\ tem em rela\c c\~ao a um \ampop\ ideal equivalente. Por exemplo, ao se injetar nas entradas um potencial correspondente ao GND, \'e esperado que a tens\~ao de sa\'ida seja nula relativa ao GND. Entretanto, em um \ampop\ real a tens\~ao de sa\'ida n\~ao \'e em geral $0\,$V. A diferen\c ca entre o valor esperado idealmente e o valor real \'e o que chamamos de {\it offset}.
+  \begin{figure}[!h]
+    \centering
+  
+      \begin{tikzpicture}[scale=.5]
+        \def\w{2*pi}
+        \def\z{-5.2}
+        \draw (-2*pi,0) -- (\w,0) node [right] {GND};
+        \draw (0,\z) -- (0,2*pi);
+        \draw[step=1,help lines] (-2*pi,-5.2) grid (\w,2*pi);
+        \draw (\w,\z) node [below] {$1\,{\rm V}/{\rm div}\atop 1\,{\rm s}/{\rm div}$};
+        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)}) node [fill=white, right] {sem {\it offset}};
+        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1}) node [fill=white, right] {com {\it offset}};
+    \end{tikzpicture}
+    \caption{Exemplo de um sinal sem e com {\it offset}.}
+  \end{figure}
+
+
+  \subsection{Ganho de modo-comum em um \ampop\ diferencial}
+  Em um \ampop\ diferencial ideal a tens\~ao de sa\'ida \'e dada pela lei
+  \[
+    V_{\rm out}=G_d(V_+-V_-),
+  \]
+  em que $G_d$ \'e o ganho diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional ao ent\~ao chamado {\bf ganho de modo-comum}, denotado por $G_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
+  \[
+    V_{\rm out}=G_d(V_+-V_-)+G_c\Bigl({V_++V_-\over 2}\Bigr).
+    \label{saida_ampop_real}
+  \]
+  Referindo-se a \cite{HH}, um \ampop\ diferencial \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $G_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|G_c|$, tanto menor ser\'a sua suscetibilidade a ru\'idos provenientes de distintas fontes. Na eletr\^onica existe uma grandeza que mensura a imunidade do circuito a ruidos n\~ao correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
+  \[
+    \cmrr=\Bigl|{G_d\over G_c}\Bigr|.
+  \]
+  Tamb\'em \'e comum v\^e-la expressa em \db
+  \[
+    \cmrr(\db)=20\cdot\log_{10}\Bigl|{G_d\over G_c}\Bigr|\;\db.
+    \label{cmrr_db}
+  \]
+  Em conformidade, quanto maior a CMRR, melhor ser\'a o amplificador diferencial. Em vista de (\ref{cmrr_db}) um \ampop\ diferencial ideal tem $\cmrr=\infty$. Desta maneira, os projetistas, com a finalidade de obter a melhor qualidade sonora, isto \'e, menor depend\^encia dos ru\'idos, ter\~ao de maximizar o CMRR. 
   \chapter{Resumo do projeto}
 
   \section{Sobre o projeto} 
@@ -162,7 +205,7 @@
 
   O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Precipuamente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
 
-  \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. N\~ao obstante, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
+  \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. No entanto, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
   \section{Um tour pelos designs}
   \subsection{A entrada desbalanceada}
 
@@ -173,14 +216,14 @@
   em que $V_{\rm in}$ \'e a tens\~ao de entrada. Esta entrada \'e chamada de desbalanceada, pois est\'a mais sucet\'ivel \`a interfer\^encia eletromagn\'etica {\it Radio Frequency} (RF), por exemplo proveniente do uso cabos longos. Ela pode ser conectada diretamente ao est\'agio de ganho---tratado nas pr\'oximas subse\c c\~oes---atrav\'es de um jumper em JP1. 
 
   \subsection{A entrada balanceada}
-  Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, ele tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR\footnote{Definir este conceito!}. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, engendrando assim num ru\'ido Jonhson\footnote{\'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin $[T(t)\,{\rm K}=(t+273)\,^\circ{\rm C}]$ \'e na realidade dada pela express\~ao:
+  Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, ele tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, engendrando assim num ru\'ido Jonhson\footnote{\'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin $[T(t)\,{\rm K}=(t+273)\,^\circ{\rm C}]$ \'e na realidade dada pela express\~ao:
     $$
       v_{J}({\rm rms})=\sqrt{4kBRT}\quad{\rm V(rms)},
     $$
     em que $k$ \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
   } ({\it Johnson Noise}) menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
   \subsection{O est\'agio de ganho}
-  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. N\~ao obstante, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD ({\it Total Harmonic Distortion}\/) seria significativo.
+  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. Contudo, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD\footnote{Definir.} ({\it Total Harmonic Distortion}\/) seria significativo.
 
   O primeiro est\'agio (IC1A,1C1B) d\'a um ganho de $10.7\,\db$[\footnote{Eu calculei $20\cdot\log_{10}(6220/910)\approx16.7\,\db$.}; as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ engendrando uma vantagem de $3\,\db$\footnote{N\~ao entendi o porqu\^e.}, como no amplicador balanceado. O segundo est\'agio duplica a tens\~ao, pois
   \[
