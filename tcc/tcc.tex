@@ -161,13 +161,14 @@
       \begin{tikzpicture}[scale=.5]
         \def\w{2*pi}
         \def\z{-5.2}
-        \draw (-2*pi,0) -- (\w,0) node [right] {GND};
+        \draw (-2*pi,0) -- (\w,0);
         \draw (0,\z) -- (0,2*pi);
         \draw[step=1,help lines] (-2*pi,-5.2) grid (\w,2*pi);
-        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)}) node [fill=white, right] {sem {\it offset}};
-        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1}) node [fill=white, right] {com {\it offset}};
+        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)});
+        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1});
+        \node at (0,0) [fill=white, rounded corners, radius=5pt] {GND};
     \end{tikzpicture}
-    \caption{Exemplo de um sinal sem e com {\it offset}.}
+    \caption{Exemplo de um sinal sem e com {\it offset} de $1\rm V$.}
   \end{figure}
 
 
@@ -181,7 +182,7 @@
     V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
     \label{saida_ampop_real}
   \]
-  Segundo \cite{HH}, um \ampop\ diferencial \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
+  Segundo \cite{HH}, um \ampop\ diferencial \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
   \[
     \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
   \]
@@ -309,7 +310,7 @@
   \]
   consequentemente
   \[
-    V_{\rm IC1A(out)}=V_{\rm IC1A(out)}=V_{\rm IC2A(in)}.
+    V_{\rm IC1A(out)}=V_{\rm IC1B(out)}=V_{\rm IC2A(in)}.
   \]
   Esta tens\~ao \'e duplicada por IC2A, e novamente duplicada no final do est\'agio de ganho conforme (\ref{ganho_IC3B}). Logo, a tens\~ao de entrada do est\'agio de ganho \'e amplificada em $12440/910$ vezes. Por conseguinte, o ganho total em dB \'e de
   \[
