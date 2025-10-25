@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  23 OCT 2025 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  24 OCT 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1335,11 +1335,11 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: D756C2813A6A73E733D7AC7CBF298B5A;2806.
  ) 
 Here is how much of TeX's memory you used:
- 28479 strings out of 467748
- 509764 string characters out of 5423317
+ 28483 strings out of 467748
+ 509840 string characters out of 5423317
  913653 words of memory out of 5000000
  56234 multiletter control sequences out of 15000+600000
- 703526 words of font info for 389 fonts, out of 8000000 for 9000
+ 703769 words of font info for 392 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,103p,1245b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1411,7 +1411,7 @@ b></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 </home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></
 home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></ho
 me/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (13 pages, 203112 bytes).
+Output written on tcc.pdf (13 pages, 203280 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  248 compressed objects within 3 object streams

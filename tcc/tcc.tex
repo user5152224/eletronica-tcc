@@ -182,13 +182,13 @@
     V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
     \label{saida_ampop_real}
   \]
-  Segundo \cite{HH}, um \ampop\ diferencial \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
+  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
   \[
     \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
   \]
   Tamb\'em \'e comum v\^e-la expressa em \db
   \[
-    \cmrr(\db)=20\cdot\log_{10}\Bigl|{A_d\over A_c}\Bigr|\;\db.
+    \cmrr_\db=20\cdot\log_{10}\Bigl|{A_d\over A_c}\Bigr|\;\db.
     \label{cmrr_db}
   \]
   Em conformidade, quanto maior a CMRR, melhor ser\'a o amplificador diferencial. Em vista de (\ref{cmrr_db}) um \ampop\ diferencial ideal tem $\cmrr=\infty$. Desta maneira, os projetistas, com a finalidade de obter a melhor qualidade sonora, isto \'e, menor depend\^encia dos ru\'idos correlacionados, ter\~ao de maximizar o CMRR. 
@@ -208,7 +208,7 @@
   \]
   \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
 
-  Ao posicionar um resistor de resist\^encia $R$ na entrada de um bom amplificador de \'audio, digamos, com imped\^ancia de entrada $Z_{\rm in}$, a tens\~ao de ru\'ido $V_n$ efetivamente vista pelo amplificador \'e dada pelo divisor de tens\~ao
+  Ao posicionar um resistor de resist\^encia $R$ na entrada de um bom amplificador de \'audio, digamos, com imped\^ancia de entrada $Z_{\rm in}$, a tens\~ao de ru\'ido $V_{\rm n}$ efetivamente vista pelo amplificador \'e dada pelo divisor de tens\~ao
   \[
     V_{\rm n}=v_{\rm n}\cdot\Bigl|{Z_{\rm in}\over Z_{\rm in}+R}\Bigr|.
     \label{tens_rui}
@@ -230,7 +230,7 @@
 
   O projeto foi dimensionado para alimentar um alto-falante de $8\ohm$, caso o de $4\ohm$ seja requerido, ser\~ao necess\'arios duas vezes mais \ampop{s}, para fornecer o dobro de corrente demandada pela carga de $4\ohm$ e, o mesmo se aplica ao modo de opera\c c\~ao {\it Bridged\/}\footnote{Neste modo, a carga, a saber, o alto-falante, receber\'a duas tens\~oes invertidas em fase, isto por sua vez resultar\'a na duplica\c c\~ao da tens\~ao de sa\'ida e {\it a fortiori} na quadruplica\c c\~ao da pot\^encia.}. 
 
-  O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Precipuamente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
+  O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Essencialmente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
 
   \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. No entanto, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
   \section{Um tour pelos designs}
@@ -304,7 +304,7 @@
   \[
     A_{\db}=20\cdot\log_{10}\Bigl({3110\over910}\Bigr)\approx 10.674\,\db\approx 10.7\,\db
   \]
-  conforme mencionado no artigo. Como a corrente em IC2A \'e neglig\'ivel, temos pela LKC
+  conforme mencionado no artigo. Como a corrente na entrada n\~ao inversora de IC2A \'e neglig\'ivel, temos pela LKC
   \[
     {V_{\rm IC1A(out)}-V_{\rm IC2A(in)}\over R_8}={V_{\rm IC1B(out)}-V_{\rm IC2A(in)}\over R_9}=0,
   \]
@@ -320,7 +320,7 @@
 
    
 
-  Nota-se no esquem\'atico que s\~ao colocados em paralelo com a alimenta\c c\~ao sim\'etrica de cada CI, um capacitor de $100\,\rm pF$. Estes capacitores filtram ru\'idos de alta frequ\^encia da fonte de alimenta\c c\~ao, pois a qualidade do sinal de sa\'ida depende de uma alimenta\c c\~ao extremamente cristalina, i.e., sem muito ru\'ido. Tamb\'em fornecem corrente necess\'arias para os transientes, que s\~ao em geral pulsos de corrente instant\^anea requeridos pelos \ampop, a fim de suprir uma varia\c c\~ao abrupta e repentina da amplitude do sinal de entrada, e.g., em batidas.
+  Nota-se no esquem\'atico que s\~ao colocados em paralelo com a alimenta\c c\~ao sim\'etrica de cada CI, um capacitor de $100\,\rm pF$. Estes capacitores filtram ru\'idos de alta frequ\^encia da fonte de alimenta\c c\~ao, pois a qualidade do sinal de sa\'ida depende de uma alimenta\c c\~ao extremamente cristalina, i.e., sem muito ru\'ido. Tamb\'em fornecem corrente necess\'arias para os transientes, que s\~ao em geral pulsos de corrente instant\^anea requeridos pelos \ampop, a fim de suprir uma varia\c c\~ao abrupta e repentina na amplitude do sinal de entrada, e.g., em batidas.
 
   Os resistores $R_{32}$ e $R_{33}$ de $10\,\Omega$, servem para isolar IC5A e IC5B, previnindo que os sinais provindos das sa\'idas destes amplificadores interajam de forma destrutiva. 
 
@@ -328,13 +328,13 @@
   \[
     I_{\rm out}={17\, V\over 500\,\Omega}=34\,\rm mA
   \]
-  Como o est\'agio de pot\^encia \'e composto precipuamente de seguidores de tens\~ao em paralelo, segue da LKC (lei de Kirchhoff para correntes) que a corrente total de sa\'ida $I_{\rm T(out)}$ do est\'agio de pot\^encia \'e
+  Como o est\'agio de pot\^encia \'e composto, sobretudo, de seguidores de tens\~ao em paralelo, segue da LKC (lei de Kirchhoff para correntes) que a corrente total de sa\'ida $I_{\rm T(out)}$ do est\'agio de pot\^encia \'e
   \[
-    I_{\rm T(out)}=64\cdot34\,{\rm mA}=2,176\,\rm A
+    I_{\rm T(out)}=64\cdot34\,{\rm mA}=2{,}176\,\rm A
   \]
   o que resulta em uma pot\^encia em rms numa carga de $8\,\Omega$ de
   \[
-    P_{\rm rms}=\Bigl({2,176\over\sqrt{2}}\Bigr)^2\cdot8\approx19\,{\rm W_{rms}}
+    P_{\rm rms}=\Bigl({2{,}176\,{\rm A}\over\sqrt{2}}\Bigr)^2\cdot8\,\Omega\approx19\,{\rm W_{rms}}
   \]
   o que \'e pr\'oximo do valor requerido pelo amplificador, a saber, $15\,{\rm W_{rms}}$.
 
