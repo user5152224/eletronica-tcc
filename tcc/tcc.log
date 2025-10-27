@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  26 OCT 2025 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  27 OCT 2025 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1285,42 +1285,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
- 343.
- (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-File: ot1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 343.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 347.
-
-(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 347.
-
 
 [12
 
-{/home/fool/.texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-(./tcc.aux)
+] (./tcc.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: D756C2813A6A73E733D7AC7CBF298B5A;2806.
  ) 
 Here is how much of TeX's memory you used:
- 28485 strings out of 467748
- 507677 string characters out of 5426443
+ 28392 strings out of 467748
+ 505958 string characters out of 5426443
  913653 words of memory out of 5000000
- 56234 multiletter control sequences out of 15000+600000
- 703977 words of font info for 393 fonts, out of 8000000 for 9000
+ 56166 multiletter control sequences out of 15000+600000
+ 702465 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,103p,1245b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,103p,1244b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1386,18 +1373,16 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </home/fool/.texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></hom
-e/fool/.texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></home/foo
-l/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/fool/.texl
-ive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/fool/.texlive/20
-25/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025/texm
-f-dist/fonts/type1/public/txfonts/txtt.pfb></home/fool/.texlive/2025/texmf-dist
-/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-dist/fonts/t
-ype1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/fonts/type1/pub
-lic/newtx/ztmri.pfb>
-Output written on tcc.pdf (13 pages, 203424 bytes).
+e/fool/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/fool/
+.texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/fool/.texli
+ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
+/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
+ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
+s/type1/public/newtx/ztmri.pfb>
+Output written on tcc.pdf (13 pages, 192910 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 90765 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 88205 words of extra memory for PDF output out of 89155 (max. 10000000)
 
