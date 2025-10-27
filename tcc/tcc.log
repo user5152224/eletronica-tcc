@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  27 OCT 2025 20:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  27 OCT 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,16 +861,13 @@ File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 111.
- (./tcc.aux
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 8.
-)
+
+No file tcc.aux.
 \openout1 = `tcc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 111.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  111.
-
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
@@ -978,8 +975,6 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 111.
-
-(./tcc.out) (./tcc.out)
 \@outlinefile=\write4
 \openout4 = `tcc.out'.
 
@@ -987,6 +982,8 @@ Package hyperref Info: Link coloring OFF on input line 111.
 \c@mv@boldtabular=\count352
 LaTeX Info: Command `\dddot' is already robust on input line 111.
 LaTeX Info: Command `\ddddot' is already robust on input line 111.
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 111.
 LaTeX Info: Redefining \microtypecontext on input line 111.
 Package microtype Info: Applying patch `item' on input line 111.
 Package microtype Info: Applying patch `toc' on input line 111.
@@ -1129,10 +1126,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 
 
 
-[1] (./tcc.toc
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-)
+[1]
+No file tcc.toc.
 \tf@toc=\write5
 \openout5 = `tcc.toc'.
 
@@ -1150,6 +1145,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 80.0pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 154.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 180.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1160,6 +1157,13 @@ Package amsmath Warning: Foreign command \over;
 [4
 
 ]
+
+LaTeX Warning: Citation `HH' on page 5 undefined on input line 185.
+
+
+LaTeX Warning: Reference `saida_ampop_real' on page 5 undefined on input line 1
+85.
+
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 185.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -1218,6 +1222,9 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 185.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 185.
+
+LaTeX Warning: Reference `cmrr_db' on page 5 undefined on input line 194.
+
 
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
@@ -1230,6 +1237,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
+
+LaTeX Warning: Reference `tens_rui' on page 6 undefined on input line 216.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1277,6 +1288,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
+LaTeX Warning: Reference `ganho_IC3B' on page 11 undefined on input line 315.
+
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1295,17 +1310,26 @@ L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: D756C2813A6A73E733D7AC7CBF298B5A;2806.
+
+Package rerunfilecheck Warning: File `tcc.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tcc.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D756C2813A6A73E733D7AC7CBF298B5A;2806.
  ) 
 Here is how much of TeX's memory you used:
- 28392 strings out of 467748
- 505958 string characters out of 5426443
- 913653 words of memory out of 5000000
- 56166 multiletter control sequences out of 15000+600000
- 702465 words of font info for 382 fonts, out of 8000000 for 9000
+ 28358 strings out of 467748
+ 505473 string characters out of 5426443
+ 913193 words of memory out of 5000000
+ 56144 multiletter control sequences out of 15000+600000
+ 702222 words of font info for 379 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,103p,1244b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1379,10 +1403,10 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (13 pages, 192910 bytes).
+Output written on tcc.pdf (13 pages, 189879 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  76 named destinations out of 1000 (max. 500000)
- 88205 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 88077 words of extra memory for PDF output out of 89155 (max. 10000000)
 
