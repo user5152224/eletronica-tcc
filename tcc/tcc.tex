@@ -16,6 +16,9 @@
 
 \usepackage[brazil]{babel}
 
+% Sugerido por pelo pacote pgfplots
+\pgfplotsset{compat=1.18}
+
 % Espaçamento de letra para o cabeçalho dos capítulos
 \usepackage[letterspace=300]{microtype}
 
@@ -44,6 +47,9 @@
   \fancyhead[CE]{\fontface\sc\leftmark}
   \fancyhead[CO]{\fontface\sc\rightmark}
   \fancyhead[LE,RO]{\fontface\thepage}
+  \setlength{\headheight}{16pt}
+  \addtolength{\topmargin}{-1pt}
+
 }
 
 % Numeração dos capítulos em algarismos romanos
@@ -373,7 +379,7 @@
         \node [
           pin={
             [fill=white, draw=black, rounded corners=2pt]
-            225:{$f_c=34.6\,\rm MHz$}
+            225:{$f_c\approx34.6\,\rm MHz$}
           },
           circle,
           draw=black, 
@@ -430,7 +436,7 @@
   \[
     {R_2^2\over2\Sigma^2}={R_2^2\over\Omega^2+\Sigma^2}
   \]
-  resolvendo para $\Omega$ temos
+  resolvendo para $\Omega^2$ temos
   \[
     \Omega^2=\Sigma^2
   \]
