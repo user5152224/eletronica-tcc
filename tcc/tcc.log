@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  29 OCT 2025 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,33 +493,22 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 992.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 2057.
 LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
-) (/home/fool/.texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
 )
-(/home/fool/.texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box55
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
-\ttl@plus=\dimen186
-\ttl@minus=\dimen187
-\ttl@toksa=\toks30
-\titlewidth=\dimen188
-\titlewidthlast=\dimen189
-\titlewidthfirst=\dimen190
-)
-(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+ (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.t
 ex
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen191
-\pgfutil@tempdimb=\dimen192
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.de
 f
-\pgfutil@abb=\box56
+\pgfutil@abb=\box55
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -534,32 +523,32 @@ x
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfi
 ltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen193
-\pgf@y=\dimen194
-\pgf@xa=\dimen195
-\pgf@ya=\dimen196
-\pgf@xb=\dimen197
-\pgf@yb=\dimen198
-\pgf@xc=\dimen199
-\pgf@yc=\dimen256
-\pgf@xd=\dimen257
-\pgf@yd=\dimen258
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count320
 \c@pgf@countb=\count321
 \c@pgf@countc=\count322
 \c@pgf@countd=\count323
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count324
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -593,12 +582,12 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.te
 x
-\pgfmath@dimen=\dimen259
+\pgfmath@dimen=\dimen198
 \pgfmath@count=\count327
-\pgfmath@box=\box57
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@box=\box56
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code
 .tex)
@@ -626,52 +615,52 @@ gerarithmetics.code.tex)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.c
 ode.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen260
-\pgf@picmaxx=\dimen261
-\pgf@picminy=\dimen262
-\pgf@picmaxy=\dimen263
-\pgf@pathminx=\dimen264
-\pgf@pathmaxx=\dimen265
-\pgf@pathminy=\dimen266
-\pgf@pathmaxy=\dimen267
-\pgf@xx=\dimen268
-\pgf@xy=\dimen269
-\pgf@yx=\dimen270
-\pgf@yy=\dimen271
-\pgf@zx=\dimen272
-\pgf@zy=\dimen273
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathcons
 truct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen274
-\pgf@path@lasty=\dimen275
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusag
 e.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen276
-\pgf@shorten@start@additional=\dimen277
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.c
 ode.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box58
-\pgf@hbox=\box59
-\pgf@layerbox@main=\box60
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count329
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphics
 tate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen278
+\pgflinewidth=\dimen273
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransfor
 mations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen279
-\pgf@pt@y=\dimen280
-\pgf@pt@temp=\dimen281
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.co
 de.tex
@@ -688,12 +677,12 @@ File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.c
 ode.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen282
+\pgfarrowsep=\dimen277
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.co
 de.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen283
+\pgf@max=\dimen278
 \pgf@sys@shading@range@num=\count330
 \pgf@shadingcount=\count331
 )
@@ -704,7 +693,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal
 .code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box61
+\pgfexternal@startupbox=\box60
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.c
 ode.tex
@@ -725,7 +714,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.co
 de.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box62
+\pgfnodeparttextbox=\box61
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code
 .tex
@@ -734,8 +723,8 @@ File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versio
 n-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen284
-\pgf@nodesepend=\dimen285
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
 )
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versio
 n-1-18.sty
@@ -748,10 +737,10 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen286
-\pgffor@skip=\dimen287
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.co
 de.tex
@@ -761,20 +750,20 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 ndlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count332
-\pgfplotmarksize=\dimen288
+\pgfplotmarksize=\dimen283
 )
-\tikz@lastx=\dimen289
-\tikz@lasty=\dimen290
-\tikz@lastxsaved=\dimen291
-\tikz@lastysaved=\dimen292
-\tikz@lastmovetox=\dimen293
-\tikz@lastmovetoy=\dimen294
-\tikzleveldistance=\dimen295
-\tikzsiblingdistance=\dimen296
-\tikz@figbox=\box63
-\tikz@figbox@bg=\box64
-\tikz@tempbox=\box65
-\tikz@tempbox@bg=\box66
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
 \tikztreelevel=\count333
 \tikznumberofchildren=\count334
 \tikznumberofcurrentchild=\count335
@@ -793,10 +782,140 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 es/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen292
+\c@pgfplots@coordindex=\count341
+\c@pgfplots@scanlineindex=\count342
+
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneri
+c.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.
+code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplo
+tsoldpgfsupp_loader.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.co
+de.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplo
+tsoldpgfsupp_pgfutil-common-lists.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.cod
+e.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sliststructure.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sliststructureext.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sarray.code.tex
+\c@pgfplotsarray@tmp=\count343
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+smatrix.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstabl
+eshared.code.tex
+\c@pgfplotstable@counta=\count344
+\t@pgfplotstable@a=\toks45
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sdeque.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.c
+ode.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.d
+ata.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.ver
+b.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplo
+ts.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count345
+
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplot
+s.surfshading.pgfsys-pdftex.def)))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap
+.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.co
+de.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.
+code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.
+code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandl
+er.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage
+.code.tex)))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code
+.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessi
+ng.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.co
+de.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code
+.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.te
+x)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.t
+ex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoratio
+ns.code.tex
+\pgfdecoratedcompleteddistance=\dimen293
+\pgfdecoratedremainingdistance=\dimen294
+\pgfdecoratedinputsegmentcompleteddistance=\dimen295
+\pgfdecoratedinputsegmentremainingdistance=\dimen296
+\pgf@decorate@distancetomove=\dimen297
+\pgf@decorate@repeatstate=\count346
+\pgfdecorationsegmentamplitude=\dimen298
+\pgfdecorationsegmentlength=\dimen299
+)
+\tikz@lib@dec@box=\box66
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathmorphing.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathmorphing.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathreplacing.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathreplacing.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfpl
+ots.contourlua.code.tex)
+\pgfplots@numplots=\count347
+\pgfplots@xmin@reg=\dimen300
+\pgfplots@xmax@reg=\dimen301
+\pgfplots@ymin@reg=\dimen302
+\pgfplots@ymax@reg=\dimen303
+\pgfplots@zmin@reg=\dimen304
+\pgfplots@zmax@reg=\dimen305
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotma
+rks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box67
+\beforetitleunit=\skip69
+\aftertitleunit=\skip70
+\ttl@plus=\dimen306
+\ttl@minus=\dimen307
+\ttl@toksa=\toks46
+\titlewidth=\dimen308
+\titlewidthlast=\dimen309
+\titlewidthfirst=\dimen310
+)
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/10/01 v25.13 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
-\babel@savecnt=\count341
+\babel@savecnt=\count348
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2045.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -811,12 +930,12 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?)
 on input line 2053.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2078.
-\U@D=\dimen297
+\U@D=\dimen311
 \l@unhyphenated=\language90
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count342
+\bbl@dirlevel=\count349
 
 (/home/fool/.texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
@@ -826,18 +945,18 @@ Package babel Info: Making " an active character on input line 143.
 ))
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-\MT@toks=\toks43
-\MT@tempbox=\box67
-\MT@count=\count343
+\MT@toks=\toks47
+\MT@tempbox=\box68
+\MT@count=\count350
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks44
+\MT@prot@toks=\toks48
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen298
+\MT@outer@kern=\dimen312
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count344
+\MT@listname@count=\count351
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
@@ -854,65 +973,65 @@ File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 111.
+e 112.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 111.
+(Font)              scaled to size 12.0pt on input line 112.
  (./tcc.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
 )
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 111.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 112.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 111.
+ 112.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 112.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-111.
+112.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 112.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 111.
+ 112.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 112.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 111.
+e 112.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -950,17 +1069,17 @@ LaTeX Font Info:    ... okay on input line 111.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen299
-\scratchbox=\box68
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen300
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count352
+\scratchdimen=\dimen313
+\scratchbox=\box69
+\nofMPsegments=\count353
+\nofMParguments=\count354
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen314
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
+\everyMPtoPDFconversion=\toks50
 ) (/home/fool/.texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
@@ -977,26 +1096,32 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 111.
+Package hyperref Info: Link coloring OFF on input line 112.
 
 (./tcc.out) (./tcc.out)
 \@outlinefile=\write4
 \openout4 = `tcc.out'.
 
-\c@mv@tabular=\count351
-\c@mv@boldtabular=\count352
-LaTeX Info: Command `\dddot' is already robust on input line 111.
-LaTeX Info: Command `\ddddot' is already robust on input line 111.
-LaTeX Info: Redefining \microtypecontext on input line 111.
-Package microtype Info: Applying patch `item' on input line 111.
-Package microtype Info: Applying patch `toc' on input line 111.
-Package microtype Info: Applying patch `eqnum' on input line 111.
+\c@mv@tabular=\count358
+\c@mv@boldtabular=\count359
+LaTeX Info: Command `\dddot' is already robust on input line 112.
+LaTeX Info: Command `\ddddot' is already robust on input line 112.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 111.
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 112.
 
-Package microtype Info: Applying patch `verbatim' on input line 111.
-LaTeX Info: Redefining \microtypesetup on input line 111.
+LaTeX Info: Redefining \microtypecontext on input line 112.
+Package microtype Info: Applying patch `item' on input line 112.
+Package microtype Info: Applying patch `toc' on input line 112.
+Package microtype Info: Applying patch `eqnum' on input line 112.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 112.
+
+Package microtype Info: Applying patch `verbatim' on input line 112.
+LaTeX Info: Redefining \microtypesetup on input line 112.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1011,108 +1136,108 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 118.
+(Font)              scaled to size 8.0pt on input line 119.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 14.4pt on input line 118.
+(Font)              scaled to size 14.4pt on input line 119.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 118.
+e 119.
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minntx' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-118.
+119.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-118.
+119.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-118.
+119.
 
 (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 118.
+(Font)              scaled to size 8.8pt on input line 119.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 118.
+(Font)              scaled to size 6.6pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 118.
+(Font)              scaled to size 17.28pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 17.28pt on input line 118.
+(Font)              scaled to size 17.28pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 118.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 10.0pt on input line 121.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1123,7 +1248,7 @@ Package microtype Info: Character `013' is missing
 {/home/fool/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/f
 ool/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}{/home/fo
 ol/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 
  []
 
@@ -1147,13 +1272,13 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 ]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 80.0pt on input line 152.
+(Font)              scaled to size 80.0pt on input line 153.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 154.
+(Font)              scaled to size 14.4pt on input line 155.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 182.
+(amsmath)                 on input line 183.
 
 
 
@@ -1161,67 +1286,67 @@ Package amsmath Warning: Foreign command \over;
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 185.
+(Font)              scaled to size 8.8pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 185.
+(Font)              scaled to size 8.8pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 185.
+(Font)              scaled to size 10.0pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 185.
+(Font)              scaled to size 5.5pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 186.
 
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 208.
+(babel)             Reported on input line 209.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1241,9 +1366,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 231.
+(Font)              scaled to size 10.0pt on input line 232.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 233.
+(Font)              scaled to size 10.0pt on input line 234.
 
 
 [7
@@ -1285,8 +1410,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
+Cap\'{\i }tulo 3.
+PGFPlots: reading {../amplificador_5532/gp.data}
+
 
 [12
+
+]
+
+[13
 
 ] (./tcc.aux)
  ***********
@@ -1294,16 +1426,16 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: D756C2813A6A73E733D7AC7CBF298B5A;2806.
+(rerunfilecheck)             Checksum: F1D74E2DCD66A2B16E113A42DBF80FBC;3072.
  ) 
 Here is how much of TeX's memory you used:
- 28390 strings out of 467748
- 505945 string characters out of 5426443
- 913598 words of memory out of 5000000
- 56164 multiletter control sequences out of 15000+600000
+ 38724 strings out of 467748
+ 855976 string characters out of 5426443
+ 1447459 words of memory out of 5000000
+ 66354 multiletter control sequences out of 15000+600000
  702465 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,103p,1244b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,103p,1244b,1989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1375,10 +1507,10 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (13 pages, 192922 bytes).
+Output written on tcc.pdf (14 pages, 201307 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
- 88205 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 88221 words of extra memory for PDF output out of 89155 (max. 10000000)
 

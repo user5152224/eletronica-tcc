@@ -8,6 +8,7 @@
   hyperref,
   newtxtext,
   newtxmath,
+  pgfplots,
   setspace,
   titlesec,
   tikz
@@ -337,6 +338,34 @@
     P_{\rm rms}=\Bigl({2{,}176\,{\rm A}\over\sqrt{2}}\Bigr)^2\cdot8\,\Omega\approx19\,{\rm W_{rms}}
   \]
   o que \'e pr\'oximo do valor requerido pelo amplificador, a saber, $15\,{\rm W_{rms}}$.
+
+  \chapter{Simula\c c\~oes}
+
+  \section{Entrada desbalanceada}
+  Segue uma an\'alise AC da sa\'ida da entrada desbalanceada realizada no ngspice (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
+  \begin{figure}[!h]
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \begin{axis}[
+        xmode=log,
+        grid=both,
+        xlabel={Frequ\^encia em Hz},
+        ylabel={Amplitude em dB},
+        scale only axis,
+        xmin=10e5,
+        xmax=10e7,
+        grid style={black!50}
+      ]
+        \addplot [
+          color=black, 
+          domain=10e6:10e8, 
+          smooth,
+          ultra thick
+        ] table {../amplificador_5532/gp.data};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{An\'alise AC da sa\'ida da entrada desbalanceada.}
+  \end{figure}
 
   \begin{thebibliography}{}
 %    \bibitem{DS}
