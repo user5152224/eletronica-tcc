@@ -1,35 +1,47 @@
 #!/usr/bin/ngspice
 
-.MODEL NE5532 OPA (
-+ LEVEL=3 
-+ A=100K 
-+ GBW=10MEG 
-+ IBIAS=200n 
-+ IOFF=10n 
-+ IOSC=38m
-+ PD=100m 
-+ ROUTAC=50 
-+ ROUTDC=75 
-+ SRN=9MEG
-+ SRP=9MEG 
-+ VNS=-18 
-+ VPS=18
-+ VOFF=500u 
-)
+.include "NE5532.lib"
 
 .title Estagio de Ganho
 
-R3 ic1+ 0 47k
+VI    IC1XNIN  0     dc    0  ac      1
+VCC   VP       0     18 
+VEE   0        VN    18
 
-XA ic1+ ic1a- ic1ao NE5532 
-RB ic1a- 0     910
-R5 ic1ao  ic1a- 2k2
-C3 ic1ao  ic1a- 33p
-R8 ic1ao  ic2a+ 10
+R3    IC1XNIN  0     47k
 
-XB ic1+ ic1b- ic1bo NE5532 
-R6 ic1b- 0     910
-R7 ic1bo  ic1b- 2k2
-C4 ic1bo  ic1b- 33p
-R9 ic1bo  ic2a+ 10
+XIC1A IC1XNIN IC1AINV VP   VN IC1AOUT NE5532
+R4    IC1AINV 0       910R
+R5    IC1AOUT IC1AINV 2k2
+C3    IC1AOUT IC1AINV 33p
+R8    IC1AOUT IC2ANIN 10R
 
+XIC1B IC1XNIN IC1BINV VP   VN IC1BOUT NE5532
+R6    IC1BINV 0       910R
+R7    IC1BOUT IC1BINV 2k2
+C4    IC1BOUT IC1BINV 33p
+R9    IC1BOUT IC2ANIN 10R
+
+XIC2A IC2ANIN IC2AINV VP   VN IC2AOUT NE5532
+R10   IC2AINV O       2k2
+R11   IC2AOUT IC2AINV 2k2
+C6    IC2AOUT IC2AINV 33p
+
+XIC2B IC2AOUT IC2BOUT VP   VN IC2BOUT NE5532
+R12   IC2BOUT IC3BINV 1k
+
+XIC3B 0       IC3BINV VP   VN IC3BOUT NE5532
+C8    IC3BOUT IC3BINV 33p
+R13   K3      IC3BINV 2k
+R14   IC3BOUT K3      47R
+.end
+
+.ac dec 100 1k 500Meg
+
+.control
+
+run
+gnuplot estagio_de_ganho vdb(K3)
+*plot vdb(K3)
+
+.endc
