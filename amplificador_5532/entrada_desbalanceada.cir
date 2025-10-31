@@ -9,20 +9,12 @@ V-15 0   -15V 15
 
 R1 K1    UNBAL 47
 R2 UNBAL 0     220k
-R3 UNBAL 0     100k
 C1 UNBAL 0     100p
 
 .ac dec 100 1Meg 100Meg
 .end
 
 .control
-
-set hcopydevtype=svg
-set color0=white
-set color1=black
-set xbrushwidth=2
-set xgridwidth=1
-set xfont=monospace
 
 run
 gnuplot gp vdb(UNBAL) ylabel dB

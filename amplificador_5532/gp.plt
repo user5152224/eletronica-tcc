@@ -9,11 +9,11 @@ set xrange [1e+06:1e+08]
 set mxtics 10
 set grid mxtics
 unset logscale y 
-set yrange [-1.037102e+01:4.836788e-01]
+set yrange [-1.037078e+01:4.879386e-01]
 #set xtics 1
 #set x2tics 1
 #set ytics 1
 #set y2tics 1
 set format y "%g"
 set format x "%g"
-plot 'gp.data' using 1:2 with lines lw 2 title "vdb(unbal)"
+plot 'gp.data' using 1:2 with lines lw 1 title "vdb(unbal)"
