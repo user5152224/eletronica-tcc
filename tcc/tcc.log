@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,7 +1452,7 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
 Here is how much of TeX's memory you used:
  38776 strings out of 467748
  857067 string characters out of 5426443
- 1455474 words of memory out of 5000000
+ 1455476 words of memory out of 5000000
  66390 multiletter control sequences out of 15000+600000
  702465 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1528,7 +1528,7 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (16 pages, 206943 bytes).
+Output written on tcc.pdf (16 pages, 206944 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  280 compressed objects within 3 object streams
