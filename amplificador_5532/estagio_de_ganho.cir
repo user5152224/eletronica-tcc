@@ -1,6 +1,35 @@
 #!/usr/bin/ngspice
 
-.MODEL NE5532 OPA (LEVEL=3 A=100K GBW=10MEG IBIAS=200n IOFF=10n IOSC=38m
-+ PD=100m ROUTAC=50 ROUTDC=75 SRN=9MEG SRP=9MEG VNS=-12.4 VOFF=500u VPS=12.4)
+.MODEL NE5532 OPA (
++ LEVEL=3 
++ A=100K 
++ GBW=10MEG 
++ IBIAS=200n 
++ IOFF=10n 
++ IOSC=38m
++ PD=100m 
++ ROUTAC=50 
++ ROUTDC=75 
++ SRN=9MEG
++ SRP=9MEG 
++ VNS=-18 
++ VPS=18
++ VOFF=500u 
+)
 
 .title Estagio de Ganho
+
+R3 ic1+ 0 47k
+
+XA ic1+ ic1a- ic1ao NE5532 
+RB ic1a- 0     910
+R5 ic1ao  ic1a- 2k2
+C3 ic1ao  ic1a- 33p
+R8 ic1ao  ic2a+ 10
+
+XB ic1+ ic1b- ic1bo NE5532 
+R6 ic1b- 0     910
+R7 ic1bo  ic1b- 2k2
+C4 ic1bo  ic1b- 33p
+R9 ic1bo  ic2a+ 10
+
