@@ -347,21 +347,40 @@
     \centering
     \begin{tikzpicture}[scale=1]
       \begin{axis}[
-        xmode=log,
+        domain=10e6:10e8, 
         grid=both,
-        xlabel={Frequ\^encia em Hz},
-        ylabel={Amplitude em dB},
+        grid style={black!50},
         scale only axis,
-        xmin=10e5,
+        xlabel={Frequ\^encia em Hz},
         xmax=10e7,
-        grid style={black!50}
+        xmin=10e5,
+        xmode=log,
+        ylabel={Amplitude em dB},
+        ytick distance=1
       ]
         \addplot [
           color=black, 
-          domain=10e6:10e8, 
           smooth,
           ultra thick
         ] table {../amplificador_5532/entrada_desbalanceada.data};
+
+        \addplot[
+          domain=10e5:10e8, 
+          samples=2,
+          color=red
+        ] {-3};
+
+        \node [
+          pin={
+            [fill=white, draw=black, rounded corners=2pt]
+            225:{$\omega_c=34.6\,\rm Hz$}
+          },
+          circle,
+          draw=black, 
+          fill=red,
+          inner sep=1.5pt
+        ] at (axis cs:34e6,-3) {};
+
       \end{axis}
     \end{tikzpicture}
     \caption{An\'alise AC da sa\'ida da entrada desbalanceada.}
@@ -391,11 +410,43 @@
   de (\ref{ganho_quad}) segue-se
   \[
     H_{\rm DESBAL}(\omega)={R_2\over\sqrt{(\omega C_1R_1R_2)^2+(R_1+R_2)^2}}.
+    \label{transf_desbal}
   \]
   No contexto de filtros, o corte \'e definido como a frequ\^encia $\omega_c$ tal que 
   \[
-    H(\omega_c)={1\over\sqrt{2}}H(0)={1\over\sqrt{2}}{R_2\over R_1+R_2}
+    H(\omega_c)={1\over\sqrt{2}}H(0)
   \]
+  Portanto,
+  \[
+    H_{\rm DESBAL}(\omega_c)={1\over\sqrt{2}}{R_2\over R_1+R_2}.
+    \label{freq_cort}
+  \]
+
+  Agora, fazendo 
+  \[
+    \Omega=\omega_cC_1R_2R_2\quad\hbox{e}\quad\Sigma=R_1+R_2,
+  \]
+  temos de (\ref{transf_desbal}) e (\ref{freq_cort}) que  
+  \[
+    {R_2^2\over2\Sigma^2}={R_2^2\over\Omega^2+\Sigma^2}
+  \]
+  resolvendo para $\Omega$ temos
+  \[
+    \Omega^2=\Sigma^2
+  \]
+  donde
+  \[
+    \omega_c=\sqrt{\Sigma^2\over (C_1R_1R_2)^2}={R_1+R_2\over C_1R_1R_2}\;(\rm rad/s)
+  \]
+  em Hz temos 
+  \[
+    f_c= {R_1+R_2\over 2\pi C_1R_1R_2}\;(\rm Hz)
+  \]
+  Com aux\'ilio duma calculadora obtemos
+  \[
+    f_c\approx 34.6\,\rm MHz.
+  \]
+
   
   
 
