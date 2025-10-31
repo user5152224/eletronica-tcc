@@ -361,11 +361,45 @@
           domain=10e6:10e8, 
           smooth,
           ultra thick
-        ] table {../amplificador_5532/gp.data};
+        ] table {../amplificador_5532/entrada_desbalanceada.data};
       \end{axis}
     \end{tikzpicture}
     \caption{An\'alise AC da sa\'ida da entrada desbalanceada.}
   \end{figure}
+
+  Reprisaremos a rela\c c\~ao da entrada com a sa\'ida neste filtro, a saber,
+  \[
+    V_{\rm out}=\bigg|{R_2\|Z_{C_1}\over R_1+R_2\|Z_{C_1}}\bigg|\cdot V_{\rm in}=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|\cdot V_{\rm in},
+  \]
+  logo, o quadrado do ganho \'e
+  \[
+    \Bigl({V_{\rm out}\over V_{\rm in}}\Bigr)^2=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|^2={R_2^2\over z\overline{z}},
+  \]
+  em que
+  \[
+    z=\omega C_1R_1R_2-j(R_1+R_2),
+  \]
+  equivalentemente obtemos
+  \[
+    \Bigl({V_{\rm out}\over V_{\rm in}}\Bigr)^2={R_2^2\over (\omega C_1R_1R_2)^2+(R_1+R_2)^2}.
+    \label{ganho_quad}
+  \]
+  N\~ao entraremos em detalhes, mas em contextos de engenharia el\'etrica/eletr\^onica \'e de constume usar a fun\c c\~ao transfer\^encia $H$, dada por
+  \[
+    H(\omega)=\Big|{V_{\rm out}\over V_{\rm in}}\Big|
+  \]
+  de (\ref{ganho_quad}) segue-se
+  \[
+    H_{\rm DESBAL}(\omega)={R_2\over\sqrt{(\omega C_1R_1R_2)^2+(R_1+R_2)^2}}.
+  \]
+  No contexto de filtros, o corte \'e definido como a frequ\^encia $\omega_c$ tal que 
+  \[
+    H(\omega_c)={1\over\sqrt{2}}H(0)={1\over\sqrt{2}}{R_2\over R_1+R_2}
+  \]
+  
+  
+
+
 
   \begin{thebibliography}{}
 %    \bibitem{DS}

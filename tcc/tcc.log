@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1411,14 +1411,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 Cap\'{\i }tulo 3.
-PGFPlots: reading {../amplificador_5532/gp.data}
+PGFPlots: reading {../amplificador_5532/entrada_desbalanceada.data}
 
 
 [12
 
 ]
 
-[13
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+
+[14
 
 ] (./tcc.aux)
  ***********
@@ -1429,10 +1438,10 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: F1D74E2DCD66A2B16E113A42DBF80FBC;3072.
  ) 
 Here is how much of TeX's memory you used:
- 38724 strings out of 467748
- 855976 string characters out of 5426443
- 1447459 words of memory out of 5000000
- 66354 multiletter control sequences out of 15000+600000
+ 38733 strings out of 467748
+ 856124 string characters out of 5426443
+ 1448548 words of memory out of 5000000
+ 66355 multiletter control sequences out of 15000+600000
  702465 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,103p,1244b,1989s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1507,10 +1516,10 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (14 pages, 201307 bytes).
+Output written on tcc.pdf (15 pages, 204337 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
  88221 words of extra memory for PDF output out of 89155 (max. 10000000)
 
