@@ -347,8 +347,10 @@
 
   \chapter{Simula\c c\~oes}
 
+  Doravante, todos os diagramas de Bode dos subcircuitos que compoem o amplificador foram gerados pelo simulador {\bf ngspice} e posteriormente reaproveitados pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
+
   \section{Entrada desbalanceada}
-  Segue uma an\'alise AC da sa\'ida da entrada desbalanceada realizada no ngspice (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
+  Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
   \begin{figure}[!h]
     \centering
     \begin{tikzpicture}[scale=1]
@@ -452,6 +454,58 @@
   \[
     f_c\approx 34.6\,\rm MHz.
   \]
+
+  \section{Est\'agio de ganho}
+  A seguir temos a simula\c c\~ao AC do est\'agio de ganho de $10\,\rm MHz$ a $100\,\rm MHz$:
+  \begin{figure}[!h]
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \begin{axis}[
+        domain=10e5:10e8, 
+        grid=both,
+        grid style={black!50},
+        scale only axis,
+        xlabel={Frequ\^encia em Hz},
+        xmin=10e4,
+        xmax=10e7,
+        xmode=log,
+        ylabel={Amplitude em dB},
+        ytick distance=20
+      ]
+        \addplot [
+          color=black, 
+          smooth,
+          ultra thick
+        ] table {../amplificador_5532/estagio_de_ganho.data};
+
+        \addplot[
+          domain=10e4:10e7, 
+          samples=2,
+          color=red
+        ] {-3} ;
+
+        \node [
+          anchor=west,
+          fill=white, 
+          inner sep=2pt,
+          rounded corners=1pt,
+        ] at (axis cs:10e4,-3) {$-3\,\rm dB$};
+
+        %\node [
+        %  pin={
+        %    [fill=white, draw=black, rounded corners=2pt]
+        %    225:{$f_c\approx34.6\,\rm MHz$}
+        %  },
+        %  circle,
+        %  draw=black, 
+        %  fill=red,
+        %  inner sep=1.5pt
+        %] at (axis cs:34e6,-3) {};
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{An\'alise AC da sa\'ida do est\'agio de ganho.}
+  \end{figure}
 
   
   

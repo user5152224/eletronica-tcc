@@ -18,3 +18,4 @@
 \contentsline {subsection}{\numberline {2.2.7}Escrut\'inio do amplificador}{10}{subsection.22.2.7}%
 \contentsline {chapter}{\numberline {3}Simula\c c\~oes}{12}{chapter.33}%
 \contentsline {section}{\numberline {3.1}Entrada desbalanceada}{12}{section.33.1}%
+\contentsline {section}{\numberline {3.2}Est\'agio de ganho}{14}{section.33.2}%
