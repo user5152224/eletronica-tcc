@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  31 OCT 2025 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  2 NOV 2025 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,12 +6,12 @@ entering extended mode
 (./tcc.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/book.cls
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/leqno.clo
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/base/leqno.clo
 File: leqno.clo 2016/12/29 v1.2b Standard LaTeX option (left equation numbers)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/bk12.clo
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -27,7 +27,7 @@ File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip51
@@ -46,17 +46,17 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip64
 \@temptokenb=\toks17
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count284
@@ -72,90 +72,91 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks19
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekey
-s.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/home/fool/.texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.st
-y
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+))
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitles
-tring.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.
+sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (/home/fool/.texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count287
-) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count288
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen159
 \Hy@linkcounter=\count289
 \Hy@pagecounter=\count290
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count291
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -169,18 +170,17 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count292
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/url/url.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen160
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.st
-y
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -199,53 +199,51 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count296
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count297
 \c@bookmark@seq@number=\count298
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
-eck.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecoun
-ter.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.st
+y
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip65
-)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/newtxtext.sty
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/newtxtext.sty
 Package: newtxtext 2024/04/01 v1.744(Michael Sharpe) latex and unicode latex su
 pport for TeXGyreTermesX
 
 `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
 nd its extensions (msharpe)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-09-02 L3 programming layer (loader) 
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex
-.def
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.s
-ty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
-)) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+))
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -256,45 +254,45 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 )
 \XKV@depth=\count300
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex
 \xs_counta=\count301
 \xs_countb=\count302
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
 \ntx@tmpcnta=\count303
 \ntx@cnt=\count304
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/figureversions/figureversi
-ons.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/figureversions/figureversions.st
+y
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 ))
 \tx@sixem=\dimen163
@@ -312,29 +310,28 @@ Package: figureversions 2025-04-29 v1.0.1 Figure versions
 \tx@dimBB=\dimen175
 \tx@dimC=\dimen176
 LaTeX Info: Redefining \oldstylenums on input line 902.
-)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/newtxmath.sty
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2024/09/22 v1.754
 
 `newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
-) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen177
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen178
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count305
@@ -385,12 +382,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/oberdiek/centernot.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \tx@cntz=\count317
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
 \tx@Isdigit=\count318
 \tx@IsAlNum=\count319
 \tx@tA=\toks27
@@ -496,46 +493,41 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 992.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 2057.
 LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
-) (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revisi
-on.tex)
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
+)
 Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-co
-mmon.tex
+ (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.t
+ex
 \pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen186
 \pgfutil@tempdimb=\dimen187
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-la
-tex.def
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.de
+f
 \pgfutil@abb=\box55
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.cod
-e.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.c
-ode.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.te
+x
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.co
-de.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks31
 \pgfkeys@temptoks=\toks32
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslib
-raryfiltered.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfi
+ltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen188
@@ -559,39 +551,37 @@ raryfiltered.code.tex
 \t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count324
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-p
-dftex.def
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.
+def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-c
-ommon-pdf.def
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-
+pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysso
-ftpath.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath
+.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count325
 \pgfsyssoftpath@bigbuffer@items=\count326
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyspr
-otocol.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol
+.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.c
-ode.tex
-Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
-
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.te
 x
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.cod
-e.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.c
-ode.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.te
+x
 \pgfmath@dimen=\dimen198
 \pgfmath@count=\count327
 \pgfmath@box=\box56
@@ -599,34 +589,31 @@ ode.tex
 \pgfmath@stack@operand=\toks38
 \pgfmath@stack@operation=\toks39
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.basic.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.trigonometric.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.random.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.comparison.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.base.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.round.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.misc.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunction
-s.integerarithmetics.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.cod
-e.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.co
-de.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code
+.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basi
+c.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trig
+onometric.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rand
+om.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comp
+arison.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base
+.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.roun
+d.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc
+.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.inte
+gerarithmetics.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count328
-))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
-)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepo
-ints.code.tex
+)) (/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.c
+ode.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen199
 \pgf@picmaxx=\dimen256
@@ -643,127 +630,124 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@zx=\dimen267
 \pgf@zy=\dimen268
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
-thconstruct.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathcons
+truct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen269
 \pgf@path@lasty=\dimen270
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
-thusage.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusag
+e.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen271
 \pgf@shorten@start@additional=\dimen272
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoresc
-opes.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.c
+ode.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count329
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregr
-aphicstate.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphics
+tate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen273
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretr
-ansformations.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransfor
+mations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen274
 \pgf@pt@y=\dimen275
 \pgf@pt@temp=\dimen276
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequ
-ick.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.co
+de.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreob
-jects.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.
+code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
-thprocessing.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproc
+essing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorear
-rows.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.c
+ode.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen277
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoresh
-ade.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.co
+de.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen278
 \pgf@sys@shading@range@num=\count330
 \pgf@shadingcount=\count331
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreim
-age.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.co
+de.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreex
-ternal.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal
+.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box60
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorela
-yers.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.c
+ode.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretr
-ansparency.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspar
+ency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
-tterns.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns
+.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerd
-f.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code
+.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulesha
-pes.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.co
+de.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box61
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplo
-t.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code
+.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-
-version-0-65.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versio
+n-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen279
 \pgf@nodesepend=\dimen280
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-
-version-1-18.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versio
+n-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.co
-de.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
-x))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.cod
-e.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+)) (/home/fool/.texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen281
 \pgffor@skip=\dimen282
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/t
-ikz.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.co
+de.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
-plothandlers.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotha
+ndlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count332
 \pgfplotmarksize=\dimen283
@@ -785,8 +769,8 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofcurrentchild=\count335
 \tikz@fig@count=\count336
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulemat
-rix.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.co
+de.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count337
 \pgfmatrixcurrentcolumn=\count338
@@ -794,14 +778,12 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 \tikz@expandcount=\count340
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
-ibraries/tikzlibrarytopaths.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.t
-ex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.co
-de.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks42
 \t@pgfplots@tokb=\toks43
 \t@pgfplots@tokc=\toks44
@@ -809,75 +791,75 @@ de.tex
 \c@pgfplots@coordindex=\count341
 \c@pgfplots@scanlineindex=\count342
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssys
-generic.code.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotsli
-brary.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/
-pgfplotsoldpgfsupp_loader.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
-fpu.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/
-pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsut
-il.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
-gfplotsliststructure.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
-gfplotsliststructureext.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
-gfplotsarray.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneri
+c.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.
+code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplo
+tsoldpgfsupp_loader.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.co
+de.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplo
+tsoldpgfsupp_pgfutil-common-lists.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.cod
+e.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sliststructure.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sliststructureext.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sarray.code.tex
 \c@pgfplotsarray@tmp=\count343
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
-gfplotsmatrix.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplo
-tstableshared.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+smatrix.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstabl
+eshared.code.tex
 \c@pgfplotstable@counta=\count344
 \t@pgfplotstable@a=\toks45
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
-gfplotsdeque.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbi
-nary.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbi
-nary.data.code.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsut
-il.verb.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrary
-pgfplots.surfshading.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplot
+sdeque.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.c
+ode.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.d
+ata.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.ver
+b.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplo
+ts.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count345
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibraryp
-gfplots.surfshading.pgfsys-pdftex.def)))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsco
-lormap.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsco
-lor.code.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstacked
-plots.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothan
-dlers.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplo
-thandler.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplo
-timage.code.tex)))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scalin
-g.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordpr
-ocessing.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorb
-ars.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.marker
-s.code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.c
-ode.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplot
+s.surfshading.pgfsys-pdftex.def)))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap
+.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.co
+de.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.
 code.tex)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
-ibraries/tikzlibrarydecorations.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledec
-orations.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.
+code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandl
+er.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage
+.code.tex)))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code
+.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessi
+ng.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.co
+de.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code
+.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.te
+x)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.t
+ex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoratio
+ns.code.tex
 \pgfdecoratedcompleteddistance=\dimen293
 \pgfdecoratedremainingdistance=\dimen294
 \pgfdecoratedinputsegmentcompleteddistance=\dimen295
@@ -889,16 +871,16 @@ orations.code.tex
 )
 \tikz@lib@dec@box=\box66
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
-ibraries/tikzlibrarydecorations.pathmorphing.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decoration
-s/pgflibrarydecorations.pathmorphing.code.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
-ibraries/tikzlibrarydecorations.pathreplacing.code.tex
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decoration
-s/pgflibrarydecorations.pathreplacing.code.tex))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrar
-ypgfplots.contourlua.code.tex)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathmorphing.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathmorphing.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathreplacing.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathreplacing.code.tex))
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfpl
+ots.contourlua.code.tex)
 \pgfplots@numplots=\count347
 \pgfplots@xmin@reg=\dimen300
 \pgfplots@xmax@reg=\dimen301
@@ -907,18 +889,18 @@ ypgfplots.contourlua.code.tex)
 \pgfplots@zmin@reg=\dimen304
 \pgfplots@zmax@reg=\dimen305
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
-ibraries/tikzlibraryplotmarks.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
-plotmarks.code.tex
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotma
+rks.code.tex
 File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box67
 \beforetitleunit=\skip69
@@ -930,7 +912,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen309
 \titlewidthfirst=\dimen310
 )
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/10/01 v25.13 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count348
@@ -951,18 +933,17 @@ on input line 2078.
 \U@D=\dimen311
 \l@unhyphenated=\language90
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
 \bbl@dirlevel=\count349
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ld
-f
+(/home/fool/.texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 (babel)             (\language72). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 \MT@toks=\toks47
 \MT@tempbox=\box68
@@ -977,8 +958,7 @@ LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count351
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex
-.def
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -987,7 +967,7 @@ LaTeX Info: Redefining \lslig on input line 944.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
@@ -995,13 +975,12 @@ LaTeX Info: Redefining \microtypesetup on input line 3065.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
 e 118.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 118.
-
-(./tcc.aux
+ (./tcc.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
 )
@@ -1011,7 +990,7 @@ LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 118.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  118.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 118.
@@ -1029,7 +1008,7 @@ LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
 118.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 118.
@@ -1041,7 +1020,7 @@ LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
  118.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 118.
@@ -1049,7 +1028,7 @@ LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
 e 118.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 118.
@@ -1088,7 +1067,7 @@ LaTeX Font Info:    ... okay on input line 118.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/home/fool/.texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count352
 \scratchdimen=\dimen313
@@ -1101,11 +1080,9 @@ LaTeX Font Info:    ... okay on input line 118.
 \MPnumerator=\count356
 \makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks50
-)
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base
-.sty
+) (/home/fool/.texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/home/papabundus/.texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1115,13 +1092,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.c
-fg
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 118.
- (./tcc.out) (./tcc.out)
+
+(./tcc.out) (./tcc.out)
 \@outlinefile=\write4
 \openout4 = `tcc.out'.
 
@@ -1152,7 +1129,7 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
@@ -1177,7 +1154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
 e 125.
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/ot1minntx.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
@@ -1211,7 +1188,7 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
 125.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
@@ -1223,7 +1200,7 @@ LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
 125.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
@@ -1235,7 +1212,7 @@ LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
 125.
 
-(/home/papabundus/.texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
+(/home/fool/.texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
@@ -1265,20 +1242,16 @@ Package microtype Info: Character `013' is missing
 
 [1
 
-{/home/papabundus/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/
-home/papabundus/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.e
-nc}{/home/papabundus/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf
-.enc}]
+{/home/fool/.texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/f
+ool/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}{/home/fo
+ol/.texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 135--135
 
  []
 
 
 
-[1] (./tcc.toc
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-)
+[1] (./tcc.toc)
 \tf@toc=\write5
 \openout5 = `tcc.toc'.
 
@@ -1296,6 +1269,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 80.0pt on input line 159.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 161.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 187.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1306,6 +1281,9 @@ Package amsmath Warning: Foreign command \over;
 [4
 
 ]
+
+LaTeX Warning: Citation `HH' on page 5 undefined on input line 192.
+
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -1417,14 +1395,27 @@ PGFPlots: reading {../amplificador_5532/estagio_de_ganho.data}
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 0A3DA6E75250BB7E11689EB539C6E14F;3218.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `tcc.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tcc.out':
+(rerunfilecheck)             Before: F1D74E2DCD66A2B16E113A42DBF80FBC;3072
+(rerunfilecheck)             After:  0A3DA6E75250BB7E11689EB539C6E14F;3218.
  ) 
 Here is how much of TeX's memory you used:
- 38800 strings out of 467748
- 860183 string characters out of 5423317
- 1508983 words of memory out of 5000000
- 66402 multiletter control sequences out of 15000+600000
+ 38799 strings out of 467748
+ 857451 string characters out of 5426443
+ 1508925 words of memory out of 5000000
+ 66401 multiletter control sequences out of 15000+600000
  702925 words of font info for 388 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,103p,1244b,2150s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1492,17 +1483,17 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
-></home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb>
-</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb>
-</home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><
-/home/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></h
-ome/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></hom
-e/papabundus/.texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (16 pages, 218705 bytes).
+</home/fool/.texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></hom
+e/fool/.texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/fool/
+.texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/fool/.texli
+ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
+/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
+ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
+s/type1/public/newtx/ztmri.pfb>
+Output written on tcc.pdf (16 pages, 217474 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
+ 300 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
  98 named destinations out of 1000 (max. 500000)
- 88229 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 88221 words of extra memory for PDF output out of 89155 (max. 10000000)
 
