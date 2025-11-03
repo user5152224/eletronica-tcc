@@ -17,7 +17,7 @@ C1 UNBAL 0     100p
 .control
 
 run
-gnuplot entrada_desbalanceada vdb(UNBAL) ylabel dB
-quit
+plot vdb(UNBAL)
+wrdata entrada_desbalanceada.data vdb(UNBAL)
 
 .endc
