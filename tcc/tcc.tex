@@ -347,7 +347,7 @@
 
   \chapter{Simula\c c\~oes}
 
-  Doravante, todos os diagramas de Bode dos subcircuitos que compoem o amplificador foram gerados pelo simulador {\bf ngspice} e posteriormente reaproveitados pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
+  Doravante, todos os diagramas de Bode dos subcircuitos que compoem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
 
   \section{Entrada desbalanceada}
   Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
@@ -364,7 +364,9 @@
         xmin=10e5,
         xmode=log,
         ylabel={Amplitude em dB},
-        ytick distance=1
+        ytick distance=1,
+        width=14cm,
+        height=9.1cm,
       ]
         \addplot [
           color=black, 
@@ -466,11 +468,13 @@
         grid style={black!20},
         scale only axis,
         xlabel={Frequ\^encia em Hz},
-        xmin=10e4,
+        xmin=10e3,
         xmax=10e7,
         xmode=log,
         ylabel={Amplitude em dB},
-        ytick distance=20
+        ytick distance=20,
+        width=14cm,
+        height=9.1cm,
       ]
 
         \addplot [
@@ -480,7 +484,7 @@
         ] table {../amplificador_5532/estagio_de_ganho.data};
 
         \addplot[
-          domain=10e4:10e7, 
+          domain=10e3:10e7, 
           samples=2,
         ] {-3} ;
 
@@ -494,7 +498,7 @@
 
 
         \addplot[
-          domain=10e4:10e7, 
+          domain=10e3:10e7, 
           samples=2,
         ] {22.7} ;
 
