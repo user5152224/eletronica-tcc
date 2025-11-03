@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  3 NOV 2025 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  3 NOV 2025 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1251,7 +1251,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 
 
 
-[1] (./tcc.toc)
+[1] (./tcc.toc
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `tcc.toc'.
 
@@ -1269,8 +1272,6 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 80.0pt on input line 159.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 161.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 187.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1281,9 +1282,6 @@ Package amsmath Warning: Foreign command \over;
 [4
 
 ]
-
-LaTeX Warning: Citation `HH' on page 5 undefined on input line 192.
-
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -1384,17 +1382,6 @@ Underfull \vbox (badness 3492) has occurred while \output is active []
 [12
 
 ]
-
-LaTeX Warning: Reference `ganho_quad' on page 13 undefined on input line 419.
-
-
-LaTeX Warning: Reference `transf_desbal' on page 13 undefined on input line 438
-.
-
-
-LaTeX Warning: Reference `freq_cort' on page 13 undefined on input line 438.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1419,27 +1406,14 @@ Overfull \hbox (8.44835pt too wide) in paragraph at lines 527--528
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `tcc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tcc.out':
-(rerunfilecheck)             Before: D756C2813A6A73E733D7AC7CBF298B5A;2806
-(rerunfilecheck)             After:  0A3DA6E75250BB7E11689EB539C6E14F;3218.
+Package rerunfilecheck Info: File `tcc.out' has not changed.
+(rerunfilecheck)             Checksum: 0A3DA6E75250BB7E11689EB539C6E14F;3218.
  ) 
 Here is how much of TeX's memory you used:
- 38792 strings out of 467748
- 857329 string characters out of 5426443
- 1567955 words of memory out of 5000000
- 66400 multiletter control sequences out of 15000+600000
+ 38795 strings out of 467748
+ 857369 string characters out of 5426443
+ 1568170 words of memory out of 5000000
+ 66403 multiletter control sequences out of 15000+600000
  702635 words of font info for 384 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,103p,1244b,2072s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1514,10 +1488,10 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (16 pages, 220330 bytes).
+Output written on tcc.pdf (16 pages, 221692 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
  98 named destinations out of 1000 (max. 500000)
- 88205 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 88229 words of extra memory for PDF output out of 89155 (max. 10000000)
 
