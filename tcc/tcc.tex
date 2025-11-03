@@ -357,7 +357,7 @@
       \begin{axis}[
         domain=10e6:10e8, 
         grid=both,
-        grid style={black!50},
+        grid style={black!20},
         scale only axis,
         xlabel={Frequ\^encia em Hz},
         xmax=10e7,
@@ -367,6 +367,12 @@
         ytick distance=1
       ]
         \addplot [
+          color=white, 
+          smooth,
+          line width=3pt,
+        ] table {../amplificador_5532/entrada_desbalanceada.data};
+
+        \addplot [
           color=black, 
           smooth,
           ultra thick
@@ -375,17 +381,16 @@
         \addplot[
           domain=10e5:10e8, 
           samples=2,
-          color=red
         ] {-3};
 
         \node [
           pin={
-            [fill=white, draw=black, rounded corners=2pt]
-            225:{$f_c\approx34.6\,\rm MHz$}
+            [fill=white, draw=black]
+            265:{$f_c\approx34.6\,\rm MHz$}
           },
           circle,
           draw=black, 
-          fill=red,
+          fill=white,
           inner sep=1.5pt
         ] at (axis cs:34e6,-3) {};
 
@@ -460,10 +465,11 @@
   \begin{figure}[!h]
     \centering
     \begin{tikzpicture}[scale=1]
+      \def\mw{1.7cm}
       \begin{axis}[
         domain=10e5:10e8, 
         grid=both,
-        grid style={black!50},
+        grid style={black!20},
         scale only axis,
         xlabel={Frequ\^encia em Hz},
         xmin=10e4,
@@ -472,24 +478,47 @@
         ylabel={Amplitude em dB},
         ytick distance=20
       ]
+
+        \addplot [
+          color=white, 
+          smooth,
+          line width=3pt,
+        ] table {../amplificador_5532/estagio_de_ganho.data};
+
         \addplot [
           color=black, 
           smooth,
-          ultra thick
+          thick,
         ] table {../amplificador_5532/estagio_de_ganho.data};
 
         \addplot[
           domain=10e4:10e7, 
           samples=2,
-          color=red
         ] {-3} ;
 
         \node [
-          anchor=west,
+          anchor=east,
+          draw=black,
           fill=white, 
           inner sep=2pt,
-          rounded corners=1pt,
-        ] at (axis cs:10e4,-3) {$-3\,\rm dB$};
+          minimum width=\mw,
+        ] at (axis cs:10e7,-3) {$-3\,\rm dB$};
+
+
+        \addplot[
+          domain=10e4:10e7, 
+          samples=2,
+        ] {22.7} ;
+
+        \node [
+          anchor=east,
+          fill=white, 
+          draw=black,
+          inner sep=2pt,
+          minimum width=\mw,
+        ] at (axis cs:10e7,22.7) {$22.7\,\rm dB$};
+
+
 
         %\node [
         %  pin={
