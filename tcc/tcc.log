@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  3 NOV 2025 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.11)  4 NOV 2025 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,12 +1370,7 @@ Package pgfplots info on input line 370: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {../amplificador_5532/entrada_desbalanceada.data}
 
-Overfull \hbox (2.44371pt too wide) in paragraph at lines 394--395
- [][] 
- []
-
-
-Underfull \vbox (badness 3492) has occurred while \output is active []
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
 
 
@@ -1390,11 +1385,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package pgfplots info on input line 478: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {../amplificador_5532/estagio_de_ganho.data}
-
-Overfull \hbox (8.44835pt too wide) in paragraph at lines 527--528
- [][] 
- []
-
 
 
 [14]
@@ -1412,7 +1402,7 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
 Here is how much of TeX's memory you used:
  38795 strings out of 467748
  857369 string characters out of 5426443
- 1568170 words of memory out of 5000000
+ 1566022 words of memory out of 5000000
  66403 multiletter control sequences out of 15000+600000
  702635 words of font info for 384 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1488,7 +1478,7 @@ ve/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/fool/.texlive/2025
 /texmf-dist/fonts/type1/public/newtx/ztmb.pfb></home/fool/.texlive/2025/texmf-d
 ist/fonts/type1/public/newtx/ztmr.pfb></home/fool/.texlive/2025/texmf-dist/font
 s/type1/public/newtx/ztmri.pfb>
-Output written on tcc.pdf (16 pages, 221692 bytes).
+Output written on tcc.pdf (16 pages, 221340 bytes).
 PDF statistics:
  323 PDF objects out of 1000 (max. 8388607)
  287 compressed objects within 3 object streams
