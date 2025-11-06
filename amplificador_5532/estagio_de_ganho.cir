@@ -35,6 +35,13 @@ C8    IC3BOUT IC3BINV 33p
 R13   K3      IC3BINV 2k
 R14   IC3BOUT K3      47R
 
+R15   K3      IC3AINV 2k2
+
+XIC3A 0       IC3AINV VP   VN IC3AOUT NE5532
+C9    IC3AOUT IC3AINV 33p
+R16   K4      IC3AINV 2k2
+R17   IC3AOUT K4      47R
+
 .end
 
 .ac dec 100 10k 100Meg
@@ -42,7 +49,7 @@ R14   IC3BOUT K3      47R
 .control
 
 run
-plot vdb(K3)
-wrdata estagio_de_ganho.data vdb(K3)
+plot vdb(K4)
+wrdata estagio_de_ganho.data vdb(K4)
 
 .endc
