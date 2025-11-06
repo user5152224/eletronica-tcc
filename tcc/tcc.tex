@@ -11,7 +11,8 @@
   pgfplots,
   setspace,
   titlesec,
-  tikz
+  tikz,
+  xcolor,
 }
 
 \usepackage[brazil]{babel}
@@ -224,7 +225,7 @@
   \[
     V_{\rm n}^2=v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2+2\Re(Z_{\rm in})R+R^2}\approx v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2}=v_{\rm n}^2,
   \]
-  logo $V_n=v_n$, i.e., a tens\~ao de ru\'ido de entrada vista pelo amplificador \'e precipuamente $v_n$, a tens\~ao de ru\'ido de circuito aberto do resistor. \'E por este motivo que \'e t\~ao importante reduzir o ru\'ido Johnson (Nyquist), antes do sinal entrar no ampificador, pois a tens\~ao de ru\'ido \'e aditiva, isto decorre da LKT (Lei de Kirchhoff para tens\~oes). Desta maneira, o ru\'ido em conjunto com o sinal s\~ao concomitamente amplificados, caso o ru\'ido seja significativo o sinal \'e degradado, predominando o ru\'ido branco, por este motivo ouvimos o chiado em amplificadores de \'audio simples.
+  logo $V_{\rm n}=v_{\rm n}$, i.e., a tens\~ao de ru\'ido de entrada vista pelo amplificador \'e precipuamente $v_{\rm n}$, a tens\~ao de ru\'ido de circuito aberto do resistor. \'E por este motivo que \'e t\~ao importante reduzir o ru\'ido Johnson (Nyquist), antes do sinal entrar no ampificador. Desta maneira, o ru\'ido em conjunto com o sinal s\~ao concomitamente amplificados, caso o ru\'ido seja significativo o sinal \'e degradado, predominando o ru\'ido branco, por este motivo ouvimos o chiado em amplificadores de \'audio simples.
 
   \chapter{Resumo do projeto}
 
@@ -272,7 +273,7 @@
   \]
   ou seja,
   \[
-    {V_{\rm out}\over V_{\rm in}}=-{R_{13}+R_{14}\over R_{12}}={2047\over 1000}\approx 2,
+    \Big|{V_{\rm out}\over V_{\rm in}}\Big|={R_{13}+R_{14}\over R_{12}}={2047\over 1000}\approx 2,
     \label{ganho_IC3B}
   \]
   logo o ganho em \db\ \'e aproximadamente
@@ -331,19 +332,21 @@
 
   Os resistores $R_{32}$ e $R_{33}$ de $10\,\Omega$, servem para isolar IC5A e IC5B, previnindo que os sinais provindos das sa\'idas destes amplificadores interajam de forma destrutiva. 
 
-  Conforme mencionado anteriormente apenas um \ampop\ NE5532 consegue acionar uma carga de $500\,\Omega$ at\'e o limiar (limite) da fonte de tens\~ao sim\'etrica neste caso $\pm 18\,\rm V$. Portanto a sa\'ida ir\'a variar entre $\pm17\,\rm V$ aproximadamente. Em decorr\^encia disto o m\'odulo de sua corrente de sa\'ida \'e aproximadamente\footnote{Averiguar isto, pois as sa\'idas dos \ampop{s} possuem resistores de $1\,\Omega$.}
-  \[
-    I_{\rm out}={17\, V\over 500\,\Omega}=34\,\rm mA
-  \]
-  Como o est\'agio de pot\^encia \'e composto, sobretudo, de seguidores de tens\~ao em paralelo, segue da LKC (lei de Kirchhoff para correntes) que a corrente total de sa\'ida $I_{\rm T(out)}$ do est\'agio de pot\^encia \'e
-  \[
-    I_{\rm T(out)}=64\cdot34\,{\rm mA}=2{,}176\,\rm A
-  \]
-  o que resulta em uma pot\^encia em rms numa carga de $8\,\Omega$ de
-  \[
-    P_{\rm rms}=\Bigl({2{,}176\,{\rm A}\over\sqrt{2}}\Bigr)^2\cdot8\,\Omega\approx19\,{\rm W_{rms}}
-  \]
-  o que \'e pr\'oximo do valor requerido pelo amplificador, a saber, $15\,{\rm W_{rms}}$.
+  {\color{gray}%
+    Conforme mencionado anteriormente apenas um \ampop\ NE5532 consegue acionar uma carga de $500\,\Omega$ at\'e o limiar (limite) da fonte de tens\~ao sim\'etrica neste caso $\pm 18\,\rm V$. Portanto a sa\'ida ir\'a variar entre $\pm17\,\rm V$ aproximadamente. Em decorr\^encia disto o m\'odulo de sua corrente de sa\'ida \'e aproximadamente\footnote{Averiguar isto, pois as sa\'idas dos \ampop{s} possuem resistores de $1\,\Omega$.}
+    \[
+      I_{\rm out}={17\, V\over 500\,\Omega}=34\,\rm mA
+    \]
+    Como o est\'agio de pot\^encia \'e composto, sobretudo, de seguidores de tens\~ao em paralelo, segue da LKC (lei de Kirchhoff para correntes) que a corrente total de sa\'ida $I_{\rm T(out)}$ do est\'agio de pot\^encia \'e
+    \[
+      I_{\rm T(out)}=64\cdot34\,{\rm mA}=2{,}176\,\rm A
+    \]
+    o que resulta em uma pot\^encia em rms numa carga de $8\,\Omega$ de
+    \[
+      P_{\rm rms}=\Bigl({2{,}176\,{\rm A}\over\sqrt{2}}\Bigr)^2\cdot8\,\Omega\approx19\,{\rm W_{rms}}
+    \]
+    o que \'e pr\'oximo do valor requerido pelo amplificador, a saber, $15\,{\rm W_{rms}}$.
+  }
 
   \chapter{Simula\c c\~oes}
 
