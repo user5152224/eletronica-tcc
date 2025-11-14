@@ -185,12 +185,12 @@
   \[
     V_{\rm out}=A_d(V_+-V_-),
   \]
-  em que $A_d$ \'e o ganho (ou amplifica\c c\~ao) diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional \`a ent\~ao chamada {\bf ganho de modo-comum}, denotado por $A_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
+  em que $A_d$ \'e o ganho (ou amplifica\c c\~ao) diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional ao ent\~ao chamado {\bf ganho de modo-comum}, denotado por $A_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
   \[
     V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
     \label{saida_ampop_real}
   \]
-  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR. Ela \'e definida por
+  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR, ela \'e definida por
   \[
     \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
   \]
@@ -230,7 +230,7 @@
   \chapter{Resumo do projeto}
 
   \section{Sobre o projeto} 
-  A proposta do projeto \'e inovadora no sentido que ela prop\~oe criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo, usando uma combina\c c\~ao de v\'arios CIs NE5532. Cada um consiste dum amplificador operacional (\ampop) dual, precisamente, um {\it Dual In-Line Package} (DIP) com dois amplificadores operacionais embutidos. O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. 
+  A proposta do projeto \'e inovadora no sentido que ela prop\~oe criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo, usando uma combina\c c\~ao de v\'arios CIs NE5532. Cada um consiste dum amplificador operacional (\ampop) dual, precisamente um {\it Dual In-Line Package} (DIP) com dois amplificadores operacionais embutidos. O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. 
 
   A fim de suplantar o desafio t\'ecnico de alimentar um alto-falante de $8\ohm$ com uma pot\^encia aceit\'avel, faz-se o uso duma ponte ({\it Bridge}). Conectam-se dois amplificadores em cascata (s\'erie), resultando num aumento de duas vezes a tens\~ao e, consequentemente quadruplicando a pot\^encia do sinal, sobrepujando o limiar de pot\^encia dum \'unico amplificador. 
 
@@ -240,7 +240,7 @@
 
   O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Essencialmente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
 
-  \'E sabido que inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. No entanto, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
+  \'E sabido que, inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. No entanto, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
   \section{Um tour pelos designs}
   \subsection{A entrada desbalanceada}
 
@@ -248,12 +248,12 @@
   \begin{equation}
     \bigg|{R_2\|Z_{C_1}\over R_1+R_2\|Z_{C_1}}\bigg|\cdot V_{\rm in}=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|\cdot V_{\rm in}
   \end{equation}
-  em que $V_{\rm in}$ \'e a tens\~ao de entrada. Esta entrada \'e chamada de desbalanceada, pois est\'a mais sucet\'ivel \`a interfer\^encia eletromagn\'etica {\it Radio Frequency} (RF), por exemplo proveniente do uso cabos longos. Ela pode ser conectada diretamente ao est\'agio de amplifica\c c\~ao---tratado nas pr\'oximas subse\c c\~oes---atrav\'es de um jumper em JP1. 
+  em que $V_{\rm in}$ \'e a tens\~ao de entrada. Esta entrada \'e chamada de desbalanceada, pois est\'a mais suscet\'ivel \`a interfer\^encia eletromagn\'etica {\it Radio Frequency} (RF), por exemplo proveniente do uso cabos longos. Ela pode ser conectada diretamente ao est\'agio de amplifica\c c\~ao---tratado nas pr\'oximas subse\c c\~oes---por meior dum jumper em JP1. 
 
   \subsection{A entrada balanceada}
-  Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, ele tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, resultando assim num ru\'ido Jonhson menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
+  Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, resultando assim num ru\'ido Jonhson menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
   \subsection{O est\'agio de ganho}
-  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. Contudo, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD\footnote{Definir.} ({\it Total Harmonic Distortion}\/) seria significativo.
+  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa, distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. Contudo, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD\footnote{Definir.} ({\it Total Harmonic Distortion}\/) seria significativo.
 
   O primeiro est\'agio \'e formados pelos amplificadores IC1A e 1C1B, dando um ganho de $10.7\,\db$, as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ criando uma vantagem de $3\,\db$\footnote{Isto trata-se do SNR, conceito a ser definido.}, como no amplicador balanceado. O segundo est\'agio IC2A duplica a tens\~ao, pois\footnote{Refazer com an\'alise AC.} temos essencialmente
   \[
@@ -282,13 +282,13 @@
   \]
   Ele \'e usado no modo {\it shunt-feedback} para evitar a distor\c c\~ao de modo comum, que resultariam de sinais de altos n\'iveis. Ele tem uma sa\'ida do tipo `imped\^ancia-zero', com retroalimentac\~ao HF ({\it High Frequency}\/) via $C_8$ e LF ({\it Low Frequency}\/) via $R_{13}$. Desta maneira, o {\it crosstalk}\footnote{Definir.} \'e mantido no m\'inimo, enquanto mant\'em estabilidade com carga capacitiva\footnote{Determinar o significado disto.}
 
-  A sa\'ida em $K_3$ est\'a revertida em fase e pode ser usada para {\it Bridging}\footnote{Definir.}.
+  A sa\'ida em $K_3$ est\'a invertida em fase e pode ser usada para {\it Bridging}\footnote{Definir.}.
 
   IC3A \'e um est\'agio inversor de ganho unit\'ario que corrige a fase do sinal. A sa\'ida tamb\'em \'e do tipo `imped\^ancia-zero'.
 
   \subsection{O amplificador de pot\^encia}
 
-  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop{s}, logo, no total s\~ao 64 se\c c\~oes de \ampop{s} atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s, e voc\^e pode se perguntar: Qual o efeito que eles ter\~ao na imped\^ancia de sa\'ida do amplificador? Uma baixa imped\^ancia de sa\'ida \'e sempre uma coisa boa a se fazer, mas n\~ao por causa do ent\~ao chamado `fator de amortecimento' ({\it Damping-Factor}\/), o qual \'e altamente n\~ao significativo devido ao fato que a bobina do alto-falante sempre domina a resist\^encia do circuito. O `fator de amortecimento' \'e definido como a imped\^ancia da carga dividido pela imped\^ancia de sa\'ida do amplificador. N\'os temos 64 resistores de $1\ohm$ em paralelo, dando uma imped\^ancia total de $1\ohm/64=0.0156\,\ohm$. Isto nos d\'a o fator de amortecimento hipot\'etico de $8/0.0156=512$, o que \'e muito bom em quaisquer padr\~oes. Em compara\c c\~ao, o cabeamento para o alto-falante possui mais resist\^encia do que isso!
+  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop{s}, logo, no total s\~ao 64 se\c c\~oes de \ampop{s} atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s, e voc\^e pode se perguntar: Qual o efeito que eles ter\~ao na imped\^ancia de sa\'ida do amplificador? Uma baixa imped\^ancia de sa\'ida \'e sempre uma coisa boa a se fazer, mas n\~ao por causa do ent\~ao chamado `fator de amortecimento' ({\it Damping-Factor}\/), o qual \'e altamente n\~ao significativo devido ao fato que a bobina do alto-falante sempre predomina a resist\^encia do circuito. O `fator de amortecimento' \'e definido como a imped\^ancia da carga dividido pela imped\^ancia de sa\'ida do amplificador. N\'os temos 64 resistores de $1\ohm$ em paralelo, dando uma imped\^ancia total de $1\ohm/64=0.0156\,\ohm$. Isto nos d\'a o fator de amortecimento hipot\'etico de $8/0.0156=512$, o que \'e muito bom em quaisquer padr\~oes. Em compara\c c\~ao, o cabeamento para o alto-falante possui mais resist\^encia do que isso!
 
   A sa\'ida dos \ampop{s} podem ser soldados diretamente na placa, a fim de diminuir os custos e dar uma melhor condu\c c\~ao de calor do encapsulamento do \ampop\ \`as trilhas de cobre. Todavia o autor deste projeto decidiu usar soquetes de alta qualidade. Ter muitos \ampop{s} em paralelos pode ser um fardo para determinar falhas no circuito---se houver um \ampop\ ruim dentre os 32, ent\~ao provavelmente voc\^e ter\'a bastante trabalho para dessoldar e, para localizar o elemento defeituoso. 
 
@@ -328,7 +328,7 @@
 
    
 
-  Nota-se no esquem\'atico que s\~ao colocados em paralelo com a alimenta\c c\~ao sim\'etrica de cada CI, um capacitor de $100\,\rm pF$. Estes capacitores filtram ru\'idos de alta frequ\^encia da fonte de alimenta\c c\~ao, pois a qualidade do sinal de sa\'ida depende de uma alimenta\c c\~ao extremamente cristalina, i.e., sem muito ru\'ido. Tamb\'em fornecem corrente necess\'arias para os transientes, que s\~ao em geral pulsos de corrente instant\^anea requeridos pelos \ampop, a fim de suprir uma varia\c c\~ao abrupta e repentina na amplitude do sinal de entrada, e.g., em batidas.
+  Nota-se no esquem\'atico que s\~ao colocados em paralelo com a alimenta\c c\~ao sim\'etrica de cada CI, um capacitor de $100\,\rm pF$. Estes capacitores filtram ru\'idos de alta frequ\^encia da fonte de alimenta\c c\~ao, pois a qualidade do sinal de sa\'ida depende de uma alimenta\c c\~ao extremamente cristalina, i.e., sem muito ru\'ido. Tamb\'em fornecem corrente necess\'arias para os transientes, que s\~ao, em geral, pulsos de corrente instant\^anea requeridos pelos \ampop, a fim de suprir uma varia\c c\~ao abrupta e repentina na amplitude do sinal de entrada, e.g., em batidas.
 
   Os resistores $R_{32}$ e $R_{33}$ de $10\,\Omega$, servem para isolar IC5A e IC5B, previnindo que os sinais provindos das sa\'idas destes amplificadores interajam de forma destrutiva. 
 
@@ -350,7 +350,7 @@
 
   \chapter{Simula\c c\~oes}
 
-  Doravante, todos os diagramas de Bode dos subcircuitos que compoem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
+  Doravante, todos os diagramas de Bode dos subcircuitos que comp\~oem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
 
   \section{Entrada desbalanceada}
   Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
@@ -404,7 +404,7 @@
   \]
   logo, o quadrado do ganho \'e
   \[
-    \Bigl({V_{\rm out}\over V_{\rm in}}\Bigr)^2=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|^2={R_2^2\over z\overline{z}},
+    \Big|{V_{\rm out}\over V_{\rm in}}\Big|^2=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|^2={R_2^2\over z\overline{z}},
   \]
   em que
   \[
