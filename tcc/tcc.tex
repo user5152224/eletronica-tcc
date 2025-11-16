@@ -2,6 +2,7 @@
 \documentclass[12pt, a4paper, leqno, twoside]{book}
 
 \usepackage{%
+  circuitikz,
   fancyhdr,
   geometry,
   graphicx,
@@ -353,6 +354,24 @@
   Doravante, todos os diagramas de Bode dos subcircuitos que comp\~oem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
 
   \section{Entrada desbalanceada}
+  \begin{figure}[!h]
+    \centering
+    \begin{circuitikz}[line width=1]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \coordinate (K1) at (0,0);
+      \coordinate (GND) at (2*\dmh,-\dmv);
+      \draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+      \draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+      \draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
+      \draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      \draw (GND) to ++ (0,-.5) node[tground] {};
+    \end{circuitikz}
+    \caption{Esquem\'atico da entrada desbalanceada}
+  \end{figure}
   Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
   \begin{figure}[!h]
     \centering
