@@ -479,6 +479,39 @@
   \]
 
   \section{Est\'agio de ganho}
+  \begin{figure}[!h]
+    \centering
+    \begin{circuitikz}[line width=.7,scale=.7, rotate=90, transform shape]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \draw (0,0) to [C,o-] ++(2*\dmh,0) coordinate (C1) to [R, l_={$R_3(\rm47k)$},-] ++(0,-2*\dmv) to [short] ++(\dmh/2,0) coordinate (GND);
+
+      % IC1B
+      \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
+      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R,l={$R_6({\rm 910R})$}] (GND) to [short] ++(0,-.5) node [tground] {};
+      \draw (C2) to [short] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7 ({\rm 2k2})$}] (C2 -| IC1B.out) to [short] (IC1B.out) to [R, l_={$R_9$}] ++(2*\dmh,0); 
+      \draw (C3) to [short] ++ (0,-\dmv/2) coordinate (C4) to [C, l_={$C_4 ({\rm 33p})$}] (C4 -| IC1B.out) to [short] (C2 -| IC1B.out);
+
+
+      % IC2B
+      \draw (C1) to [short] ++(0,2*\dmv) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
+      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short] ++(0,-\dmv/5) to [R,l={$R_6({\rm 910R})$}] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
+      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_7 ({\rm 2k2})$}] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l_={$R_9$}] ++(2*\dmh,0); 
+      \draw (C6) to [short] ++ (0,-\dmv/3) coordinate (C7) to [C, l_={$C_4 ({\rm 33p})$}] (C7 -| IC1B.out) to [short] (C5 -| IC1B.out);
+
+      %\coordinate (K1) at (0,0);
+      %\coordinate (GND) at (2*\dmh,-\dmv);
+      %\draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+      %\draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+      %\draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
+      %\draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      %\draw (GND) to ++ (0,-.5) node[tground] {};
+    \end{circuitikz}
+    \caption{Esquem\'atico da entrada desbalanceada}
+  \end{figure}
   A seguir temos a simula\c c\~ao AC do est\'agio de ganho de $10\,\rm kHz$ a $100\,\rm MHz$:
   \begin{figure}[!h]
     \centering
