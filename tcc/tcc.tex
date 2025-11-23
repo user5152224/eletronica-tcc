@@ -356,7 +356,7 @@
   \section{Entrada desbalanceada}
   \begin{figure}[!ht]
     \centering
-    \begin{circuitikz}[line width=1]
+    \begin{circuitikz}[line width=.7]
       \ctikzset{
         european,
       }
@@ -366,9 +366,10 @@
       \coordinate (GND) at (2*\dmh,-\dmv);
       \draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
       \draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
-      \draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
-      \draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
-      \draw (GND) to ++ (0,-.5) node[tground] {};
+      \draw (K1) node [above=.2cm] {$K_1$} to [R, l=$R_1$, a={47R}, o-] (2*\dmh,0) to [C, l_={$C_1$}, a^={100p}, *-*] (GND);
+      \draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) to [R, l_=$R_2$, a^={220k}, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      \draw (C2) to [short, -o] ++(0.7*\dmh,0) node [right] {DESBAL} ;
+      \draw (GND) to ++ (0,-.3) node[tground] {};
     \end{circuitikz}
     \caption{Esquem\'atico da entrada desbalanceada.}
   \end{figure}
@@ -479,71 +480,12 @@
   \]
 
   \section{Est\'agio de ganho}
-  \begin{figure}[]
-    \centering
-    \begin{circuitikz}[line width=.7,scale=.7, rotate=90, transform shape]
-      \ctikzset{
-        european,
-      }
-      \def\dmh{1.5}
-      \def\dmv{3.6}
-      \draw (0,0) node [left] {\it IN} to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
-
-      % IC1B
-      \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
-      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R, text width=1cm, align=center, l={$R_6$ 910R}] (GND) to [short] ++(0,-.5) node [tground] {};
-      \draw (C2) to [short, *-] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7$ 2k2}, -*] (C2 -| IC1B.out) to [short, -*] (IC1B.out) to [R, l_={$R_9 ({\rm 10R})$}] ++(1.5*\dmh,0) coordinate (IC2ANIN); 
-      \draw (C3) to [short, *-] ++ (0,-\dmv/2) coordinate (C4) to [C, l_={$C_4 ({\rm 33p})$}] (C4 -| IC1B.out) to [short] (C2 -| IC1B.out);
-
-
-      % IC2B
-      \draw (C1) to [short, *-] ++(0,2*\dmv) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
-      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short] ++(0,-\dmv/5) to [R,l={$R_4({\rm 910R})$}] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
-      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_5 ({\rm 2k2})$}] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l_={$R_8 ({\rm 10R})$}] ++(1.5*\dmh,0) to [short, -*] (IC2ANIN); 
-      \draw (C6) to [short] ++ (0,-\dmv/3) coordinate (C7) to [C, l_={$C_3 ({\rm 33p})$}] (C7 -| IC1B.out) to [short] (C5 -| IC1B.out);
-
-      % IC2A
-      \draw (IC2ANIN) to [short] ++(1.5*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2A) {IC2A};
-      \draw (IC2A.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C8)  to [short] ++(0,-\dmv/5) to [R,l={$R_{10}({\rm 2k2})$}] (GND -| C8) to [short] ++(0,-.5) node [tground] {};
-      \draw (C8) to [short] ++(\dmh,0) coordinate (C9) to [R, l^={$R_{11} ({\rm 2k2})$}] (C8 -| IC2A.out) to [short] (IC2A.out); 
-      \draw (C9) to [short] ++ (0,-.415*\dmv) coordinate (C10) to [C, l_={$C_6 ({\rm 33p})$}] (C10 -| IC2A.out) to [short] (C9 -| IC2A.out);
-
-      % IC2B
-      \draw (IC2A.out) to [short] ++ (\dmh/2,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
-      \draw (IC2B.-) to [short] ++(0,-\dmv/3) coordinate (C11) to [short] (C11 -| IC2B.out) to [short] (IC2B.out) to [R, l_={$R_{12} (1k)$}, *-] ++ (1.5*\dmh,0) coordinate (IC3BINV);
-
-      % IC3B
-      \draw (IC3BINV) node [op amp, anchor=-] (IC3B) {IC3B};
-      \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
-      \draw (IC3B.out) to [short] ++ (0,\dmv/2) coordinate (C12) to [C, l_={$C_8 ({\rm 33p})$}] (C12 -| IC3BINV);
-      \draw (IC3B.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}] (C13 -| IC3BINV) to [short] (IC3BINV);
-      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$\\\it BRIDGE};
-      \draw (C14) to [short] ++ (0, \dmv);
-
-      % IC3A
-      \draw (IC3BINV) ++ (0,4.5*\dmh) coordinate (IC3AINV) node [op amp, anchor=-] (IC3A) {IC3A};
-      \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
-      \draw (IC3A.out) to [short] ++ (0,\dmv/2) coordinate (C15) to [C, l_={$C_8 ({\rm 33p})$}] (C15 -| IC3AINV);
-      \draw (IC3A.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{13}$}] (C15 -| IC3AINV) to [short] (IC3AINV);
-      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R,  text width=2cm, align=center, l_={$R_{15}$\\\rm 2k2}] (IC3AINV);
-      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\\it PARALLEL}; 
-
-
-      %\coordinate (K1) at (0,0);
-      %\coordinate (GND) at (2*\dmh,-\dmv);
-      %\draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
-      %\draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
-      %\draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
-      %\draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
-      %\draw (GND) to ++ (0,-.5) node[tground] {};
-    \end{circuitikz}
-    \caption{Esquem\'atico do est\'agio de ganho.}
-  \end{figure}
   A seguir temos a simula\c c\~ao AC do est\'agio de ganho de $10\,\rm kHz$ a $100\,\rm MHz$:
-  \begin{figure}[!ht]
+  \begin{figure}[!h]
     \centering
     \begin{tikzpicture}[scale=1]
       \def\mw{1.7cm}
+      \def\prop{1.2}
       \begin{axis}[
         domain=10e5:10e8, 
         grid=both,
@@ -555,8 +497,8 @@
         xmode=log,
         ylabel={Amplitude em dB},
         ytick distance=20,
-        width=12cm,
-        height=7cm,
+        width=\prop*12cm,
+        height=\prop*7cm,
       ]
 
         \addplot [
@@ -609,10 +551,75 @@
     \end{tikzpicture}
     \caption{An\'alise AC da sa\'ida do est\'agio de ganho.}
   \end{figure}
+  \begin{figure}[]
+    \centering
+    \begin{circuitikz}[line width=.7, scale=.8, rotate=90, transform shape]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \draw (0,0) node [left] {\it IN} to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
+
+      % IC1B
+      \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
+      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R, text width=1cm, align=center, l={$R_6$ 910R}] (GND) to [short] ++(0,-.5) node [tground] {};
+      \draw (C2) to [short, *-] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7$}, a={2k2}, -*] (C2 -| IC1B.out) to [short, -*] (IC1B.out) to [R, l={$R_9$}, a={10R}] ++(1.5*\dmh,0) coordinate (IC2ANIN); 
+      \draw (C3) to [short, *-] ++ (0,-.6*\dmv) coordinate (C4) to [C, l={$C_4$}, a={33p}] (C4 -| IC1B.out) to [short] (C2 -| IC1B.out);
+
+      % IC2B
+      \draw (C1) to [short, *-] ++(0,2*\dmv) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
+      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short] ++(0,-\dmv/5) to [R, l^={$R_4$\\ 910R}, text width=1cm, align=center] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
+      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_5$}, a={2k2}] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_8$}, a={10R}] ++(1.5*\dmh,0) to [short, -*] (IC2ANIN); 
+      \draw (C6) to [short] ++ (0,-.6*\dmv) coordinate (C7) to [C, l={$C_3$}, a={33p}] (C7 -| IC1B.out) to [short] (C5 -| IC1B.out);
+
+      % IC2A
+      \draw (IC2ANIN) to [short] ++(1.5*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2A) {IC2A};
+      \draw (IC2A.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C8)  to [short] ++(0,-\dmv/5) to [R,l_={$R_{10}$}, a^={2k2}] (GND -| C8) to [short] ++(0,-.5) node [tground] {};
+      \draw (C8) to [short] ++(\dmh,0) coordinate (C9) to [R, l^={$R_{11}$}, a={2k2}] (C8 -| IC2A.out) to [short] (IC2A.out); 
+      \draw (C9) to [short] ++ (0,-.6*\dmv) coordinate (C10) to [C, l={$C_6$}, a={33p}] (C10 -| IC2A.out) to [short] (C9 -| IC2A.out);
+
+      % IC2B
+      \draw (IC2A.out) to [short] ++ (\dmh/2,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
+      \draw (IC2B.-) to [short] ++(0,-\dmv/3) coordinate (C11) to [short] (C11 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_{12}$}, a={1k}, *-] ++ (1.5*\dmh,0) coordinate (IC3BINV);
+
+      % IC3B
+      \draw (IC3BINV) node [op amp, anchor=-] (IC3B) {IC3B};
+      \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
+      \draw (IC3B.out) to [short] ++ (0,.6*\dmv) coordinate (C12) to [C, l_={$C_8$}, a^={33p}] (C12 -| IC3BINV);
+      \draw (IC3B.out) to [R, l={$R_{14}$}, a={47R}] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}, a^={2k}] (C13 -| IC3BINV) to [short] (IC3BINV);
+      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$\\\it BRIDGE};
+      \draw (C14) to [short] ++ (0, \dmv);
+
+      % IC3A
+      \draw (IC3BINV) ++ (0,4.5*\dmh) coordinate (IC3AINV) node [op amp, anchor=-] (IC3A) {IC3A};
+      \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
+      \draw (IC3A.out) to [short] ++ (0,.6*\dmv) coordinate (C15) to [C, l_={$C_9$}, a^={33p}] (C15 -| IC3AINV);
+      \draw (IC3A.out) to [R, l={$R_{17}$}, a={47R}] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{16}$}, a^={2k2}] (C15 -| IC3AINV) to [short] (IC3AINV);
+      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R, l^={$R_{15}$}, a_={2k2}] (IC3AINV);
+      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\\it PARALLEL}; 
+
+
+      %\coordinate (K1) at (0,0);
+      %\coordinate (GND) at (2*\dmh,-\dmv);
+      %\draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+      %\draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+      %\draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
+      %\draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      %\draw (GND) to ++ (0,-.5) node[tground] {};
+    \end{circuitikz}
+    \caption{Esquem\'atico do est\'agio de ganho.}
+  \end{figure}
+
 
   \begin{thebibliography}{}
 %    \bibitem{DS}
 %    DEEPSEEK AI. {\it DeepSeek Chat} (modelo de linguagem). Vers\~ao 2025. Xangai: DeepSeek AI, 2024. Dispon\'ivel em: \url{https://chat.deepseek.com/}. Acesso em: 28 de maio 2024.
+    \bibitem{CircuiTikz}
+    REDAELLI, Massimo A.; LINDNER, Stefan; ERHARDT, Stefan; GIANNETTI, Romano. {\it CircuiTikZ: version 1.8.2. 2025.} Dispon\'ivel em: \url{https://br.mirrors.cicku.me/ctan/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf}. Acesso em: 23 de novembro 2025.
+    \bibitem{PGFTikz}
+    TANTAU, Till. {\it The TikZ and PGF Packages: Manual for version 3.1.11a.}~Lübeck: Ins\-titut für Theoretische Informatik, Universität zu Lübeck, 29 ago. 2025. Disponível em: \url{https://br.mirrors.cicku.me/ctan/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}. Acesso em: 23 de novembro 2025.
+
     \bibitem{HH}
     HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
 %    \bibitem{Malvino}
