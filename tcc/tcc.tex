@@ -164,7 +164,7 @@
 
   \subsection{Offset de um \ampop}
   O {\it offset} de um aplificador \'e o desvio/erro de tens\~ao que um \ampop\ real tem em rela\c c\~ao a um \ampop\ ideal equivalente. Por exemplo, ao se injetar nas entradas um potencial correspondente ao GND, \'e esperado que a tens\~ao de sa\'ida seja nula relativa ao GND. Entretanto, em um \ampop\ real a tens\~ao de sa\'ida n\~ao \'e em geral $0\,$V. A diferen\c ca entre o valor esperado idealmente e o valor real \'e o que chamamos de {\it offset}.
-  \begin{figure}[!h]
+  \begin{figure}[!ht]
     \centering
   
       \begin{tikzpicture}[scale=.5]
@@ -354,7 +354,7 @@
   Doravante, todos os diagramas de Bode dos subcircuitos que comp\~oem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
 
   \section{Entrada desbalanceada}
-  \begin{figure}[!h]
+  \begin{figure}[!ht]
     \centering
     \begin{circuitikz}[line width=1]
       \ctikzset{
@@ -373,7 +373,7 @@
     \caption{Esquem\'atico da entrada desbalanceada.}
   \end{figure}
   Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
-  \begin{figure}[!h]
+  \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}[scale=1]
       \begin{axis}[
@@ -487,7 +487,7 @@
       }
       \def\dmh{1.5}
       \def\dmv{3.6}
-      \draw (0,0) to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
+      \draw (0,0) node [left] {\it IN} to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
 
       % IC1B
       \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
@@ -517,7 +517,7 @@
       \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
       \draw (IC3B.out) to [short] ++ (0,\dmv/2) coordinate (C12) to [C, l_={$C_8 ({\rm 33p})$}] (C12 -| IC3BINV);
       \draw (IC3B.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}] (C13 -| IC3BINV) to [short] (IC3BINV);
-      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$ (BRIDGE)};
+      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$\\\it BRIDGE};
       \draw (C14) to [short] ++ (0, \dmv);
 
       % IC3A
@@ -525,8 +525,8 @@
       \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
       \draw (IC3A.out) to [short] ++ (0,\dmv/2) coordinate (C15) to [C, l_={$C_8 ({\rm 33p})$}] (C15 -| IC3AINV);
       \draw (IC3A.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{13}$}] (C15 -| IC3AINV) to [short] (IC3AINV);
-      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-4*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [short] (IC3AINV);
-      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\ (PARALLEL)}; 
+      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R,  text width=2cm, align=center, l_={$R_{15}$\\\rm 2k2}] (IC3AINV);
+      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\\it PARALLEL}; 
 
 
       %\coordinate (K1) at (0,0);
@@ -540,7 +540,7 @@
     \caption{Esquem\'atico do est\'agio de ganho.}
   \end{figure}
   A seguir temos a simula\c c\~ao AC do est\'agio de ganho de $10\,\rm kHz$ a $100\,\rm MHz$:
-  \begin{figure}[!h]
+  \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}[scale=1]
       \def\mw{1.7cm}
