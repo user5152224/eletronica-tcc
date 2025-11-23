@@ -479,20 +479,20 @@
   \]
 
   \section{Est\'agio de ganho}
-  \begin{figure}[!h]
+  \begin{figure}[]
     \centering
-    \begin{circuitikz}[line width=1,scale=.9, rotate=90, transform shape]
+    \begin{circuitikz}[line width=.7,scale=.7, rotate=90, transform shape]
       \ctikzset{
         european,
       }
       \def\dmh{1.5}
       \def\dmv{3.6}
-      \draw (0,0) to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, l_={$R_3(\rm47k)$},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
+      \draw (0,0) to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
 
       % IC1B
       \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
-      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R,l={$R_6({\rm 910R})$}] (GND) to [short] ++(0,-.5) node [tground] {};
-      \draw (C2) to [short, *-] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7 ({\rm 2k2})$}, -*] (C2 -| IC1B.out) to [short, -*] (IC1B.out) to [R, l_={$R_9 ({\rm 10R})$}] ++(1.5*\dmh,0) coordinate (IC2ANIN); 
+      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R, text width=1cm, align=center, l={$R_6$ 910R}] (GND) to [short] ++(0,-.5) node [tground] {};
+      \draw (C2) to [short, *-] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7$ 2k2}, -*] (C2 -| IC1B.out) to [short, -*] (IC1B.out) to [R, l_={$R_9 ({\rm 10R})$}] ++(1.5*\dmh,0) coordinate (IC2ANIN); 
       \draw (C3) to [short, *-] ++ (0,-\dmv/2) coordinate (C4) to [C, l_={$C_4 ({\rm 33p})$}] (C4 -| IC1B.out) to [short] (C2 -| IC1B.out);
 
 
@@ -515,7 +515,18 @@
       % IC3B
       \draw (IC3BINV) node [op amp, anchor=-] (IC3B) {IC3B};
       \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
-      \draw (IC3B.out) to [short] ++ (0,\dmv/2) coordinate (C12) to [C, l_={$C_8 ({\rm 33p})$}] (C12 -| IC3BINV) to [short, -*] (IC3BINV);
+      \draw (IC3B.out) to [short] ++ (0,\dmv/2) coordinate (C12) to [C, l_={$C_8 ({\rm 33p})$}] (C12 -| IC3BINV);
+      \draw (IC3B.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}] (C13 -| IC3BINV) to [short] (IC3BINV);
+      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$ (BRIDGE)};
+      \draw (C14) to [short] ++ (0, \dmv);
+
+      % IC3A
+      \draw (IC3BINV) ++ (0,4.5*\dmh) coordinate (IC3AINV) node [op amp, anchor=-] (IC3A) {IC3A};
+      \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
+      \draw (IC3A.out) to [short] ++ (0,\dmv/2) coordinate (C15) to [C, l_={$C_8 ({\rm 33p})$}] (C15 -| IC3AINV);
+      \draw (IC3A.out) to [R, l_={$R_{14}$}] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{13}$}] (C15 -| IC3AINV) to [short] (IC3AINV);
+      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-4*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [short] (IC3AINV);
+      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\ (PARALLEL)}; 
 
 
       %\coordinate (K1) at (0,0);
