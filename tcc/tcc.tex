@@ -569,34 +569,34 @@
 
       % IC2B
       \draw (C1) to [short, *-] ++(0,2*\dmv) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
-      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short] ++(0,-\dmv/5) to [R, l^={$R_4$\\ 910R}, text width=1cm, align=center] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
-      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_5$}, a={2k2}] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_8$}, a={10R}] ++(1.5*\dmh,0) to [short, -*] (IC2ANIN); 
+      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short, *-] ++(0,-\dmv/5) to [R, l^={$R_4$\\ 910R}, text width=1cm, align=center] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
+      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_5$}, a={2k2}, *-*] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_8$}, a={10R}, *-] ++(1.5*\dmh,0) to [short, -*] (IC2ANIN); 
       \draw (C6) to [short] ++ (0,-.6*\dmv) coordinate (C7) to [C, l={$C_3$}, a={33p}] (C7 -| IC1B.out) to [short] (C5 -| IC1B.out);
 
       % IC2A
       \draw (IC2ANIN) to [short] ++(1.5*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2A) {IC2A};
       \draw (IC2A.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C8)  to [short] ++(0,-\dmv/5) to [R,l_={$R_{10}$}, a^={2k2}] (GND -| C8) to [short] ++(0,-.5) node [tground] {};
-      \draw (C8) to [short] ++(\dmh,0) coordinate (C9) to [R, l^={$R_{11}$}, a={2k2}] (C8 -| IC2A.out) to [short] (IC2A.out); 
+      \draw (C8) to [short, *-] ++(\dmh,0) coordinate (C9) to [R, l^={$R_{11}$}, a={2k2}, *-*] (C8 -| IC2A.out) to [short, -*] (IC2A.out); 
       \draw (C9) to [short] ++ (0,-.6*\dmv) coordinate (C10) to [C, l={$C_6$}, a={33p}] (C10 -| IC2A.out) to [short] (C9 -| IC2A.out);
 
       % IC2B
       \draw (IC2A.out) to [short] ++ (\dmh/2,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
-      \draw (IC2B.-) to [short] ++(0,-\dmv/3) coordinate (C11) to [short] (C11 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_{12}$}, a={1k}, *-] ++ (1.5*\dmh,0) coordinate (IC3BINV);
+      \draw (IC2B.-) to [short] ++(0,-\dmv/3) coordinate (C11) to [short] (C11 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_{12}$}, a={1k}, *-*] ++ (1.5*\dmh,0) coordinate (IC3BINV);
 
       % IC3B
       \draw (IC3BINV) node [op amp, anchor=-] (IC3B) {IC3B};
       \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
-      \draw (IC3B.out) to [short] ++ (0,.6*\dmv) coordinate (C12) to [C, l_={$C_8$}, a^={33p}] (C12 -| IC3BINV);
-      \draw (IC3B.out) to [R, l={$R_{14}$}, a={47R}] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}, a^={2k}] (C13 -| IC3BINV) to [short] (IC3BINV);
+      \draw (IC3B.out) to [short] ++ (0,.6*\dmv) coordinate (C12) to [C, l_={$C_8$}, a^={33p}, -*] (C12 -| IC3BINV);
+      \draw (IC3B.out) to [R, l={$R_{14}$}, a={47R}, *-*] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}, a^={2k}, *-] (C13 -| IC3BINV) to [short] (IC3BINV);
       \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$\\\it BRIDGE};
       \draw (C14) to [short] ++ (0, \dmv);
 
       % IC3A
       \draw (IC3BINV) ++ (0,4.5*\dmh) coordinate (IC3AINV) node [op amp, anchor=-] (IC3A) {IC3A};
       \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
-      \draw (IC3A.out) to [short] ++ (0,.6*\dmv) coordinate (C15) to [C, l_={$C_9$}, a^={33p}] (C15 -| IC3AINV);
-      \draw (IC3A.out) to [R, l={$R_{17}$}, a={47R}] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{16}$}, a^={2k2}] (C15 -| IC3AINV) to [short] (IC3AINV);
-      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R, l^={$R_{15}$}, a_={2k2}] (IC3AINV);
+      \draw (IC3A.out) to [short] ++ (0,.6*\dmv) coordinate (C15) to [C, l_={$C_9$}, a^={33p}, -*] (C15 -| IC3AINV);
+      \draw (IC3A.out) to [R, l={$R_{17}$}, a={47R}, *-*] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{16}$}, a^={2k2}] (C15 -| IC3AINV) to [short] (IC3AINV);
+      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R, l^={$R_{15}$}, a_={2k2}, -*] (IC3AINV);
       \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\\it PARALLEL}; 
 
 
