@@ -559,7 +559,7 @@
       }
       \def\dmh{1.5}
       \def\dmv{3.6}
-      \draw (0,0) node [left] {\it IN} to [C,o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
+      \draw (0,0) node [left] {\it IN} to [C, l={$C_2$}, a={2u2}, o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
 
       % IC1B
       \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
