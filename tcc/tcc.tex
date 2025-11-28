@@ -21,6 +21,8 @@
 % Sugerido por pelo pacote pgfplots
 \pgfplotsset{compat=1.18}
 
+\usetikzlibrary{math}
+
 % Espaçamento de letra para o cabeçalho dos capítulos
 \usepackage[letterspace=300]{microtype}
 
@@ -610,6 +612,20 @@
     \end{circuitikz}
     \caption{Esquem\'atico do est\'agio de ganho.}
   \end{figure}
+
+%  \begin{figure}
+%    \begin{circuitikz}[scale=.9, transform shape]
+%      \ctikzset{
+%        european,
+%      }
+%      \def\dmh{1.5}
+%      \def\dmv{3.6}
+%     \foreach \y in {0,...,7} {
+%       \draw (0,\y*.8*\dmv) to [short] ++(\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y) {IC\y};
+%       \draw (IC\y.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y.out) to [short, -*] (IC\y.out) to [R, l={R}, a={1R}] ++(1.5*\dmh,0) to [short] ++ (0,-.5*\dmv);
+%     }
+%    \end{circuitikz}
+%  \end{figure}
 
 
   \begin{thebibliography}{}
