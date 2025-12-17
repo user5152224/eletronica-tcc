@@ -1,0 +1,650 @@
+%!latex
+\documentclass[12pt, a4paper, leqno, twoside]{book}
+
+\usepackage{%
+  circuitikz,
+  fancyhdr,
+  geometry,
+  graphicx,
+  hyperref,
+  newtxtext,
+  newtxmath,
+  pgfplots,
+  setspace,
+  titlesec,
+  tikz,
+  xcolor,
+}
+
+\usepackage[brazil]{babel}
+
+% Sugerido por pelo pacote pgfplots
+\pgfplotsset{compat=1.18}
+
+\usetikzlibrary{math}
+
+% Espaçamento de letra para o cabeçalho dos capítulos
+\usepackage[letterspace=300]{microtype}
+
+% Formatação do título dos capítulos
+\titleformat{\chapter}[display]
+{}%
+{
+   \centering\fontsize{80pt}{80pt}%
+   {\selectfont\thechapter}
+}%
+{1em}% 
+{\centering\scshape\lsstyle\MakeUppercase}%
+[]
+
+% Formatação do título das se\c c\~oes e subseções
+\titleformat{\section}{\centering\large\scshape}{\thesection}{1em}{}[]
+\titleformat{\subsection}{\centering\scshape}{\thesubsection}{1em}{}[]
+
+% Estilo dos cabeçalhos das páginas
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headrulewidth}{0ex}
+\fancypagestyle{est}{%
+  \def\fontface{\bf}
+  \fancyhf{}
+  \fancyhead[CE]{\fontface\sc\leftmark}
+  \fancyhead[CO]{\fontface\sc\rightmark}
+  \fancyhead[LE,RO]{\fontface\thepage}
+  \setlength{\headheight}{16pt}
+  \addtolength{\topmargin}{-1pt}
+
+}
+
+% Numeração dos capítulos em algarismos romanos
+\def\theHchapter{\arabic{chapter}\thechapter}
+%\def\thechapter{\Roman{chapter}}
+
+% Remover páginas em branco
+\let\cleardoublepage=\clearpage
+
+% Geometria da página
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+
+% Modificar o estilo da numeração das notas de rodapé
+\renewcommand{\thefootnote}{\bfseries\arabic{footnote}}
+
+% Definições gerais
+\def\tpfc{\scshape}
+
+\def\localData{%
+  \parbox[c][0cm][c]{3.5cm}{
+    \sc
+    Jo\~ao Pessoa\hfill -\hfill PB\\
+    \footnotesize
+    \today
+  }
+}
+
+\def\parteSuperior{
+  \parbox[c][0cm][c]{10cm}{
+    {\scshape\scriptsize%
+      {INSTITUTO\hfill FEDERAL\hfill DE\hfill EDUCA\c C\~AO,\hfill CI\^ENCIA\hfill E\hfill TECNOLOGIA DA PARA\'IBA}\\
+      {
+        \fontsize{12}{12}\selectfont
+        {\noindent CURSO\hfill T\'ECNICO\hfill SUBSEQUENTE\hfill EM\hfill ELETR\^ONICA}\\
+        \large
+        {\noindent TRABALHO\hfill DE\hfill CONCLUS\~AO\hfill DE\hfill CURSO}\\
+      }
+    }
+  }
+  \vfill 
+  {\lsstyle\Large\scshape%
+    PROJETO }
+  \vskip .5cm
+  \textit{por}
+  \vskip .5cm
+  {\tpfc Harllen Ara\'ujo de Sena}
+  \vskip .15cm
+  {\it e}
+  \vskip .15cm
+  {\tpfc Henrique Cirilo Costa}
+  \vskip .5cm
+  \textit{orientado pelo}
+  \vskip .5cm
+  {\tpfc Prof. Dr. C\'icero Alisson dos Santos}
+  \vskip .5cm
+}
+
+\def\ohm{\,\Omega}
+\def\ampop{amp-op}
+\def\db{{\rm dB}}
+\def\cmrr{{\rm CMRR}}
+
+\def\[{\begin{equation}}
+\def\]{\end{equation}}
+
+\begin{document}
+
+  % Remover a capa da contagem de páginas.
+  \pagenumbering{gobble}
+
+  \pagestyle{empty}
+  \begin{center}
+    \parteSuperior
+    \vfill 
+    \localData
+  \end{center} 
+  \newpage
+
+  % Começar a contagem de páginas.
+  \pagenumbering{arabic}
+
+  \begin{center}
+    \parteSuperior
+    \vskip 2cm
+    \hfill
+    \parbox[c][0cm][c]{7.7cm}{
+      Trabalho de conclus\~ao de curso apresentado ao IFPB.
+    }
+    \vfill 
+    \localData
+  \end{center} 
+
+  % Espaçamento entre linhas.
+  \setstretch{1.5}
+
+  \tableofcontents
+
+  % Remover paginação da tabela de conteúdos
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+  \newpage
+  \singlespacing
+  \pagestyle{est}
+
+  \chapter*{Introdu\c c\~ao}
+
+  \chapter{Preliminares}
+  
+  \section{Amplificadores Operacionais}
+
+  \subsection{Offset de um \ampop}
+  O {\it offset} de um aplificador \'e o desvio/erro de tens\~ao que um \ampop\ real tem em rela\c c\~ao a um \ampop\ ideal equivalente. Por exemplo, ao se injetar nas entradas um potencial correspondente ao GND, \'e esperado que a tens\~ao de sa\'ida seja nula relativa ao GND. Entretanto, em um \ampop\ real a tens\~ao de sa\'ida n\~ao \'e em geral $0\,$V. A diferen\c ca entre o valor esperado idealmente e o valor real \'e o que chamamos de {\it offset}.
+  \begin{figure}[!ht]
+    \centering
+  
+      \begin{tikzpicture}[scale=.5]
+        \def\w{2*pi}
+        \def\z{-5.2}
+        \draw (-2*pi,0) -- (\w,0);
+        \draw (0,\z) -- (0,2*pi);
+        \draw[step=1,help lines] (-2*pi,-5.2) grid (\w,2*pi);
+        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)});
+        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1});
+        \node at (0,0) [fill=white, rounded corners, radius=5pt] {GND};
+    \end{tikzpicture}
+    \caption{Exemplo de um sinal sem e com {\it offset} de $1\rm V$.}
+  \end{figure}
+
+
+  \subsection{Ganho de modo-comum em um \ampop\ diferencial}
+  Em um \ampop\ diferencial ideal a tens\~ao de sa\'ida \'e dada pela lei
+  \[
+    V_{\rm out}=A_d(V_+-V_-),
+  \]
+  em que $A_d$ \'e o ganho (ou amplifica\c c\~ao) diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional ao ent\~ao chamado {\bf ganho de modo-comum}, denotado por $A_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
+  \[
+    V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
+    \label{saida_ampop_real}
+  \]
+  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[\footnote{Adicionar um diagrama explicativo.}. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR, ela \'e definida por
+  \[
+    \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
+  \]
+  Tamb\'em \'e comum v\^e-la expressa em \db
+  \[
+    \cmrr_\db=20\cdot\log_{10}\Bigl|{A_d\over A_c}\Bigr|\;\db.
+    \label{cmrr_db}
+  \]
+  Em conformidade, quanto maior a CMRR, melhor ser\'a o amplificador diferencial. Em vista de (\ref{cmrr_db}) um \ampop\ diferencial ideal tem $\cmrr=\infty$. Desta maneira, os projetistas, com a finalidade de obter a melhor qualidade sonora, isto \'e, menor depend\^encia dos ru\'idos correlacionados, ter\~ao de maximizar o CMRR. 
+  \section{Ru\'idos}
+  \subsection{Ru\'ido Johnson (Nyquist)}
+  \'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin 
+  \[ 
+    T(\tau)\,{\rm K}=(\tau+273)\,^\circ{\rm C}
+  \]
+  \'e na realidade dada pela express\~ao:
+  \[
+    v_{\rm n}=\sqrt{4kBRT}\quad{\rm V_{rms}},
+  \]
+  em que 
+  \[
+    k=1,380649\times10^{-23}\,{\rm J}\cdot{\rm K}^{-1}
+  \]
+  \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
+
+  Ao posicionar um resistor de resist\^encia $R$ na entrada de um bom amplificador de \'audio, digamos, com imped\^ancia de entrada $Z_{\rm in}$, a tens\~ao de ru\'ido $V_{\rm n}$ efetivamente vista pelo amplificador \'e dada pelo divisor de tens\~ao
+  \[
+    V_{\rm n}=v_{\rm n}\cdot\Bigl|{Z_{\rm in}\over Z_{\rm in}+R}\Bigr|.
+    \label{tens_rui}
+  \]
+  Em um bom amplificador de \'audio $|Z_{in}|\gg R$, pois em geral possui uma imped\^ancia muito alta da ordem de ${\rm M}\Omega$, ent\~ao de (\ref{tens_rui}) temos
+  \[
+    V_{\rm n}^2=v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2+2\Re(Z_{\rm in})R+R^2}\approx v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2}=v_{\rm n}^2,
+  \]
+  logo $V_{\rm n}=v_{\rm n}$, i.e., a tens\~ao de ru\'ido de entrada vista pelo amplificador \'e precipuamente $v_{\rm n}$, a tens\~ao de ru\'ido de circuito aberto do resistor. \'E por este motivo que \'e t\~ao importante reduzir o ru\'ido Johnson (Nyquist), antes do sinal entrar no ampificador. Desta maneira, o ru\'ido em conjunto com o sinal s\~ao concomitamente amplificados, caso o ru\'ido seja significativo o sinal \'e degradado, predominando o ru\'ido branco, por este motivo ouvimos o chiado em amplificadores de \'audio simples.
+
+  \chapter{Resumo do projeto}
+
+  \section{Sobre o projeto} 
+  A proposta do projeto \'e inovadora no sentido que ela prop\~oe criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo, usando uma combina\c c\~ao de v\'arios CIs NE5532. Cada um consiste dum amplificador operacional (\ampop) dual, precisamente um {\it Dual In-Line Package} (DIP) com dois amplificadores operacionais embutidos. O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. 
+
+  A fim de suplantar o desafio t\'ecnico de alimentar um alto-falante de $8\ohm$ com uma pot\^encia aceit\'avel, faz-se o uso duma ponte ({\it Bridge}). Conectam-se dois amplificadores em cascata (s\'erie), resultando num aumento de duas vezes a tens\~ao e, consequentemente quadruplicando a pot\^encia do sinal, sobrepujando o limiar de pot\^encia dum \'unico amplificador. 
+
+  Um outro fator preponderante \'e o limite da corrente de sa\'ida de cada \ampop, que por sua vez \'e estipulado para evitar sua sobrecarga. Segundo o pr\'oprio autor do projeto, o NE5532 consegue acionar uma carga de $500\ohm$\footnote{Creio que este par\^ametro \'e dependente do fabricante.} at\'e o limiar da tens\~ao de sa\'ida do \ampop. Entretanto, \'e recomend\'avel usar cargas mais ``leves'', isto \'e, cargas com resist\^encias maiores. 
+
+  O projeto foi dimensionado para alimentar um alto-falante de $8\ohm$, caso o de $4\ohm$ seja requerido, ser\~ao necess\'arios duas vezes mais \ampop{s}, para fornecer o dobro de corrente demandada pela carga de $4\ohm$ e, o mesmo se aplica ao modo de opera\c c\~ao {\it Bridged\/}\footnote{Neste modo, a carga, a saber, o alto-falante, receber\'a duas tens\~oes invertidas em fase, isto por sua vez resultar\'a na duplica\c c\~ao da tens\~ao de sa\'ida e {\it a fortiori} na quadruplica\c c\~ao da pot\^encia.}. 
+
+  O sistema foi desenvolvido de maneira modular, para abarcar os modos {\it Single-Ended\/}\footnote{A carga ser\'a conectada ao GND e a tens\~ao de sa\'ida.} e {\it Bridged}. Ademais, devido \`a sua modularidade \'e poss\'ivel construir um amplificador est\'ereo\footnote{Essencialmente, a configura\c c\~ao est\'ereo \'e constitu\'ida de dois canais um esquerdo ({\bf L}{\it eft}) e um direito ({\bf R}{\it ight}).} com apenas tr\^es PCIs.
+
+  \'E sabido que, inerentemente os \ampop{s} possuem prote\c c\~ao contra sobrecarga. No entanto, rel\'es de sa\'ida s\~ao usados para evitar o {\it On-Off Muting} causador dos efeitos indesejados ao se ligar um sistema de \'audio, e.g., os estalos ({\it pops}); e para evitar falhas DC, i.e., evitar que o sistema forneça um sinal DC intermitente ao alto-falante, precavendo assim, a degenera\c c\~ao da bobina por aquecimento\footnote{Efeito Joule.} e do sistema de suspens\~ao do cone por deforma\c c\~ao cont\'inua. 
+  \section{Um tour pelos designs}
+  \subsection{A entrada desbalanceada}
+
+  Este est\'agio consiste de um filtro RF, neste caso um filtro passa-baixas, pois a tens\~ao de sa\'ida \'e 
+  \begin{equation}
+    \bigg|{R_2\|Z_{C_1}\over R_1+R_2\|Z_{C_1}}\bigg|\cdot V_{\rm in}=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|\cdot V_{\rm in}
+  \end{equation}
+  em que $V_{\rm in}$ \'e a tens\~ao de entrada. Esta entrada \'e chamada de desbalanceada, pois est\'a mais suscet\'ivel \`a interfer\^encia eletromagn\'etica {\it Radio Frequency} (RF), por exemplo proveniente do uso cabos longos. Ela pode ser conectada diretamente ao est\'agio de amplifica\c c\~ao---tratado nas pr\'oximas subse\c c\~oes---por meior dum jumper em JP1. 
+
+  \subsection{A entrada balanceada}
+  Um est\'agio convencional \'e constru\'ido com quatro resistores de $10\,{\rm k}\Omega$ e um \'unico \ampop\ 5532, tem uma performace de ru\'ido pior que uma entrada desbalanceada simples. Al\'em disso, o ru\'ido \'e ainda pior que a maioria dos amplificadores de pot\^encia. O amplificador balanceado soluciona este problema parcialmente. Trata-se dum est\'agio amplificador balanceado duplo ({\it Dual Balanced Stage Amplifier}) compreendendo aos \ampop{s}\ IC5A e IC5B, que cancela parcialmente ru\'ido n\~ao correlacionado---ru\'ido aleat\'orio sem rela\c c\~ao aos dois \ampop{s}---dando uma redu\c c\~ao de ru\'ido de $3\,\db$, melhorando assim o CMRR. Ele tamb\'em usa resistores de valores muito menores, a saber, $802\,\ohm$ se comparado com os usados ordinariamente, {\it viz.} $10\,{\rm k}\Omega$, resultando assim num ru\'ido Jonhson menor. Isso s\'o \'e poss\'ivel porque o amplificador \'e controlado pelos buffers, que permitem que a imped\^ancia de entrada sejam mais altas que o usual, evitando a sobrecarga dos equipamentos externos, melhorando ainda mais o CMRR. O ru\'ido de sa\'ida \'e de menos de $-112\,\db{\rm u}$, uma melhora de $8\,\db$ relativo \`a tecnologia convencional.
+  \subsection{O est\'agio de ganho}
+  De acordo com o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa, distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. Contudo, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD\footnote{Definir.} ({\it Total Harmonic Distortion}\/) seria significativo.
+
+  O primeiro est\'agio \'e formados pelos amplificadores IC1A e 1C1B, dando um ganho de $10.7\,\db$, as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ criando uma vantagem de $3\,\db$\footnote{Isto trata-se do SNR, conceito a ser definido.}, como no amplicador balanceado. O segundo est\'agio IC2A duplica a tens\~ao, pois\footnote{Refazer com an\'alise AC.} temos essencialmente
+  \[
+    V_{\rm out}=\biggl(1+{R_{11}\over R_{10}}\biggr)\cdot V_{\rm in}=\biggl(1+{2{\rm k}2\over 2{\rm k}2}\biggr)\cdot V_{\rm in}=2\cdot V_{\rm in},
+  \]
+  donde o ganho em $\db$ \'e
+  \[
+    20\cdot\log_{10}\biggr({V_{\rm out}\over V_{\rm in}}\biggr)=20\cdot\log_{10}2\approx 6\,\db.
+  \]
+  O ganho \'e menor para maximizar a retroalimenta\c c\~ao negativa ({\it Negative Feedback}\/), porque agora o n\'ivel de tens\~ao \'e mais alto. 
+
+  IC2B \'e um seguidor de tens\~ao, logo, seu ganho \'e unit\'ario. Sua fun\c c\~ao \'e prevenir a imped\^ancia de entrada de $1\,{\rm k}\Omega$ do est\'agio de ganho final IC3B, de carregar a sa\'ida de IC2A, causando distor\c c\~ao. IC2B \'e menos vulner\'avel \`a carga, porque ela tem uma retroalimenta\c c\~ao negativa m\'axima. 
+
+  Em IC3B, no pino 6, em virtude de \ampop{s} possuirem imped\^ancia de entrada muito alta, a corrente nas entradas do \ampop\ s\~ao neglig\'iveis. Portanto, idealmente, segue da lei de Kirchhoff a igualdade
+  \[
+    {V_{\rm in}\over R_{12}}+{V_{\rm out}\over R_{13}+R_{14}}=0,
+  \]
+  ou seja,
+  \[
+    \Big|{V_{\rm out}\over V_{\rm in}}\Big|={R_{13}+R_{14}\over R_{12}}={2047\over 1000}\approx 2,
+    \label{ganho_IC3B}
+  \]
+  logo o ganho em \db\ \'e aproximadamente
+  \[
+    20\cdot\log_{10}2\approx6\,\db. 
+  \]
+  Ele \'e usado no modo {\it shunt-feedback} para evitar a distor\c c\~ao de modo comum, que resultariam de sinais de altos n\'iveis. Ele tem uma sa\'ida do tipo `imped\^ancia-zero', com retroalimentac\~ao HF ({\it High Frequency}\/) via $C_8$ e LF ({\it Low Frequency}\/) via $R_{13}$. Desta maneira, o {\it crosstalk}\footnote{Definir.} \'e mantido no m\'inimo, enquanto mant\'em estabilidade com carga capacitiva\footnote{Determinar o significado disto.}
+
+  A sa\'ida em $K_3$ est\'a invertida em fase e pode ser usada para {\it Bridging}\footnote{Definir.}.
+
+  IC3A \'e um est\'agio inversor de ganho unit\'ario que corrige a fase do sinal. A sa\'ida tamb\'em \'e do tipo `imped\^ancia-zero'.
+
+  \subsection{O amplificador de pot\^encia}
+
+  O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop{s}, logo, no total s\~ao 64 se\c c\~oes de \ampop{s} atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\ohm$. Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s, e voc\^e pode se perguntar: Qual o efeito que eles ter\~ao na imped\^ancia de sa\'ida do amplificador? Uma baixa imped\^ancia de sa\'ida \'e sempre uma coisa boa a se fazer, mas n\~ao por causa do ent\~ao chamado `fator de amortecimento' ({\it Damping-Factor}\/), o qual \'e altamente n\~ao significativo devido ao fato que a bobina do alto-falante sempre predomina a resist\^encia do circuito. O `fator de amortecimento' \'e definido como a imped\^ancia da carga dividido pela imped\^ancia de sa\'ida do amplificador. N\'os temos 64 resistores de $1\ohm$ em paralelo, dando uma imped\^ancia total de $1\ohm/64=0.0156\,\ohm$. Isto nos d\'a o fator de amortecimento hipot\'etico de $8/0.0156=512$, o que \'e muito bom em quaisquer padr\~oes. Em compara\c c\~ao, o cabeamento para o alto-falante possui mais resist\^encia do que isso!
+
+  A sa\'ida dos \ampop{s} podem ser soldados diretamente na placa, a fim de diminuir os custos e dar uma melhor condu\c c\~ao de calor do encapsulamento do \ampop\ \`as trilhas de cobre. Todavia o autor deste projeto decidiu usar soquetes de alta qualidade. Ter muitos \ampop{s} em paralelos pode ser um fardo para determinar falhas no circuito---se houver um \ampop\ ruim dentre os 32, ent\~ao provavelmente voc\^e ter\'a bastante trabalho para dessoldar e, para localizar o elemento defeituoso. 
+
+  A fila de \ampop{s} s\~ao unidos pelos jumpers $K_5$--$K_{12}$.
+
+  Existe uma {\it Output Choke} $L_1$ para estabilidade em cargas capacitivas, e {\it Catching Diodes} $D_1$--$D_2$ para previnir danos devidos aos transientes\footnote{Geralmente s\~ao picos ou impulsos el\'etricos indesejados de curta dura\c c\~ao, causador de estalos nos alto-falantes, e.g., no momento em que se liga e desliga o sistema de \'audio. \underline{Adicionar uma se\c c\~ao pr\'opria com detalhamento.}} de tens\~ao ao limitar a corrente em cargas reativas. 
+
+  \subsection{O rel\'e de sa\'ida e seu controle}
+
+  Conforme j\'a mencionado, o rel\'e de sa\'ida protege os alto-falantes contra falhas DC e d\'a uma partida suave ({\it Slow-On}\/), e um desligamento r\'apido ({\it Fast-Off}\/). Destarte, nenhum transiente \'e passado aos alto-falantes, tanto ao ligar o sistema, como ao deslig\'a-lo. O rel\'e \'e controlado pela fonte de tens\~ao. Referindo-se \`a figura 2, ao se ligar a fonte de tens\~ao, $R_{17}$ carrega $C_{24}$ suavemente, atrasando o ligamento do amplificador. Em funcionamento, $C_{21}$ \'e carregado e $T_3$ \'e acionado. Quando a tens\~ao AC \'e removida, $C_{21}$ descarrega rapidamente, desligando $T_3$, logo, o diodo $D_8$ aciona os transistores $T_4$ e $T_5$, os quais descarregam $C_{24}$ e faz com que os contatos de sa\'ida do rel\'e se abram imediatamente. At\'e mesmo uma breve interrup\c c\~ao na tens\~ao AC resulta num atraso do ligamento completo. Normalmente $T_4$ e $T_5$ est\~ao inativos e $D_{15}$ n\~ao conduz, mas se uma falha DC aplicar uma tens\~ao positiva ou negativa via $R_{13}$ ou $R_{14}$, $T_4$ e $T_5$ s\~ao acionados e os rel\'es s\~ao abertos subitamente para proteger os alto-falantes.
+
+  \subsection{Fonte de tens\~ao}
+
+  \subsection{Escrut\'inio do amplificador}
+
+  O primeiro est\'agio \'e constitu\'ido pelos amplificadores IC1A/B, ambos amplificadores n\~ao inversores com ganho de
+  \[
+   A=1+{2200\over910}={3110\over 910},
+  \]
+  logo, o ganho em dB \'e
+  \[
+    A_{\db}=20\cdot\log_{10}\Bigl({3110\over910}\Bigr)\approx 10.674\,\db\approx 10.7\,\db
+  \]
+  conforme mencionado no artigo. Como a corrente na entrada n\~ao inversora de IC2A \'e neglig\'ivel, temos pela LKC
+  \[
+    {V_{\rm IC1A(out)}-V_{\rm IC2A(in)}\over R_8}={V_{\rm IC1B(out)}-V_{\rm IC2A(in)}\over R_9}=0,
+  \]
+  consequentemente
+  \[
+    V_{\rm IC1A(out)}=V_{\rm IC1B(out)}=V_{\rm IC2A(in)}.
+  \]
+  Esta tens\~ao \'e duplicada por IC2A, e novamente duplicada no final do est\'agio de ganho conforme (\ref{ganho_IC3B}). Logo, a tens\~ao de entrada do est\'agio de ganho \'e amplificada em $12440/910$ vezes. Por conseguinte, o ganho total em dB \'e de
+  \[
+    A_{T(\db)}=20\cdot\log_{10}\Bigl({12440\over910}\Bigr)\approx 22.7\,\db,
+  \]
+  em conformidade com os c\'alculos do artigo.
+
+   
+
+  Nota-se no esquem\'atico que s\~ao colocados em paralelo com a alimenta\c c\~ao sim\'etrica de cada CI, um capacitor de $100\,\rm pF$. Estes capacitores filtram ru\'idos de alta frequ\^encia da fonte de alimenta\c c\~ao, pois a qualidade do sinal de sa\'ida depende de uma alimenta\c c\~ao extremamente cristalina, i.e., sem muito ru\'ido. Tamb\'em fornecem corrente necess\'arias para os transientes, que s\~ao, em geral, pulsos de corrente instant\^anea requeridos pelos \ampop, a fim de suprir uma varia\c c\~ao abrupta e repentina na amplitude do sinal de entrada, e.g., em batidas.
+
+  Os resistores $R_{32}$ e $R_{33}$ de $10\,\Omega$, servem para isolar IC5A e IC5B, previnindo que os sinais provindos das sa\'idas destes amplificadores interajam de forma destrutiva. 
+
+  {\color{gray}%
+    Conforme mencionado anteriormente apenas um \ampop\ NE5532 consegue acionar uma carga de $500\,\Omega$ at\'e o limiar (limite) da fonte de tens\~ao sim\'etrica neste caso $\pm 18\,\rm V$. Portanto a sa\'ida ir\'a variar entre $\pm17\,\rm V$ aproximadamente. Em decorr\^encia disto o m\'odulo de sua corrente de sa\'ida \'e aproximadamente\footnote{Averiguar isto, pois as sa\'idas dos \ampop{s} possuem resistores de $1\,\Omega$.}
+    \[
+      I_{\rm out}={17\, V\over 500\,\Omega}=34\,\rm mA
+    \]
+    Como o est\'agio de pot\^encia \'e composto, sobretudo, de seguidores de tens\~ao em paralelo, segue da LKC (lei de Kirchhoff para correntes) que a corrente total de sa\'ida $I_{\rm T(out)}$ do est\'agio de pot\^encia \'e
+    \[
+      I_{\rm T(out)}=64\cdot34\,{\rm mA}=2{,}176\,\rm A
+    \]
+    o que resulta em uma pot\^encia em rms numa carga de $8\,\Omega$ de
+    \[
+      P_{\rm rms}=\Bigl({2{,}176\,{\rm A}\over\sqrt{2}}\Bigr)^2\cdot8\,\Omega\approx19\,{\rm W_{rms}}
+    \]
+    o que \'e pr\'oximo do valor requerido pelo amplificador, a saber, $15\,{\rm W_{rms}}$.
+  }
+
+  \chapter{Simula\c c\~oes}
+
+  Doravante, todos os diagramas de Bode dos subcircuitos que comp\~oem o amplificador foram gerados pelo simulador {\bf ngspice} e lidos pelo pacote {\bf pgfplots} do \LaTeX. Na cofe\c c\~ao destes diagramas usei modelo de linguagem {\bf ChatGPT} para sugest\~oes de sintaxe do pacote pgfplots.
+
+  \section{Entrada desbalanceada}
+  \begin{figure}[!ht]
+    \centering
+    \begin{circuitikz}[line width=.7]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \coordinate (K1) at (0,0);
+      \coordinate (GND) at (2*\dmh,-\dmv);
+      \draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+      \draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+      \draw (K1) node [above=.2cm] {$K_1$} to [R, l=$R_1$, a={47R}, o-] (2*\dmh,0) to [C, l_={$C_1$}, a^={100p}, *-*] (GND);
+      \draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) to [R, l_=$R_2$, a^={220k}, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      \draw (C2) to [short, -o] ++(0.7*\dmh,0) node [right] {DESBAL} ;
+      \draw (GND) to ++ (0,-.3) node[tground] {};
+    \end{circuitikz}
+    \caption{Esquem\'atico da entrada desbalanceada.}
+  \end{figure}
+  Segue uma an\'alise AC da sa\'ida da entrada desbalanceada (de $1\,{\rm MHz}$ at\'e $100\,{\rm MHz}$):
+  \begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \begin{axis}[
+        domain=10e6:10e8, 
+        grid=both,
+        grid style={black!20},
+        scale only axis,
+        xlabel={Frequ\^encia em Hz},
+        xmax=10e7,
+        xmin=10e5,
+        xmode=log,
+        ylabel={Amplitude em dB},
+        ytick distance=1,
+        width=12cm,
+        height=7cm,
+      ]
+        \addplot [
+          color=black, 
+          smooth,
+          ultra thick
+        ] table {../amplificador_5532/entrada_desbalanceada.data};
+
+        \addplot[
+          domain=10e5:10e8, 
+          samples=2,
+        ] {-3};
+
+        \node [
+          pin={
+            [fill=white, draw=black]
+            265:{$f_c\approx34.6\,\rm MHz$}
+          },
+          circle,
+          draw=black, 
+          fill=white,
+          inner sep=1.5pt
+        ] at (axis cs:34e6,-3) {};
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{An\'alise AC da sa\'ida da entrada desbalanceada.}
+  \end{figure}
+
+  Reprisaremos a rela\c c\~ao da entrada com a sa\'ida neste filtro, a saber,
+  \[
+    V_{\rm out}=\bigg|{R_2\|Z_{C_1}\over R_1+R_2\|Z_{C_1}}\bigg|\cdot V_{\rm in}=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|\cdot V_{\rm in},
+  \]
+  logo, o quadrado do ganho \'e
+  \[
+    \Big|{V_{\rm out}\over V_{\rm in}}\Big|^2=\bigg|{R_2\over\omega C_1R_1R_2-j(R_1+R_2)}\bigg|^2={R_2^2\over z\overline{z}},
+  \]
+  em que
+  \[
+    z=\omega C_1R_1R_2-j(R_1+R_2),
+  \]
+  equivalentemente obtemos
+  \[
+    \Bigl({V_{\rm out}\over V_{\rm in}}\Bigr)^2={R_2^2\over (\omega C_1R_1R_2)^2+(R_1+R_2)^2}.
+    \label{ganho_quad}
+  \]
+  N\~ao entraremos em detalhes, mas em contextos de engenharia el\'etrica/eletr\^onica \'e de constume usar a fun\c c\~ao transfer\^encia $H$, dada por
+  \[
+    H(\omega)=\Big|{V_{\rm out}\over V_{\rm in}}\Big|
+  \]
+  de (\ref{ganho_quad}) segue-se
+  \[
+    H_{\rm DESBAL}(\omega)={R_2\over\sqrt{(\omega C_1R_1R_2)^2+(R_1+R_2)^2}}.
+    \label{transf_desbal}
+  \]
+  No contexto de filtros, o corte \'e definido como a frequ\^encia $\omega_c$ tal que 
+  \[
+    H(\omega_c)={1\over\sqrt{2}}H(0)
+  \]
+  Portanto,
+  \[
+    H_{\rm DESBAL}(\omega_c)={1\over\sqrt{2}}{R_2\over R_1+R_2}.
+    \label{freq_cort}
+  \]
+
+  Agora, fazendo 
+  \[
+    \Omega=\omega_cC_1R_2R_2\quad\hbox{e}\quad\Sigma=R_1+R_2,
+  \]
+  temos de (\ref{transf_desbal}) e (\ref{freq_cort}) que  
+  \[
+    {R_2^2\over2\Sigma^2}={R_2^2\over\Omega^2+\Sigma^2}
+  \]
+  resolvendo para $\Omega^2$ temos
+  \[
+    \Omega^2=\Sigma^2
+  \]
+  donde
+  \[
+    \omega_c=\sqrt{\Sigma^2\over (C_1R_1R_2)^2}={R_1+R_2\over C_1R_1R_2}\;(\rm rad/s)
+  \]
+  em Hz temos 
+  \[
+    f_c= {R_1+R_2\over 2\pi C_1R_1R_2}\;(\rm Hz)
+  \]
+  Com aux\'ilio duma calculadora obtemos
+  \[
+    f_c\approx 34.6\,\rm MHz.
+  \]
+
+  \section{Est\'agio de ganho}
+  A seguir temos a simula\c c\~ao AC do est\'agio de ganho de $10\,\rm kHz$ a $100\,\rm MHz$:
+  \begin{figure}[!h]
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \def\mw{1.7cm}
+      \def\prop{1.2}
+      \begin{axis}[
+        domain=10e5:10e8, 
+        grid=both,
+        grid style={black!20},
+        scale only axis,
+        xlabel={Frequ\^encia em Hz},
+        xmin=10e3,
+        xmax=10e7,
+        xmode=log,
+        ylabel={Amplitude em dB},
+        ytick distance=20,
+        width=\prop*12cm,
+        height=\prop*7cm,
+      ]
+
+        \addplot [
+          thick,
+          color=black, 
+          smooth,
+        ] table {../amplificador_5532/estagio_de_ganho.data};
+
+        \addplot[
+          domain=10e3:10e7, 
+          samples=2,
+        ] {-3} ;
+
+        \node [
+          anchor=east,
+          draw=black,
+          fill=white, 
+          inner sep=2pt,
+          minimum width=\mw,
+        ] at (axis cs:10e7,-3) {$-3\,\rm dB$};
+
+
+        \addplot[
+          domain=10e3:10e7, 
+          samples=2,
+        ] {22.7} ;
+
+        \node [
+          anchor=east,
+          fill=white, 
+          draw=black,
+          inner sep=2pt,
+          minimum width=\mw,
+        ] at (axis cs:10e7,22.7) {$22.7\,\rm dB$};
+
+
+
+        %\node [
+        %  pin={
+        %    [fill=white, draw=black, rounded corners=2pt]
+        %    225:{$f_c\approx34.6\,\rm MHz$}
+        %  },
+        %  circle,
+        %  draw=black, 
+        %  fill=red,
+        %  inner sep=1.5pt
+        %] at (axis cs:34e6,-3) {};
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{An\'alise AC da sa\'ida do est\'agio de ganho.}
+  \end{figure}
+  \begin{figure}[]
+    \centering
+    \begin{circuitikz}[line width=.7, scale=.8, rotate=90, transform shape]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \draw (0,0) node [left] {\it IN} to [C, l={$C_2$}, a={2u2}, o-] ++(1.5*\dmh,0) coordinate (C1) to [R, text width=1cm, align=center, l_={$R_3$ 47k},-] ++(0,-2*\dmv) to [short, -*] ++(\dmh/2,0) coordinate (GND);
+
+      % IC1B
+      \draw (C1) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC1B) {IC1B};
+      \draw (IC1B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C2)  to [short] ++(0,-\dmv/5) to [R, text width=1cm, align=center, l={$R_6$ 910R}] (GND) to [short] ++(0,-.5) node [tground] {};
+      \draw (C2) to [short, *-] ++(\dmh,0) coordinate (C3) to [R, l^={$R_7$}, a={2k2}, -*] (C2 -| IC1B.out) to [short, -*] (IC1B.out) to [R, l={$R_9$}, a={10R}] ++(1.5*\dmh,0) coordinate (IC2ANIN); 
+      \draw (C3) to [short, *-] ++ (0,-.6*\dmv) coordinate (C4) to [C, l={$C_4$}, a={33p}] (C4 -| IC1B.out) to [short] (C2 -| IC1B.out);
+
+      % IC2B
+      \draw (C1) to [short, *-] ++(0,2*\dmv) to [short] ++(2*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
+      \draw (IC2B.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C5)  to [short, *-] ++(0,-\dmv/5) to [R, l^={$R_4$\\ 910R}, text width=1cm, align=center] ++(0,-.7*\dmv) to [short] ++(0,-.5) node [tground] {};
+      \draw (C5) to [short] ++(\dmh,0) coordinate (C6) to [R, l^={$R_5$}, a={2k2}, *-*] (C5 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_8$}, a={10R}, *-] ++(1.5*\dmh,0) to [short, -*] (IC2ANIN); 
+      \draw (C6) to [short] ++ (0,-.6*\dmv) coordinate (C7) to [C, l={$C_3$}, a={33p}] (C7 -| IC1B.out) to [short] (C5 -| IC1B.out);
+
+      % IC2A
+      \draw (IC2ANIN) to [short] ++(1.5*\dmh,0) node [op amp, anchor=+, noinv input up] (IC2A) {IC2A};
+      \draw (IC2A.-) to [short] ++ (-1.5*\dmh,0) to [short] ++(0,-\dmv/2) coordinate (C8)  to [short] ++(0,-\dmv/5) to [R,l_={$R_{10}$}, a^={2k2}] (GND -| C8) to [short] ++(0,-.5) node [tground] {};
+      \draw (C8) to [short, *-] ++(\dmh,0) coordinate (C9) to [R, l^={$R_{11}$}, a={2k2}, *-*] (C8 -| IC2A.out) to [short, -*] (IC2A.out); 
+      \draw (C9) to [short] ++ (0,-.6*\dmv) coordinate (C10) to [C, l={$C_6$}, a={33p}] (C10 -| IC2A.out) to [short] (C9 -| IC2A.out);
+
+      % IC2B
+      \draw (IC2A.out) to [short] ++ (\dmh/2,0) node [op amp, anchor=+, noinv input up] (IC2B) {IC2B};
+      \draw (IC2B.-) to [short] ++(0,-\dmv/3) coordinate (C11) to [short] (C11 -| IC2B.out) to [short] (IC2B.out) to [R, l={$R_{12}$}, a={1k}, *-*] ++ (1.5*\dmh,0) coordinate (IC3BINV);
+
+      % IC3B
+      \draw (IC3BINV) node [op amp, anchor=-] (IC3B) {IC3B};
+      \draw (IC3B.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
+      \draw (IC3B.out) to [short] ++ (0,.6*\dmv) coordinate (C12) to [C, l_={$C_8$}, a^={33p}, -*] (C12 -| IC3BINV);
+      \draw (IC3B.out) to [R, l={$R_{14}$}, a={47R}, *-*] ++(1.5*\dmh,0) coordinate (C14) to [short] ++(0,\dmv) coordinate (C13) to [R, l_={$R_{13}$}, a^={2k}, *-] (C13 -| IC3BINV) to [short] (IC3BINV);
+      \draw (C14) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K3$\\\it BRIDGE};
+      \draw (C14) to [short] ++ (0, \dmv);
+
+      % IC3A
+      \draw (IC3BINV) ++ (0,4.5*\dmh) coordinate (IC3AINV) node [op amp, anchor=-] (IC3A) {IC3A};
+      \draw (IC3A.+) to [short] ++ (-\dmh/10,0) to [short] ++ (0,-.5) node [tground] {};
+      \draw (IC3A.out) to [short] ++ (0,.6*\dmv) coordinate (C15) to [C, l_={$C_9$}, a^={33p}, -*] (C15 -| IC3AINV);
+      \draw (IC3A.out) to [R, l={$R_{17}$}, a={47R}, *-*] ++(1.5*\dmh,0) coordinate (C16) to [short] ++(0,\dmv) coordinate (C15) to [R, l_={$R_{16}$}, a^={2k2}] (C15 -| IC3AINV) to [short] (IC3AINV);
+      \draw (C13) to [short] ++(0,\dmv/3) to [short] ++(-5*\dmh,0) coordinate (C17) to [short] (C17 |- IC3AINV) to [R, l^={$R_{15}$}, a_={2k2}, -*] (IC3AINV);
+      \draw (C16) to [short, -o] ++(\dmh/2,0) node [text width=2cm, align=center, right] {$K4$\\\it PARALLEL}; 
+
+
+      %\coordinate (K1) at (0,0);
+      %\coordinate (GND) at (2*\dmh,-\dmv);
+      %\draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+      %\draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+      %\draw (K1) node [above=.2cm] {$K_1$} to [R=$R_1$,o-] (2*\dmh,0) to [C={$\displaystyle C_1\atop{\rm 100p}$}, *-*] (GND);
+      %\draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) node [above] {DESBAL} to [R=$R_2$, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+      %\draw (GND) to ++ (0,-.5) node[tground] {};
+    \end{circuitikz}
+    \caption{Esquem\'atico do est\'agio de ganho.}
+  \end{figure}
+
+%  \begin{figure}
+%    \begin{circuitikz}[scale=.9, transform shape]
+%      \ctikzset{
+%        european,
+%      }
+%      \def\dmh{1.5}
+%      \def\dmv{3.6}
+%     \foreach \y in {0,...,7} {
+%       \draw (0,\y*.8*\dmv) to [short] ++(\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y) {IC\y};
+%       \draw (IC\y.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y.out) to [short, -*] (IC\y.out) to [R, l={R}, a={1R}] ++(1.5*\dmh,0) to [short] ++ (0,-.5*\dmv);
+%     }
+%    \end{circuitikz}
+%  \end{figure}
+
+
+  \begin{thebibliography}{}
+%    \bibitem{DS}
+%    DEEPSEEK AI. {\it DeepSeek Chat} (modelo de linguagem). Vers\~ao 2025. Xangai: DeepSeek AI, 2024. Dispon\'ivel em: \url{https://chat.deepseek.com/}. Acesso em: 28 de maio 2024.
+    \bibitem{CircuiTikz}
+    REDAELLI, Massimo A.; LINDNER, Stefan; ERHARDT, Stefan; GIANNETTI, Romano. {\it CircuiTikZ: version 1.8.2. 2025.} Dispon\'ivel em: \url{https://br.mirrors.cicku.me/ctan/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf}. Acesso em: 23 de novembro 2025.
+    \bibitem{PGFTikz}
+    TANTAU, Till. {\it The TikZ and PGF Packages: Manual for version 3.1.11a.}~Lübeck: Ins\-titut für Theoretische Informatik, Universität zu Lübeck, 29 ago. 2025. Disponível em: \url{https://br.mirrors.cicku.me/ctan/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}. Acesso em: 23 de novembro 2025.
+
+    \bibitem{HH}
+    HOROWITZ, Paul; HILL, Winfield; {\it The Art of Electronics.} 7. ed. New York: Cambridge University Press, 2016.
+%    \bibitem{Malvino}
+%    MALVINO, Albert Paul. {\it Eletr\^onica\/}: Volume 1. 1ª ed. S\~ao Paulo: McGraw-Hill Education, 1987.
+    \bibitem{SelfElektor}
+    SELF, Douglas. {\it The 5532 OpAmplifier. Part 1: design philosophy and schematics.} Elektor, p. 14--17, out. 2010.
+    \bibitem{SelfGiesbertsElektor}
+    SELF, Douglas; GIESBERTS, Ton. {\it The 5532 OpAmplifier. Part 2: construction, bridged operation and test results.} Elektor, p. 24--27, nov. 2010.
+  \end{thebibliography}
+\end{document}
+
+% Teste branch revisao
