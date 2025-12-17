@@ -1,0 +1,60 @@
+#!/usr/bin/ngspice
+
+.include "NE5532.lib"
+
+.title Estagio de Potência
+
+.param AIN=1
+
+VI     K5       0        dc   0  ac      1       sin(0 {AIN} 1k)
+VCC    VP       0        18 
+VEE    VN       0        -18
+
+R37    0        K5       22k
+
+XIC7A  K5       IC7AOUT  VP   VN IC7AOUT NE5532
+R39    IC7AOUT  K7       1R
+
+XIC7B  K5       IC7BOUT  VP   VN IC7BOUT NE5532
+R40    IC7BOUT  K7       1R
+
+XIC8A  K5       IC8AOUT  VP   VN IC8AOUT NE5532
+R41    IC8AOUT  K7       1R
+
+XIC8B  K5       IC8BOUT  VP   VN IC8BOUT NE5532
+R42    IC8BOUT  K7       1R
+
+XIC9A  K5       IC9AOUT  VP   VN IC9AOUT NE5532
+R43    IC9AOUT  K7       1R
+
+XIC9B  K5       IC9BOUT  VP   VN IC9BOUT NE5532
+R44    IC9BOUT  K7       1R
+
+XIC10A K5       IC10AOUT VP   VN IC10AOUT NE5532
+R45    IC10AOUT K7       1R
+
+XIC10B K5       IC10BOUT VP   VN IC10BOUT NE5532
+R46    IC10BOUT K7       1R
+
+RL     K7       0        8R
+
+
+.tran .01ms 20ms 10ms
+.meas tran Vrms RMS V(K7)
+.meas tran Pout PARAM='Vrms*Vrms/8'
+
+.end
+
+
+
+.control
+
+foreach A 0.5 1 2 3 4 5
+  alterparam AIN=$A
+  reset
+  run
+  show Vrms Pout
+  plot v(K7)
+end
+
+.endc
