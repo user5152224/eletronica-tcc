@@ -1,0 +1,164 @@
+%!latex
+\documentclass[12pt, a4paper, leqno, twoside]{book}
+
+\usepackage{%
+  circuitikz,
+  fancyhdr,
+  geometry,
+  graphicx,
+  hyperref,
+  newtxtext,
+  newtxmath,
+  pgfplots,
+  setspace,
+  titlesec,
+  tikz,
+  xcolor,
+}
+
+\usepackage[brazil]{babel}
+
+% Sugerido por pelo pacote pgfplots
+\pgfplotsset{compat=1.18}
+
+\usetikzlibrary{math}
+
+% Espaçamento de letra para o cabeçalho dos capítulos
+\usepackage[letterspace=300]{microtype}
+
+% Formatação do título dos capítulos
+\titleformat{\chapter}[display]
+{}%
+{
+   \centering\fontsize{80pt}{80pt}%
+   {\selectfont\thechapter}
+}%
+{1em}% 
+{\centering\scshape\lsstyle\MakeUppercase}%
+[]
+
+% Formatação do título das se\c c\~oes e subseções
+\titleformat{\section}{\centering\large\scshape}{\thesection}{1em}{}[]
+\titleformat{\subsection}{\centering\scshape}{\thesubsection}{1em}{}[]
+
+% Estilo dos cabeçalhos das páginas
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headrulewidth}{0ex}
+\fancypagestyle{est}{%
+  \def\fontface{\bf}
+  \fancyhf{}
+  \fancyhead[CE]{\fontface\sc\leftmark}
+  \fancyhead[CO]{\fontface\sc\rightmark}
+  \fancyhead[LE,RO]{\fontface\thepage}
+  \setlength{\headheight}{16pt}
+  \addtolength{\topmargin}{-1pt}
+
+}
+
+% Numeração dos capítulos em algarismos romanos
+\def\theHchapter{\arabic{chapter}\thechapter}
+%\def\thechapter{\Roman{chapter}}
+
+% Remover páginas em branco
+\let\cleardoublepage=\clearpage
+
+% Geometria da página
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+
+% Modificar o estilo da numeração das notas de rodapé
+\renewcommand{\thefootnote}{\bfseries\arabic{footnote}}
+
+% Definições gerais
+\def\tpfc{\scshape}
+
+\def\localData{%
+  \parbox[c][0cm][c]{3.5cm}{
+    \sc
+    Jo\~ao Pessoa\hfill -\hfill PB\\
+    \footnotesize
+    \today
+  }
+}
+
+\def\parteSuperior{
+  \parbox[c][0cm][c]{10cm}{
+    {\scshape\scriptsize%
+      {INSTITUTO\hfill FEDERAL\hfill DE\hfill EDUCA\c C\~AO,\hfill CI\^ENCIA\hfill E\hfill TECNOLOGIA DA PARA\'IBA}\\
+      {
+        \fontsize{12}{12}\selectfont
+        {\noindent CURSO\hfill T\'ECNICO\hfill SUBSEQUENTE\hfill EM\hfill ELETR\^ONICA}\\
+        \large
+        {\noindent TRABALHO\hfill DE\hfill CONCLUS\~AO\hfill DE\hfill CURSO}\\
+      }
+    }
+  }
+  \vfill 
+  {\lsstyle\Large\scshape%
+    PROJETO }
+  \vskip .5cm
+  \textit{por}
+  \vskip .5cm
+  {\tpfc Harllen Ara\'ujo de Sena}
+  \vskip .15cm
+  {\it e}
+  \vskip .15cm
+  {\tpfc Henrique Cirilo Costa}
+  \vskip .5cm
+  \textit{orientado pelo}
+  \vskip .5cm
+  {\tpfc Prof. Dr. C\'icero Alisson dos Santos}
+  \vskip .5cm
+}
+
+\def\ohm{\,\Omega}
+\def\ampop{amp-op}
+\def\db{{\rm dB}}
+\def\cmrr{{\rm CMRR}}
+
+\def\[{\begin{equation}}
+\def\]{\end{equation}}
+
+\begin{document}
+
+  \hbox{}\vfill
+  \begin{figure}[!ht]
+    \begin{circuitikz}[scale=.6, rotate=90, transform shape]
+      \ctikzset{
+        european,
+      }
+      \def\dmh{1.5}
+      \def\dmv{3.6}
+      \def\per{.5}
+      \foreach \y in {0,...,3} {
+        \pgfmathsetmacro{\z}{int(\y+7)}
+        \pgfmathsetmacro{\r}{int(39+2*\y)}
+        \pgfmathsetmacro{\s}{int(40+2*\y)}
+
+        \path coordinate (NINIC\z A) at (0,-2*\y*.8*\dmv);
+        \draw (NINIC\z A) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y A) {IC\z A};
+        \draw (IC\y A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y A.out) to [short, -*] (IC\y A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
+        \path coordinate (R\r) at (R\r);
+B
+        \path coordinate (NINIC\z B) at (0,{-(1+2*\y)*.8*\dmv});
+        \draw (NINIC\z B) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y B) {IC\z B};
+        \draw (IC\y B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y B.out) to [short, -*] (IC\y B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
+        \path coordinate (R\s) at (R\s);
+      }
+      \foreach \i in {39,...,45} {
+        \pgfmathsetmacro{\j}{int(\i+1)}
+        \draw (R\i) to [short, -*] (R\j);
+      }
+      \foreach \i in {7,...,10} {
+        \draw (NINIC\i A) to [short, -*] (NINIC\i B);
+      }
+      \foreach \i in {7,...,9} {
+        \pgfmathsetmacro{\j}{int(\i+1)};
+        \draw (NINIC\i B) to [short, -*] (NINIC\j A);
+      }
+      \draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
+
+    \end{circuitikz}
+  \end{figure}
+
+\end{document}
