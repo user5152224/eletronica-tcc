@@ -123,46 +123,76 @@
 
   \hbox{}\vfill
   \begin{figure}[!ht]
-    \begin{circuitikz}[scale=.6, rotate=90, transform shape]
+    \begin{circuitikz}[scale=.45, rotate=90, transform shape]
       \ctikzset{
         european,
       }
+
+      % Dimensões '\dmh' para horizontal e 'dmv' de vertical.
       \def\dmh{1.5}
       \def\dmv{3.6}
+
       \def\per{.5}
-      \foreach \a in {0,1} {
+      \def\esp{6}
+      \foreach \a in {0,...,7} {
         \foreach \y in {0,...,3} {
+          % Para os rótulos dos ICs.
           \pgfmathsetmacro{\z}{int(\a*4+\y+7)}
+
+          % Para os rótulos dos resistores.
           \pgfmathsetmacro{\r}{int(\a*8+39+2*\y)}
-          \pgfmathsetmacro{\s}{int(\a*8+40+2*\y)}
+          \pgfmathsetmacro{\s}{int(\r+1)}
 
           % ICXA
-          \path coordinate (NINIC\z A) at (\a,-2*\y*.8*\dmv);
-          \draw (NINIC\z A) to [short] ++(6*\a+\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y A) {IC\z A};
-          \draw (IC\y A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y A.out) to [short, -*] (IC\y A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
+          \path coordinate (NINIC\z A) at (\esp*\a,-2*\y*.8*\dmv);
+          \draw (NINIC\z A) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z A) {IC\z A};
+          \draw (IC\z A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z A.out) to [short, -*] (IC\z A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
+
+          % Salvar coordenada globalmente.
           \path coordinate (R\r) at (R\r);
 
           % ICXB
-          \path coordinate (NINIC\z B) at (\a,{-(1+2*\y)*.8*\dmv});
-          \draw (NINIC\z B) to [short] ++(6*\a+\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y B) {IC\z B};
-          \draw (IC\y B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y B.out) to [short, -*] (IC\y B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
+          \path coordinate (NINIC\z B) at (\esp*\a,{-(1+2*\y)*.8*\dmv});
+          \draw (NINIC\z B) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z B) {IC\z B};
+          \draw (IC\z B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z B.out) to [short, -*] (IC\z B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
+
+          % Salvar coordenada globalmente.
           \path coordinate (R\s) at (R\s);
         }
-        %\foreach \i in {39,...,45} {
-        %  \pgfmathsetmacro{\j}{int(\i+1)}
-        %  \draw (R\i) to [short, -*] (R\j);
-        %}
-        %\foreach \i in {7,...,10} {
-        %  \draw (NINIC\i A) to [short, -*] (NINIC\i B);
-        %}
+        \foreach \i in {0,...,3} {
+          \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
+          \pgfmathsetmacro{\k}{int(1+\j)}
+          \pgfmathsetmacro{\l}{int(1+\k)}
+          \draw (R\j) to [short, *-] (R\k);
+          \ifnum\i<3
+            \draw (R\k) to [short, *-] (R\l);
+          \fi
+        }
+        \foreach \i in {7,...,10} {
+          \pgfmathsetmacro{\j}{int(\a*4+\i)}
+          \pgfmathsetmacro{\k}{int(\j+1)}
+          \draw (NINIC\j A) to [short, -*] (NINIC\j B);
+          \ifnum\i<10
+            \draw (NINIC\j B) to [short, -*] (NINIC\k A);
+          \fi
+        }
         %\foreach \i in {7,...,9} {
-        %  \pgfmathsetmacro{\j}{int(\i+1)}
-        %  \draw (NINIC\i B) to [short, -*] (NINIC\j A);
+        %  \pgfmathsetmacro{\j}{int(\a*4+\i)}
+        %  \pgfmathsetmacro{\k}{int(\a*4+\i+1)}
+        %  \draw (NINIC\j B) to [short, -*] (NINIC\k A);
         %}
-        %\draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
       }
 
+      \draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
+      \draw (NINIC18B) to [R, text width=1cm, align=center, l_={$R_{38}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
+      \draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
+      \draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-2.5*\dmh) node [tground] {};
+      
+      \fill[red] (NINIC28A) circle [radius=2pt];
+
+
     \end{circuitikz}
+    \caption{Est\'agio de pot\^encia.}
   \end{figure}
 
 \end{document}
