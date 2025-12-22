@@ -555,7 +555,6 @@
   \end{figure}
   \begin{figure}[]
     \centering
-    \ctikzset{amplifiers/fill=green!35}
     \begin{circuitikz}[line width=.7, scale=.8, rotate=90, transform shape]
       \ctikzset{
         european,
@@ -630,9 +629,9 @@
 
   \begin{figure}[!ht]
     \centering
-    \ctikzset{
-      amplifiers/fill=green!35,
-    }
+    %\ctikzset{
+    %  amplifiers/fill=green!35,
+    %}
     \begin{circuitikz}[scale=.42, rotate=90, transform shape]
       \ctikzset{
         european,
@@ -673,9 +672,9 @@
           \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
           \pgfmathsetmacro{\k}{int(1+\j)}
           \pgfmathsetmacro{\l}{int(1+\k)}
-          \draw (R\j) to [short, *-] (R\k);
+          \draw (R\j) to [short, -*] (R\k);
           \ifnum\i<3
-            \draw (R\k) to [short, *-] (R\l);
+            \draw (R\k) to [short, -*] (R\l);
           \fi
         }
         \foreach \i in {7,...,10} {
