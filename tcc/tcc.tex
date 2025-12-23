@@ -613,19 +613,9 @@
     \caption{Esquem\'atico do est\'agio de ganho.}
   \end{figure}
 
-%  \begin{figure}
-%    \begin{circuitikz}[scale=.9, transform shape]
-%      \ctikzset{
-%        european,
-%      }
-%      \def\dmh{1.5}
-%      \def\dmv{3.6}
-%     \foreach \y in {0,...,7} {
-%       \draw (0,\y*.8*\dmv) to [short] ++(\dmh,0) node [op amp, anchor=+, noinv input up] (IC\y) {IC\y};
-%       \draw (IC\y.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\y.out) to [short, -*] (IC\y.out) to [R, l={R}, a={1R}] ++(1.5*\dmh,0) to [short] ++ (0,-.5*\dmv);
-%     }
-%    \end{circuitikz}
-%  \end{figure}
+  \section{Est\'agio de ganho}
+  
+  \iftrue % \iffalse IGNORAR; \iftrue COMPILAR.
 
   \begin{figure}[!ht]
     \centering
@@ -698,29 +688,40 @@
       \draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-\dmv) node [tground] {};
       \draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-\dmv) node [tground] {};
 
-      \draw (NINIC7A)  to [short, -o] ++(0,.7*\dmv) coordinate (IC7)  node [above=.2cm] {$K_5$};
-      \draw (NINIC15A) to [short, -o] ++(0,.7*\dmv) coordinate (IC15) node [above=.2cm] {$K_6$};
-      \draw (NINIC23A) to [short, -o] ++(0,.7*\dmv) coordinate (IC23) node [above=.2cm] {$K_9$};
-      \draw (NINIC31A) to [short, -o] ++(0,.7*\dmv) coordinate (IC31) node [above=.2cm] {$K_{10}$};
-
-      \draw (R47) to [short, -o] (R47 |- IC7)  node [above=.2cm] {$K_7$};
-      \draw (R63) to [short, -o] (R63 |- IC15) node [above=.2cm] {$K_8$};
-      \draw (R79) to [short, -o] (R79 |- IC23) node [above=.2cm] {$K_{11}$};
-      \draw (R95) to [short, -o] (R95 |- IC31) node [above=.2cm] {$K_{12}$};
-
-      \foreach \i in {0,...,3} {
-        \pgfmathsetmacro{\j}{int(7+8*\i)}
+      \foreach \i in {0,...,6} {
+        \pgfmathsetmacro{\j}{int(7+4*\i)}
         \pgfmathsetmacro{\k}{int(\j+4)}
-        \pgfmathsetmacro{\r}{int(46+16*\i)}
-        \pgfmathsetmacro{\s}{int(\r+8)}
-        \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
-        \draw (R\r) to [short, *-] ++ (0,-.7*\dmv) coordinate (CX) to [short] (CX -| R\s) to [short, -*] (R\s);
 
+        \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
+
+        \pgfmathsetmacro{\r}{int(46+8*\i)}
+        \pgfmathsetmacro{\s}{int(\r+8)}
+        \draw (R\r) to [short, *-] ++ (0,-1.1*\dmv) coordinate (CX) to [short, -*] (CX -| R\s);
+
+        \ifnum\i=6
+          \draw (R\s) to [short, -o] ++(0,-1.3*\dmv) node [below=.2cm] {$K_{12}$};
+        \fi
       }
+
+      \draw (NINIC7A) to [short, -o] ++ (0,.7*\dmv) node [above=.2cm] {$K_5$};
+
+
+
+      %\foreach \i in {0,...,3} {
+      %  \pgfmathsetmacro{\j}{int(7+4*\i)}
+      %  \pgfmathsetmacro{\k}{int(\j+4)}
+      %  \pgfmathsetmacro{\r}{int(46+16*\i)}
+      %  \pgfmathsetmacro{\s}{int(\r+8)}
+      %  \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
+      %  \draw (R\r) to [short, *-] ++ (0,-.7*\dmv) coordinate (CX) to [short] (CX -| R\s) to [short, -*] (R\s);
+
+      %}
       
     \end{circuitikz}
     \caption{Est\'agio de pot\^encia.}
   \end{figure}
+
+  \fi %IGNORAR
 
   \begin{thebibliography}{}
 %    \bibitem{DS}
