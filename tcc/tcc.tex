@@ -615,8 +615,7 @@
   \end{figure}
 
   \section{Est\'agio de ganho}
-  Na confec\c c\~ao do esquem\'atico do estágio de ganho, por questões pragmáticas há divergências nas numera\c c\~oes dos resistores neste trabalho e no artigo da Elektor \cite{SelfElektor}, quando o \'indice $i$ for maior que 70 leia-se $i+2$, este impasse se deve \`as numera\c c\~oes das coordenadas dos elementos.
-  
+
   \iftrue % \iffalse IGNORAR; \iftrue COMPILAR.
 
   \begin{figure}[!ht]
@@ -708,9 +707,11 @@
         \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
 
         \pgfmathsetmacro{\r}{int(46+8*\i)}
+
         \ifnum\r>70
           \pgfmathsetmacro{\r}{int(\r+2)}
         \fi
+
         \pgfmathsetmacro{\s}{int(\r+8)}
         \draw (R\r) to [short, *-] ++ (0,-1.1*\dmv) coordinate (CX) to [short, -*] (CX -| R\s);
 
