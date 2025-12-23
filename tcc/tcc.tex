@@ -643,6 +643,11 @@
           % Para os rótulos dos resistores.
 
           \pgfmathsetmacro{\r}{int(\a*8+39+2*\y)}
+          
+          \ifnum\r>70
+            \pgfmathsetmacro{\r}{int(\r+2)}
+          \fi
+
           \pgfmathsetmacro{\s}{int(\r+1)}
 
           % ICXA
@@ -663,6 +668,11 @@
         }
         \foreach \i in {0,...,3} {
           \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
+
+          \ifnum\j>70
+            \pgfmathsetmacro{\j}{int(\j+2)}
+          \fi
+
           \pgfmathsetmacro{\k}{int(1+\j)}
           \pgfmathsetmacro{\l}{int(1+\k)}
           \draw (R\j) to [short, -*] (R\k);
@@ -688,8 +698,8 @@
       % Não consegui usar o polinômio de interpolação de Lagrange.
       \draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-\dmv) node [tground] {};
       \draw (NINIC18B) to [R, text width=1cm, align=center, l_={$R_{38}$ 22k}] ++(0,-\dmv) node [tground] {};
-      \draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-\dmv) node [tground] {};
-      \draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-\dmv) node [tground] {};
+      %\draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-\dmv) node [tground] {};
+      %\draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-\dmv) node [tground] {};
 
       \foreach \i in {0,...,6} {
         \pgfmathsetmacro{\j}{int(7+4*\i)}
@@ -698,6 +708,9 @@
         \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
 
         \pgfmathsetmacro{\r}{int(46+8*\i)}
+        \ifnum\r>70
+          \pgfmathsetmacro{\r}{int(\r+2)}
+        \fi
         \pgfmathsetmacro{\s}{int(\r+8)}
         \draw (R\r) to [short, *-] ++ (0,-1.1*\dmv) coordinate (CX) to [short, -*] (CX -| R\s);
 
