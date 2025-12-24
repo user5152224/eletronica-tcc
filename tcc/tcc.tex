@@ -617,129 +617,114 @@
   \section{Est\'agio de ganho}
 
   \iftrue % \iffalse IGNORAR; \iftrue COMPILAR.
-  \begin{figure}[!ht]
-    \vskip -.5cm
-    \centering
-    %\ctikzset{
-    %  amplifiers/fill=green!35,
-    %}
-    \begin{circuitikz}[scale=.45, rotate=90, transform shape]
-      \ctikzset{
-        european,
-      }
-
-      % Dimensões '\dmh' para horizontal e 'dmv' de vertical.
-      \def\dmh{1.5}
-      \def\dmv{3.6}
-
-      \def\per{.5}
-      \def\esp{6.95}
-      \foreach \a in {0,...,7} {
-        \foreach \y in {0,...,3} {
-          % Para os rótulos dos ICs.
-          \pgfmathsetmacro{\z}{int(\a*4+\y+7)}
-
-          % Para os rótulos dos resistores.
-
-          \pgfmathsetmacro{\r}{int(\a*8+39+2*\y)}
-          
+    \begin{figure}[!ht]
+      \vskip -.5cm
+      \centering
+      %\ctikzset{
+      %  amplifiers/fill=green!35,
+      %}
+      \begin{circuitikz}[scale=.45, rotate=90, transform shape]
+        \ctikzset{
+          european,
+        }
+  
+        % Dimensões '\dmh' para horizontal e 'dmv' de vertical.
+        \def\dmh{1.5}
+        \def\dmv{3.6}
+        
+        % Percentual.
+        \def\per{.5}
+  
+        % Espaçamento.
+        \def\esp{6.95}
+  
+        \foreach \a in {0,...,7} {
+          \foreach \y in {0,...,3} {
+            % Para os rótulos dos ICs.
+            \pgfmathsetmacro{\z}{int(\a*4+\y+7)}
+  
+            % Para os rótulos dos resistores.
+            \pgfmathsetmacro{\r}{int(\a*8+39+2*\y)}
+            \ifnum\r>70
+              \pgfmathsetmacro{\r}{int(\r+2)}
+            \fi
+            \pgfmathsetmacro{\s}{int(\r+1)}
+  
+            % ICXA.
+            \path coordinate (NINIC\z A) at (\esp*\a,-2*\y*.8*\dmv);
+            \draw (NINIC\z A) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z A) {IC\z A};
+            % Resistores de saída de do ampop IXCA.
+            \draw (IC\z A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z A.out) to [short, -*] (IC\z A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
+            % Salvar coordenada globalmente.
+            \path coordinate (R\r) at (R\r);
+  
+            % ICXB.
+            \path coordinate (NINIC\z B) at (\esp*\a,{-(1+2*\y)*.8*\dmv});
+            \draw (NINIC\z B) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z B) {IC\z B};
+            % Resistores de saída de do ampop IXCA.
+            \draw (IC\z B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z B.out) to [short, -*] (IC\z B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
+            % Salvar coordenada globalmente.
+            \path coordinate (R\s) at (R\s);
+          }
+          % Curto que conecta resistor com resistor.
+          \foreach \i in {0,...,3} {
+            \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
+  
+            \ifnum\j>70
+              \pgfmathsetmacro{\j}{int(\j+2)}
+            \fi
+  
+            \pgfmathsetmacro{\k}{int(1+\j)}
+            \pgfmathsetmacro{\l}{int(1+\k)}
+            \draw (R\j) to [short, -*] (R\k);
+            \ifnum\i<3
+              \draw (R\k) to [short, -*] (R\l);
+            \fi
+          }
+          % Conectar em paralelo rol de ampops.
+          \foreach \i in {7,...,10} {
+            \pgfmathsetmacro{\j}{int(\a*4+\i)}
+            \pgfmathsetmacro{\k}{int(\j+1)}
+            \draw (NINIC\j A) to [short, -*] (NINIC\j B);
+            \ifnum\i<10
+              \draw (NINIC\j B) to [short, -*] (NINIC\k A);
+            \fi
+          }
+        }
+  
+        % Não consegui usar o polinômio de interpolação de Lagrange.
+        \draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-\dmv) node [tground] {};
+        \draw (NINIC18B) to [R, text width=1cm, align=center, l_={$R_{38}$ 22k}] ++(0,-\dmv) node [tground] {};
+        \draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-\dmv) node [tground] {};
+        \draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-\dmv) node [tground] {};
+  
+        \foreach \i in {0,...,6} {
+          \pgfmathsetmacro{\j}{int(7+4*\i)}
+          \pgfmathsetmacro{\k}{int(\j+4)}
+  
+          \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
+  
+          \pgfmathsetmacro{\r}{int(46+8*\i)}
+  
           \ifnum\r>70
             \pgfmathsetmacro{\r}{int(\r+2)}
           \fi
-
-          \pgfmathsetmacro{\s}{int(\r+1)}
-
-          % ICXA
-          \path coordinate (NINIC\z A) at (\esp*\a,-2*\y*.8*\dmv);
-          \draw (NINIC\z A) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z A) {IC\z A};
-          \draw (IC\z A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z A.out) to [short, -*] (IC\z A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
-
-          % Salvar coordenada globalmente.
-          \path coordinate (R\r) at (R\r);
-
-          % ICXB
-          \path coordinate (NINIC\z B) at (\esp*\a,{-(1+2*\y)*.8*\dmv});
-          \draw (NINIC\z B) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z B) {IC\z B};
-          \draw (IC\z B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z B.out) to [short, -*] (IC\z B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
-
-          % Salvar coordenada globalmente.
-          \path coordinate (R\s) at (R\s);
-        }
-        \foreach \i in {0,...,3} {
-          \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
-
-          \ifnum\j>70
-            \pgfmathsetmacro{\j}{int(\j+2)}
-          \fi
-
-          \pgfmathsetmacro{\k}{int(1+\j)}
-          \pgfmathsetmacro{\l}{int(1+\k)}
-          \draw (R\j) to [short, -*] (R\k);
-          \ifnum\i<3
-            \draw (R\k) to [short, -*] (R\l);
+  
+          \pgfmathsetmacro{\s}{int(\r+8)}
+          \draw (R\r) to [short, *-] ++ (0,-1.1*\dmv) coordinate (CX) to [short, -*] (CX -| R\s);
+  
+          \ifnum\i=6
+            \draw (R\s) to [short, -o] ++(0,-1.3*\dmv) node [below=.2cm] {$K_{12}$};
           \fi
         }
-        \foreach \i in {7,...,10} {
-          \pgfmathsetmacro{\j}{int(\a*4+\i)}
-          \pgfmathsetmacro{\k}{int(\j+1)}
-          \draw (NINIC\j A) to [short, -*] (NINIC\j B);
-          \ifnum\i<10
-            \draw (NINIC\j B) to [short, -*] (NINIC\k A);
-          \fi
-        }
-        %\foreach \i in {7,...,9} {
-        %  \pgfmathsetmacro{\j}{int(\a*4+\i)}
-        %  \pgfmathsetmacro{\k}{int(\a*4+\i+1)}
-        %  \draw (NINIC\j B) to [short, -*] (NINIC\k A);
-        %}
-      }
+  
+        \draw (NINIC7A) to [short, *-o] ++ (0,.7*\dmv) node [above=.2cm] {$K_5$};
+      \end{circuitikz}
+      \vskip -.5cm
+      \caption{Est\'agio de pot\^encia.}
+    \end{figure}
 
-      % Não consegui usar o polinômio de interpolação de Lagrange.
-      \draw (NINIC10B) to [R, text width=1cm, align=center, l_={$R_{37}$ 22k}] ++(0,-\dmv) node [tground] {};
-      \draw (NINIC18B) to [R, text width=1cm, align=center, l_={$R_{38}$ 22k}] ++(0,-\dmv) node [tground] {};
-      \draw (NINIC26B) to [R, text width=1cm, align=center, l_={$R_{71}$ 22k}] ++(0,-\dmv) node [tground] {};
-      \draw (NINIC34B) to [R, text width=1cm, align=center, l_={$R_{72}$ 22k}] ++(0,-\dmv) node [tground] {};
-
-      \foreach \i in {0,...,6} {
-        \pgfmathsetmacro{\j}{int(7+4*\i)}
-        \pgfmathsetmacro{\k}{int(\j+4)}
-
-        \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
-
-        \pgfmathsetmacro{\r}{int(46+8*\i)}
-
-        \ifnum\r>70
-          \pgfmathsetmacro{\r}{int(\r+2)}
-        \fi
-
-        \pgfmathsetmacro{\s}{int(\r+8)}
-        \draw (R\r) to [short, *-] ++ (0,-1.1*\dmv) coordinate (CX) to [short, -*] (CX -| R\s);
-
-        \ifnum\i=6
-          \draw (R\s) to [short, -o] ++(0,-1.3*\dmv) node [below=.2cm] {$K_{12}$};
-        \fi
-      }
-
-      \draw (NINIC7A) to [short, *-o] ++ (0,.7*\dmv) node [above=.2cm] {$K_5$};
-
-
-
-      %\foreach \i in {0,...,3} {
-      %  \pgfmathsetmacro{\j}{int(7+4*\i)}
-      %  \pgfmathsetmacro{\k}{int(\j+4)}
-      %  \pgfmathsetmacro{\r}{int(46+16*\i)}
-      %  \pgfmathsetmacro{\s}{int(\r+8)}
-      %  \draw (NINIC\j A) ++(0,.5*\dmv) coordinate (CX) to [short, *-] (CX -| NINIC\k A) to [short, -*] (NINIC\k A);
-      %  \draw (R\r) to [short, *-] ++ (0,-.7*\dmv) coordinate (CX) to [short] (CX -| R\s) to [short, -*] (R\s);
-
-      %}
-      
-    \end{circuitikz}
-    \vskip -.5cm
-    \caption{Est\'agio de pot\^encia.}
-  \end{figure}
-
-  \fi %IGNORAR ?
+  \fi %IGNORAR?
 
   \begin{thebibliography}{}
 %    \bibitem{DS}
