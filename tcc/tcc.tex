@@ -632,7 +632,7 @@
         \def\dmh{1.5}
         \def\dmv{3.6}
         
-        % Percentual.
+        % Percentual para ajuste fino.
         \def\per{.5}
   
         % Espaçamento.
@@ -640,10 +640,10 @@
   
         \foreach \a in {0,...,7} {
           \foreach \y in {0,...,3} {
-            % Para os rótulos dos ICs.
+            % Índices dos rótulos dos ICs.
             \pgfmathsetmacro{\z}{int(\a*4+\y+7)}
   
-            % Para os rótulos dos resistores.
+            % Índices dos rótulos dos resistores.
             \pgfmathsetmacro{\r}{int(\a*8+39+2*\y)}
             \ifnum\r>70
               \pgfmathsetmacro{\r}{int(\r+2)}
@@ -653,7 +653,7 @@
             % ICXA.
             \path coordinate (NINIC\z A) at (\esp*\a,-2*\y*.8*\dmv);
             \draw (NINIC\z A) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z A) {IC\z A};
-            % Resistores de saída de do ampop IXCA.
+            % Resistores de saída de do ampop ICXA.
             \draw (IC\z A.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z A.out) to [short, -*] (IC\z A.out) to [R, l={$R_{\r}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\r);
             % Salvar coordenada globalmente.
             \path coordinate (R\r) at (R\r);
@@ -661,7 +661,7 @@
             % ICXB.
             \path coordinate (NINIC\z B) at (\esp*\a,{-(1+2*\y)*.8*\dmv});
             \draw (NINIC\z B) to [short] ++(\per*\dmh,0) node [op amp, anchor=+, noinv input up] (IC\z B) {IC\z B};
-            % Resistores de saída de do ampop IXCA.
+            % Resistores de saída de do ampop ICXA.
             \draw (IC\z B.-) to [short] ++(0,-.3*\dmv) coordinate (C1) to [short] (C1 -| IC\z B.out) to [short, -*] (IC\z B.out) to [R, l={$R_{\s}$}, a={1R}] ++(1.5*\dmh,0) coordinate (R\s);
             % Salvar coordenada globalmente.
             \path coordinate (R\s) at (R\s);
@@ -670,6 +670,7 @@
           \foreach \i in {0,...,3} {
             \pgfmathsetmacro{\j}{int(39+\a*8+2*\i)}
   
+            % Ajustar os índides para coincidir com a numeração do artigo.
             \ifnum\j>70
               \pgfmathsetmacro{\j}{int(\j+2)}
             \fi
@@ -681,7 +682,7 @@
               \draw (R\k) to [short, -*] (R\l);
             \fi
           }
-          % Conectar em paralelo rol de ampops.
+          % Conectar em paralelo o rol de ampops.
           \foreach \i in {7,...,10} {
             \pgfmathsetmacro{\j}{int(\a*4+\i)}
             \pgfmathsetmacro{\k}{int(\j+1)}
@@ -706,6 +707,7 @@
   
           \pgfmathsetmacro{\r}{int(46+8*\i)}
   
+           % Ajustar os índides para coincidir com a numeração do artigo.
           \ifnum\r>70
             \pgfmathsetmacro{\r}{int(\r+2)}
           \fi
