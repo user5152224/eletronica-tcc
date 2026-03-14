@@ -1,0 +1,82 @@
+\magnification = 1200
+\baselineskip  = 16truept
+\parskip       = 4truept
+\parindent     = 1.5em
+%\spaceskip     = .3em plus .2em minus .1em % espaçamento entre palavras.
+%\xspaceskip    =.4em plas 1em minus 1em    % espaçamento extra depois de pontuações.
+
+\font\vcmr=cmbx10 scaled 800
+
+% Euler Fraktur
+\font\xeufm   = eufm10
+\font\viieufm = eufm10 scaled 700
+\font\veufm   = eufm10 scaled 500
+
+\newfam\frakfam
+\textfont\frakfam         = \xeufm
+\scriptfont\frakfam       = \viieufm
+\scriptscriptfont\frakfam = \veufm
+\def\frak{\fam\frakfam\xeufm}
+
+% A special font
+\font\spft=cmcsc10 at 10pt
+
+% Font for sections
+\font\secfont=cmsl10 at 10pt
+
+\chardef\i="10
+
+
+\def\cp{\mathbin{\neg}}
+\def\ra{\rightarrow}
+\def\a{\wedge}
+\def\d{\wedge}
+\def\dom{{\frak D}\kern.2ex}
+\def\img{{\frak I}\kern.2ex}
+\def\U{{\cal U}}
+\def\fnc{{\frak F}}
+\def\qed{%
+  %\ \hfill\vbox{\hrule width .42em height 1em}
+  \ \hfill{/\kern -2.5pt/\kern -2.5pt/} % q. e. d. (quod erat demonstrandum) um slash para cada letra. 
+  \bigskip
+}
+\def\rel#1{%
+  \mathbin{#1}
+}
+
+\def\section#1{%
+  \null
+  \vskip .5cm
+  \noindent\hfill{\secfont #1}\hfill\null
+  \vskip .25cm
+  \null
+}
+
+
+% barebone proclaim
+\newcount\proclaimcounter
+\long\def\proc#1#2#3{%
+  \bigskip
+  \advance\proclaimcounter by 1
+  \noindent{\spft #1 \the\proclaimcounter\kern3pt #2\quad}
+  {\sl #3}
+}
+
+\def\prova{%
+  \noindent
+  {\it Prova}
+  \quad
+}
+
+\def\fig#1#2{
+  \vskip .5cm
+  \line{\hfil#1\hfil}
+  \vskip 20pt
+  \line{%
+    \hfil
+    Figura: #2
+    \hfil
+  }
+  \vskip .5cm
+}
+
