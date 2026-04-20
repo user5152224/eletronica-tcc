@@ -1,0 +1,45 @@
+
+\begin{figure}[!ht]
+  \centering
+  \begin{tikzpicture}[scale=1]
+    \begin{axis}[
+      domain=10e6:10e8, 
+      grid=both,
+      grid style={black!20},
+      scale only axis,
+      xlabel={Frequ\^encia em Hz},
+      xmax=10e7,
+      xmin=10e5,
+      xmode=log,
+      ylabel={Amplitude em dB},
+      ytick distance=1,
+      width=12cm,
+      height=7cm,
+    ]
+      \addplot [
+        color=black, 
+        smooth,
+        ultra thick
+      ] table {../amplificador_5532/entrada_desbalanceada.data};
+
+      \addplot[
+        domain=10e5:10e8, 
+        samples=2,
+      ] {-3};
+
+      \node [
+        pin={
+          [fill=white, draw=black]
+          265:{$f_c\approx34.6\,\rm MHz$}
+        },
+        circle,
+        draw=black, 
+        fill=white,
+        inner sep=1.5pt
+      ] at (axis cs:34e6,-3) {};
+
+    \end{axis}
+  \end{tikzpicture}
+  \caption{An\'alise AC da sa\'ida da entrada desbalanceada.}
+\end{figure}
+

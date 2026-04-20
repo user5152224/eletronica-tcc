@@ -1,0 +1,19 @@
+\begin{figure}[!ht]
+  \centering
+  \begin{circuitikz}[line width=.7]
+    \ctikzset{
+      european,
+    }
+    \def\dmh{1.5}
+    \def\dmv{3.6}
+    \coordinate (K1) at (0,0);
+    \coordinate (GND) at (2*\dmh,-\dmv);
+    \draw (GND) to [short] (0,-\dmv) to [short,-o] (K1);
+    \draw [thick, fill=white] (K1) coordinate (K1) circle [radius=1.5ex];
+    \draw (K1) node [above=.2cm] {$K_1$} to [R, l=$R_1$, a={47R}, o-] (2*\dmh,0) to [C, l_={$C_1$}, a^={100p}, *-*] (GND);
+    \draw (2*\dmh,0) to [short] ++(2*\dmh,0) coordinate (C2) to [R, l_=$R_2$, a^={220k}, *-] ++ (0,-\dmv) to [short] (2*\dmh,-\dmv);
+    \draw (C2) to [short, -o] ++(0.7*\dmh,0) node [right] {DESBAL} ;
+    \draw (GND) to ++ (0,-.3) node[tground] {};
+  \end{circuitikz}
+  \caption{Esquem\'atico da entrada desbalanceada.}
+\end{figure}
