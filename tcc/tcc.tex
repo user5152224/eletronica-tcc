@@ -178,80 +178,82 @@
 
   \chapter*{Introdu\c c\~ao}
 
-  \chapter{Preliminares}
-  
-  \section{Amplificadores Operacionais}
-
-  \subsection{Offset de um \ampop}
-  O {\it offset} de um aplificador \'e o desvio/erro de tens\~ao que um \ampop\ real tem em rela\c c\~ao a um \ampop\ ideal equivalente. Por exemplo, ao se injetar nas entradas um potencial correspondente ao GND, \'e esperado que a tens\~ao de sa\'ida seja nula relativa ao GND. Entretanto, em um \ampop\ real a tens\~ao de sa\'ida n\~ao \'e em geral $0\,$V. A diferen\c ca entre o valor esperado idealmente e o valor real \'e o que chamamos de {\it offset}.
-  \begin{figure}[!ht]
-    \centering
-  
-      \begin{tikzpicture}[scale=.5]
-        \def\w{2*pi}
-        \def\z{-5.2}
-        \draw (-2*pi,0) -- (\w,0);
-        \draw (0,\z) -- (0,2*pi);
-        \draw[step=1,help lines] (-2*pi,-5.2) grid (\w,2*pi);
-        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)});
-        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1});
-        \node at (0,0) [fill=white, rounded corners, radius=5pt] {GND};
-    \end{tikzpicture}
-    \caption{Exemplo de um sinal sem e com {\it offset} de $1\rm V$.}
-  \end{figure}
-
-
-  \subsection{Ganho de modo-comum em um \ampop\ diferencial}
-  Em um \ampop\ diferencial ideal a tens\~ao de sa\'ida \'e dada pela lei
-  \[
-    V_{\rm out}=A_d(V_+-V_-),
-  \]
-  em que $A_d$ \'e o ganho (ou amplifica\c c\~ao) diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional ao ent\~ao chamado {\bf ganho de modo-comum}, denotado por $A_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
-  \[
-    V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
-    \label{saida_ampop_real}
-  \]
-  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR, ela \'e definida por
-  \[
-    \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
-  \]
-  Tamb\'em \'e comum v\^e-la expressa em \db
-  \[
-    \cmrr_\db=20\cdot\log_{10}\Bigl|{A_d\over A_c}\Bigr|\;\db.
-    \label{cmrr_db}
-  \]
-  Em conformidade, quanto maior a CMRR, melhor ser\'a o amplificador diferencial. Em vista de (\ref{cmrr_db}) um \ampop\ diferencial ideal tem $\cmrr=\infty$. Desta maneira, os projetistas, com a finalidade de obter a melhor qualidade sonora, isto \'e, menor depend\^encia dos ru\'idos correlacionados, ter\~ao de maximizar o CMRR. 
-  \section{Ru\'idos}
-  \subsection{Ru\'ido Johnson (Nyquist)}
-  \'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin 
-  \[ 
-    T(\tau)\,{\rm K}=(\tau+273)\,^\circ{\rm C}
-  \]
-  \'e na realidade dada pela express\~ao:
-  \[
-    v_{\rm n}=\sqrt{4kBRT}\quad{\rm V_{rms}},
-  \]
-  em que 
-  \[
-    k=1,380649\times10^{-23}\,{\rm J}\cdot{\rm K}^{-1}
-  \]
-  \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
-
-  Ao posicionar um resistor de resist\^encia $R$ na entrada de um bom amplificador de \'audio, digamos, com imped\^ancia de entrada $Z_{\rm in}$, a tens\~ao de ru\'ido $V_{\rm n}$ efetivamente vista pelo amplificador \'e dada pelo divisor de tens\~ao
-  \[
-    V_{\rm n}=v_{\rm n}\cdot\Bigl|{Z_{\rm in}\over Z_{\rm in}+R}\Bigr|.
-    \label{tens_rui}
-  \]
-  Em um bom amplificador de \'audio $|Z_{in}|\gg R$, pois em geral possui uma imped\^ancia muito alta da ordem de ${\rm M}\Omega$, ent\~ao de (\ref{tens_rui}) temos
-  \[
-    V_{\rm n}^2=v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2+2\Re(Z_{\rm in})R+R^2}\approx v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2}=v_{\rm n}^2,
-  \]
-  logo $V_{\rm n}=v_{\rm n}$, i.e., a tens\~ao de ru\'ido de entrada vista pelo amplificador \'e precipuamente $v_{\rm n}$, a tens\~ao de ru\'ido de circuito aberto do resistor. \'E por este motivo que \'e t\~ao importante reduzir o ru\'ido Johnson (Nyquist), antes do sinal entrar no ampificador. Desta maneira, o ru\'ido em conjunto com o sinal s\~ao concomitamente amplificados, caso o ru\'ido seja significativo o sinal \'e degradado, predominando o ru\'ido branco, por este motivo ouvimos o chiado em amplificadores de \'audio simples.
+%  \chapter{Preliminares}
+%  
+%  \section{Amplificadores Operacionais}
+%
+%  \subsection{Offset de um \ampop}
+%  O {\it offset} de um aplificador \'e o desvio/erro de tens\~ao que um \ampop\ real tem em rela\c c\~ao a um \ampop\ ideal equivalente. Por exemplo, ao se injetar nas entradas um potencial correspondente ao GND, \'e esperado que a tens\~ao de sa\'ida seja nula relativa ao GND. Entretanto, em um \ampop\ real a tens\~ao de sa\'ida n\~ao \'e em geral $0\,$V. A diferen\c ca entre o valor esperado idealmente e o valor real \'e o que chamamos de {\it offset}.
+%  \begin{figure}[!ht]
+%    \centering
+%  
+%      \begin{tikzpicture}[scale=.5]
+%        \def\w{2*pi}
+%        \def\z{-5.2}
+%        \draw (-2*pi,0) -- (\w,0);
+%        \draw (0,\z) -- (0,2*pi);
+%        \draw[step=1,help lines] (-2*pi,-5.2) grid (\w,2*pi);
+%        \draw[domain=-2*pi:2*pi, samples=100, very thick] plot (\x,{5*cos(\x r)});
+%        \draw[domain=-2*pi:\w, samples=100, very thick, dotted] plot (\x,{5*cos(\x r)+1});
+%        \node at (0,0) [fill=white, rounded corners, radius=5pt] {GND};
+%    \end{tikzpicture}
+%    \caption{Exemplo de um sinal sem e com {\it offset} de $1\rm V$.}
+%  \end{figure}
+%
+%
+%  \subsection{Ganho de modo-comum em um \ampop\ diferencial}
+%  Em um \ampop\ diferencial ideal a tens\~ao de sa\'ida \'e dada pela lei
+%  \[
+%    V_{\rm out}=A_d(V_+-V_-),
+%  \]
+%  em que $A_d$ \'e o ganho (ou amplifica\c c\~ao) diferencial, $V_-$ a tens\~ao na entrada inversora e $V_+$ a tens\~ao na entrada n\~ao-inversora. Todavia, em um \ampop\ real h\'a uma parcela adicional proporcional ao ent\~ao chamado {\bf ganho de modo-comum}, denotado por $A_c$. Em verdade, a tens\~ao de sa\'ida de um \ampop\ diferencial mais realista \'e definida por
+%  \[
+%    V_{\rm out}=A_d(V_+-V_-)+A_c\Bigl({V_++V_-\over 2}\Bigr).
+%    \label{saida_ampop_real}
+%  \]
+%  Segundo \cite{HH}, um \ampop\ diferencial ideal \'e aquele cuja sa\'ida \'e inteiramente independente dos sinais individuais, importando apenas a diferen\c ca entre eles. Por\'em, como se nota em (\ref{saida_ampop_real}), $V_{\rm out}$ depende da tens\~ao dos sinais injetados nas entradas, a saber, da sua m\'edia aritm\'etica, e n\~ao apenas de sua diferen\c ca. \`A vista disto, em aplica\c c\~oes de \ampop{s} diferenciais deseja-se que o comportamento seja o mais pr\'oximo de um \ampop\ ideal, isto for\c ca o projetista a tornar o m\'odulo de $A_c$ muito pequeno, em outros termos o mais pr\'oximo de 0. Destarte, quanto menor $|A_c|$, tanto menor ser\'a sua suscetibilidade a {\bf ru\'idos correlacionados}, ou seja, a ru\'idos que aparecem com a mesma fase e amplitude em $V_-$ e $V_+$[. Na eletr\^onica existe uma grandeza que mensura a imunidade do \ampop\ diferencial a ru\'idos correlacionados, \'e o {\bf CMRR} ({\it Common-Mode Rejection Ratio}\/), em portugu\^es {\bf raz\~ao de rejei\c c\~ao de modo-comum}, doravante a referiremos simplesmente por CMRR, ela \'e definida por
+%  \[
+%    \cmrr=\Bigl|{A_d\over A_c}\Bigr|.
+%  \]
+%  Tamb\'em \'e comum v\^e-la expressa em \db
+%  \[
+%    \cmrr_\db=20\cdot\log_{10}\Bigl|{A_d\over A_c}\Bigr|\;\db.
+%    \label{cmrr_db}
+%  \]
+%  Em conformidade, quanto maior a CMRR, melhor ser\'a o amplificador diferencial. Em vista de (\ref{cmrr_db}) um \ampop\ diferencial ideal tem $\cmrr=\infty$. Desta maneira, os projetistas, com a finalidade de obter a melhor qualidade sonora, isto \'e, menor depend\^encia dos ru\'idos correlacionados, ter\~ao de maximizar o CMRR. 
+%  \section{Ru\'idos}
+%  \subsection{Ru\'ido Johnson (Nyquist)}
+%  \'E sabido que um resistor antigo apenas estando sobre uma mesa, gera uma tens\~ao de ru\'ido atrav\'es de seus terminais conhecido como ru\'ido Johnson. Ele tem um {\it spectrum} de frequ\^encia achatado dentro de uma banda de frequ\^encias. Ru\'idos com {\it spectra} achatados s\~ao comumente classificados como ru\'ido branco ({\it White Noise}\/). O ru\'ido Jonhson (Nyquist), \'e um ru\'ido rand\^omico inerente aos condutores el\'etricos em equil\'ibrio t\'ermico, associado \`a agita\c c\~ao t\'ermica dos portadores majorit\'arios de carga (usualmente os el\'etrons) e indiferente \`a diferen\c ca de potencial no condutor. A tens\~ao de ru\'ido de circuito aberto gerado por uma resist\^encia $R$ em $\ohm$ \`a temperatura $T$ em Kelvin 
+%  \[ 
+%    T(\tau)\,{\rm K}=(\tau+273)\,^\circ{\rm C}
+%  \]
+%  \'e na realidade dada pela express\~ao:
+%  \[
+%    v_{\rm n}=\sqrt{4kBRT}\quad{\rm V_{rms}},
+%  \]
+%  em que 
+%  \[
+%    k=1,380649\times10^{-23}\,{\rm J}\cdot{\rm K}^{-1}
+%  \]
+%  \'e a constante de Boltzmann e $B$ \'e o comprimento da banda em Hz.
+%
+%  Ao posicionar um resistor de resist\^encia $R$ na entrada de um bom amplificador de \'audio, digamos, com imped\^ancia de entrada $Z_{\rm in}$, a tens\~ao de ru\'ido $V_{\rm n}$ efetivamente vista pelo amplificador \'e dada pelo divisor de tens\~ao
+%  \[
+%    V_{\rm n}=v_{\rm n}\cdot\Bigl|{Z_{\rm in}\over Z_{\rm in}+R}\Bigr|.
+%    \label{tens_rui}
+%  \]
+%  Em um bom amplificador de \'audio $|Z_{in}|\gg R$, pois em geral possui uma imped\^ancia muito alta da ordem de ${\rm M}\Omega$, ent\~ao de (\ref{tens_rui}) temos
+%  \[
+%    V_{\rm n}^2=v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2+2\Re(Z_{\rm in})R+R^2}\approx v_{\rm n}^2\cdot{|Z_{\rm in}|^2\over |Z_{\rm in}|^2}=v_{\rm n}^2,
+%  \]
+%  logo $V_{\rm n}=v_{\rm n}$, i.e., a tens\~ao de ru\'ido de entrada vista pelo amplificador \'e precipuamente $v_{\rm n}$, a tens\~ao de ru\'ido de circuito aberto do resistor. \'E por este motivo que \'e t\~ao importante reduzir o ru\'ido Johnson (Nyquist), antes do sinal entrar no ampificador. Desta maneira, o ru\'ido em conjunto com o sinal s\~ao concomitamente amplificados, caso o ru\'ido seja significativo o sinal \'e degradado, predominando o ru\'ido branco, por este motivo ouvimos o chiado em amplificadores de \'audio simples.
 
   \chapter{Resumo do projeto}
 
   \section{Sobre o projeto} 
-  A proposta \'e criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo, usando uma combina\c c\~ao de v\'arios CIs NE5532. Cada um consiste dum amplificador operacional (\ampop) dual, precisamente um {\it Dual In-Line Package} (DIP) com dois amplificadores operacionais embutidos. O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. 
+  Esta parte tratar\'a de uma apresenta\c c\~ao breve do projeto, esta por sua vez est\'a totalmente embasada na descri\c c\~ao original do projeto segundo o autor. 
+
+  A proposta \'e criar um amplificador de \'audio com baixa distor\c c\~ao\footnote{Embora intuitivo \'e necess\'ario precisar tecnicamente o que \'e distor\c c\~ao em \'audio.} e de baixo custo, usando uma rede de v\'arios CIs NE5532. Cada um consiste de um \ampop\ (amplificador operacional) dual.  O autor do projeto justifica a escolha deste CI devido \`a sua baixa distor\c c\~ao, \`a sua baixa imped\^ancia\footnote{Outro conceito a ser precisado.} de sa\'ida e \`a uma not\'avel performance de ru\'ido. 
 
   Deve ser mencionado duma vez, que a limita\c c\~ao \'obvia em se usar \ampop s para alimentar alto-falantes, \'e que a varia\c c\~ao de tens\~ao \'e limitada se comparada com um amplificador de \'audio convencional. E, ao se usar uma rede de 5532s teremos por volta de $15\,\rm W_{rms}$ em $8\ohm$. Esta sa\'ida pode ser estendida usando dois destes amplicadores em modo {\it Bridge}. Um estar\'a defasado em $180^\circ$ do outro, ou de maneira an\'aloga, com sinais invertidos. Esta inversão, resultar\'a numa diferen\c ca de potencial duplicada, acarretando numa quadruplica\c c\~ao da pot\^encia:
   $$
@@ -452,7 +454,7 @@
 
   \section{Est\'agio de pot\^encia}
   
-  \input{diagramas/esquematico_estagio_de_potencia.tex}
+  %\input{diagramas/esquematico_estagio_de_potencia.tex}
 
   \begin{thebibliography}{}
     \bibitem{CircuiTikZ}
