@@ -86,12 +86,13 @@
   \vbox{
     \hsize=10cm
     \offinterlineskip
+    \openup 3pt
     \def\spc{\vskip 2pt}
     \scshape\scriptsize%
     INSTITUTO\hfill FEDERAL\hfill DE\hfill EDUCA\c C\~AO,\hfill CI\^ENCIA\hfill E\hfill TECNOLOGIA DA PARA\'IBA\par
-    \spc\fontsize{12}{12}\selectfont
+    \fontsize{12}{12}\selectfont
     CURSO\hfill T\'ECNICO\hfill SUBSEQUENTE\hfill EM\hfill ELETR\^ONICA\par
-    \spc\large
+    \large
     TRABALHO\hfill DE\hfill CONCLUS\~AO\hfill DE\hfill CURSO\par
   }
   \hfill\null
@@ -296,7 +297,7 @@
   \subsection{O est\'agio de ganho}
   Segundo o autor do projeto, o amplificador principal, assim como o est\'agio balanceado, possui um design inovador, que obtem uma distor\c c\~ao muito baixa, distribuindo o ganho requerido sobre tr\^es est\'agios. Sabe-se que $22.7\,\db$ poderia ser facilmente obtido com um \'unico \ampop. Contudo, os NE5532s n\~ao est\~ao completamente livres de distor\c c\~ao, e o THD ({\it Total Harmonic Distortion}\/) seria significativo.
 
-  \input{diagramas/esquematico_estagio_de_ganho.tex}
+  %\input{diagramas/esquematico_estagio_de_ganho.tex}
   \vfill\null\eject
 
   O primeiro est\'agio \'e formado pelos amplificadores IC1A e 1C1B, dando um ganho de $10.7\,\db$, as duas sa\'idas s\~ao combinadas por $R_8$ e $R_9$ criando uma vantagem de $3\,\db$\footnote{Isto trata-se do SNR {\it Signal-to-Noise Ratio}, a raz\~ao da pot\^encia do sinal \'util com a pot\^encia do ru\'ido. Ingenuamente, pode ser entendida como o qu\~ao limpo est\'a o sinal.}, como no amplicador balanceado. O segundo est\'agio IC2A duplica a tens\~ao, pois temos essencialmente
@@ -335,7 +336,7 @@
   O amplificador de pot\^encia consiste de trinta e dois 5532 dual \ampop{s}, logo, no total s\~ao 64 se\c c\~oes de \ampop{s} atuando como seguidores de tens\~ao, com suas sa\'idas reunidas por resistores de $1\ohm$. 
   vfill\null\eject
 
-  \input{diagramas/esquematico_estagio_de_potencia.tex}
+  %\input{diagramas/esquematico_estagio_de_potencia.tex}
 
   Estes resistores combinados est\~ao fora dos la\c cos de retroalimenta\c c\~ao dos 5532s, e voc\^e pode se perguntar: Qual o efeito que eles ter\~ao na imped\^ancia de sa\'ida do amplificador? Uma baixa imped\^ancia de sa\'ida \'e sempre uma coisa boa a se fazer, mas n\~ao por causa do ent\~ao chamado `fator de amortecimento' ({\it Damping-Factor}\/), o qual \'e altamente n\~ao significativo devido ao fato que a bobina do alto-falante sempre predomina a resist\^encia do circuito. O `fator de amortecimento' \'e definido como a imped\^ancia da carga dividido pela imped\^ancia de sa\'ida do amplificador. N\'os temos 64 resistores de $1\ohm$ em paralelo, dando uma imped\^ancia total de $1\ohm/64=0.0156\,\ohm$. Isto nos d\'a o fator de amortecimento hipot\'etico de $8/0.0156=512$, o que \'e muito bom em quaisquer padr\~oes. Em compara\c c\~ao, o cabeamento para o alto-falante possui mais resist\^encia do que isso!
 
