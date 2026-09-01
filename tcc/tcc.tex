@@ -73,11 +73,13 @@
 \def\tpfc{\scshape}
 
 \def\localData{%
-  \parbox[c][0cm][c]{3.5cm}{
+  \leavevmode
+  \vbox{%
+    \hsize=3.5cm 
     \sc
-    Jo\~ao Pessoa\hfill -\hfill PB\\
+    Jo\~ao Pessoa\hfill -\hfill PB\par
     \footnotesize
-    \today
+    data
   }
 }
 
